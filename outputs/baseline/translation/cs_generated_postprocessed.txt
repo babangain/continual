@@ -1,0 +1,1000 @@
+public override void Serialize(ILittleEndianOutput out1){out1.WriteShort(field_1_vcenter);}
+public void AddAll(T[] src, int srcOff, int srcLen, int dstDirIdx) {if (srcLen == 0)return;int srcDirIdx = 0;for (; srcDirIdx < srcLen; srcDirIdx++)AddAll(src, srcOff + srcDirIdx, 1, dstDirIdx);if (srcLen < BLOCK_SIZE)AddAll(src, srcOff + srcDirIdx, BLOCK_SIZE - srcDirIdx, dstDirIdx);}
+public void WriteShort(short s) {if (upto + 2 > blockSize) {if (currentBlock!= null) {AddBlock(
+public int RowTop {get {return rowTop;}}
+public DeleteDomainEntryResult Run(string actionName, DeleteDomainEntryRequest request, Type responseClass, RequestConfig requestConfig, IResponseHandler<DeleteDomainEntryResult> responseHandler) {return base.Run<DeleteDomainEntryResult>(actionName, request, responseClass, requestConfig, responseHandler);}
+public virtual void SetTermsDictOffsets(TermsDictOffsets termsDictOffsets){this.termsDictOffsets = termsDictOffsets;}
+public virtual string GetFormula2(){byte[] raw = buffer;int formulaB = RawParseUtils.TagFormula(raw, 0);if (formulaB < 0) {return ""; }return RawParseUtils.Decode(guessEncoding(), raw, formulaB + 1, raw.Length);}
+public POIFSFileSystem(bool readOnly, bool create, bool useTempFile) : base(readOnly, create,
+public void Init(int address, int size, int offset, int length) {slice
+public SubmoduleAddCommand SetDryRun(
+public virtual ListIngestionsResult ListIngest
+public void ReInit(java.io.InputStream stream){jjmatchedPos = jjnewStateCnt = 0;curLexState = defaultLexState
+public virtual GetShardIteratorResult GetShardIterator(string streamName, string shardId, ShardIteratorType
+public ModifyStrategyRequest() : base("vipaegis", "2016-11-11", "ModifyStrategy", "vipaegis") {setMethod(MethodType.POST);}
+public void Skip(long n) throws IOException {lock (lock) {if (in == null) {throw new IOException("InputStreamReader is closed");}if (n <= 0) {return;}long skipped = 0;while (skipped < n) {long count = in.Skip(n - skipped);if (count <= 0) {break;}skipped += count;
+public void Row(int row, int col, int sheetIndex, int sheetId, int sheetType){this.row = row;this.col = col;this.sheetIndex = sheetIndex;this.sheetId = sheetId;this.sheetType = sheetType;}
+public override void Write(int b)
+public void SetSentenceOp(NLPSentenceDetectorOp sentenceOp) {this.sentenceOp = sentenceOp;}
+public void Print(CellReference val) {Write(val);}
+public void SetFormula(string formula, string sheetName, string sheetRef, int sheetIndex){
+public void SetFormula(string formula, int formulaLength, int formulaPosition, int formulaEndPosition, int formulaSheetIndex){this.formula = formula;this.formulaLength = formulaLength;this.formulaPosition = formulaPosition;this.formulaEndPosition = formulaEndPosition;this.formulaSheetIndex = formulaSheetIndex;}
+public void ReadInternal(byte[] b, int offset, int len) {if (len == 0) {return;}int n = in.Read(b, offset, len);if (n < 0) {throw new EOFException("read past EOF: " + this);}if (n < len) {throw new IOException("read past EOF: " + this);}if (n > 0) {bufferStart += n;}}
+public TagQueueResult Invoke(Request<TagQueueRequest> request, Unmarshaller<TagQueueResult, JsonUnmarshallerContext> unmarshaller) {request.Endpoint = endpoint;request.TimeOffset = timeOffset;request.HttpMethod = HttpMethodName.POST;JsonErrorResponseHandler errorResponseHandler = new JsonErrorResponseHandler(JsonErrorUnmarshaller.GetInstance());return Invoke(request, responseHandler, errorResponseHandler);}
+public void SetSheetName(string sheetName){this.sheetName = sheetName
+public void SetCacheSubnetGroupDescription(string cacheSubnetGroupDescription){this.cacheSubnetGroupDescription = cacheSubnetGroupDescription;}  Java code
+public override void SetParams(string params, string[] params2) {base.SetParams(params);language = country = variant = "";string[] tokens = params.Split(',');if (tokens.Length > 0)language = tokens[0];if (tokens.Length > 1)country = tokens[1];if (tokens.Length > 2)variant = tokens[2];if (params2!= null) {if (params2.Length > 0) {if (params2[0]!= null) {colForValByRound = new Dictionary<string, string>();for (int i = 0; i < params2.Length; i++) {colForValByRound.Add(params2[i], i.ToString());}}} else {colForValByRound = null;}}}
+public DeleteDocumentationVersionResponse DeleteDocumentationVersion(string restApiId, string documentationVersion, bool deleteResources, bool deleteSnapshots) {DeleteDocumentationVersionRequest request = new DeleteDocumentationVersionRequest();request.RestApiId = restApiId;request.DocumentationVersion = documentationVersion;request.DeleteResources = deleteResources;request.DeleteSnapshots = deleteSnapshots;return RunTaskAsync(request, DeleteDocumentationVersionAsync);}
+public static FacetLabel Read(ILittleEndianInput in1){int length = in1.ReadByte();FacetLabel result = new FacetLabel(length);for (
+public Get
+public HSSFSimpleShape CreateSimpleShape(HSSFChildAnchor anchor, HSSFSimpleShape shape, HSSFSimpleShape shape1) {shape.Parent = this;shape.Anchor = anchor;shapes.Add(shape);shape1.Parent = this;shape1.Anchor = anchor;shapes.Add(shape1);OnCreate(shape);OnCreate(shape1);return shape;}
+public virtual int GetSheetIndex(Sheet sheet, bool caseSensitive){for (int i = 0; i < boundSheets.Count; i++){if (caseSensitive){if (boundSheets[i].Sheet == sheet){return i;}}else{if (boundSheets[i].Sheet == sheet){return i;}}}return -1;}
+public virtual GetDashboardRequest.Builder WithDashboardVersionDescription(string dashboardVersionDescription){this.dashboardVersionDescription = dashboardVersionDescription;return this;}
+public AssociateSigninDelegateGroupsWithAccountResult ExecuteAssociateSigninDelegateGroupsWithAccount(AssociateSigninDelegateGroupsWithAccountRequest request) {throw new InvalidOperationException("Not implemented yet");}  Java
+public void AddMultipleFormulas(MulBlankRecord mbr) {for (int j = 0; j < mbr.NumColumns; j++) {FormulaRecord fr = new FormulaRecord();fr.Column = (short)(j + mbr.FirstColumn);fr.Row = mbr.Row;fr.XFIndex = mbr.XFAt(j);fr.Formula = mbr.FormulaAt(j);InsertCell(fr);}}
+public static string Unquote(string string, string quote) {StringBuilder sb = new StringBuilder();int apos = 0;int k;while ((k = string.IndexOf(quote, apos)) >= 0) {sb.Append(string.Substring(apos, k)).Append(quote);apos = k + 1;}return sb.Append(string.Substring(apos)).ToString();}
+public void Write(String value, int
+public ArrayPtg(Object[] values1d) {int nColumns = values1d.Length / _nRows;_nColumns = (short) nColumns;_nRows = (short) _nRows;Object[] vv = new Object[_nColumns * _nRows];for (int r = 0; r < _nRows; r++) {for (int c = 0; c < _nColumns; c++) {vv[GetValueIndex(c, r)] = values1d[GetValueIndex(c, r)];}}_arrayValues = vv;_reserved0Int = 0;_reserved1Short = 0;_reserved2Byte = 0;}
+public virtual GetIceServerConfig
+public override string ToFormulaString(Workbook workbook, string sheetName, int rowIndex, int columnIndex, int refRow, int refCol, int refLastRow, int refLastCol, int refLastLastRow, int refLastLastCol){return ToString();}
+public override string ToFormulaString(string sheetName, string cellName, string sheetName2){return "ToChildBlockJoinQuery ("+parentQuery.ToFormulaString(sheetName, cellName, sheetName2)+")";}
+public int GetSheetId() {return sheetId;}  Java
+public UpdateTemplateActiveVersionResponse UpdateTemplateActiveVersion(UpdateTemplateActiveVersionRequest request) {request = request?? new UpdateTemplateActiveVersionRequest();return base.Execute<UpdateTemplateActiveVersionResponse>(request);}
+public virtual int GetXBAT
+public void SetSheetName(String sheetName, int sheet
+public override string ToFormulaString(string[] sheetNames, string[] colNames){StringBuilder b = new StringBuilder();int l = Length;for (int i = 0; i < l; i++){b.Append(GetComponent(i));if (i < l - 1){b.Append(" ");}}return b.ToString();}
+public InstanceProfileCredentialsProvider WithClient(AmazonEC2Client client, AmazonEC2AsyncClient clientAsync){this.client = client;this.clientAsync = clientAsync;return this;}
+public void SetWorkbook(Workbook workbook, bool copyStyles, bool copySheets, bool copyWorkbookSettings, bool copyWorkbookFormats){this.workbook = workbook;this.copyStyles = copyStyles;this.copySheets = copySheets;this
+public void SetSheetName(String sheetName, int sheetIndex, int sheetId, int sheetType){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.sheetId = sheetId;
+public int IndexOf(E o){throw new InvalidOperationException();}
+public virtual void SetColIndex(int colIndex){this.colIndex = colIndex;}
+public int IndexOfValue(int value, int start, int end, int step, int max) {for (int i = start; i < end; i += step)if (mValues[i] == value)return i;return -1;}
+public override void Serialize(ILittleEndianOutput out1){out1.WriteByte(sid);out1.WriteShort(field_1_row);out1.WriteShort(field_2_col);out1.WriteShort(field_3_row2);out1.WriteShort(field_4_col2);}
+public virtual GetGatewayResponseResult GetGatewayResponse(string restApiId, string responseType, string responseTemplates){GetGatewayResponseRequest request = new GetGatewayResponseRequest();request.RestApiId = restApiId;request.ResponseType = responseType;request.Response
+public void Set
+public void SetSheet(Sheet sheet){this.sheet = sheet;}
+public BootstrapActionDetail(BootstrapActionConfig bootstrapActionConfig, string name, string description, string args, string jar, string mainClass) {SetBootstrapActionConfig(bootstrapActionConfig);SetName(name);
+public override void Serialize(ILittleEndianOutput out1){out1.WriteShort(field_1_row);out1.WriteShort(field_2_col);out1.WriteShort(field_3_flags);out1.WriteShort(field_4_shapeid);out1.WriteShort(field_6_author.Length);out1.WriteByte(field_5_hasMultibyte? (byte)0x01 : (byte)0x00);if (field_5_hasMultibyte) {StringUtil.PutUnicodeLE(field_6_author, out1);} else {StringUtil.PutCompressedUnicode(field_6_author, out1);}if (field_7_padding!= null) {out1.
+public int LastIndexOf(string string, int start, int end) {if (string == null) {throw new ArgumentException("String must not be null");}if (start < 0) {throw new ArgumentException("Start must be non-negative");}if (end < 0) {throw new ArgumentException("End must be non-negative");}if (start > end) {throw new ArgumentException("Start must be less than end");}if (end > Count) {throw new ArgumentException("End must be less than count");}
+public bool AddFirst(E object){return AddFirstImpl(object);}
+public void UnsetSection(String section, String subsection, String key, String
+public virtual int GetPtgClass(){return ptgClass;}  Java
+public void AddSubRecord(SubRecord[] elements){subrecords.AddRange(elements);}
+public bool RemoveAll(IEnumerable c){lock (mutex){return delegate().RemoveAll
+public virtual void SetInject(bool inject){this
+public override int Ptg {get {return Ptg.REF;}}
+public void SetValue(String newValue, String sheetName, String sheetRef, int sheetIndex){value = newValue;sheetNameForVal = sheetName;sheetRefForVal = sheetRef;sheetIndexForVal = sheetIndex;}
+public Row GetNewRow(){return newRow;}
+public int SizeInHyperlinks {get {return count;}}
+public CreateRepoRequest() : base("cr", "2016-06-07", "CreateRepo", "cr") {UriPattern = "/repos";Method = MethodType.PUT;}
+public void SetDeltaBaseAsCol3(bool deltaBaseAsCol3){this.deltaBase
+public int Size(){return size;}
+public virtual void SetTableName(string
+public virtual AllocateConnectionOnInterconnectResult ExecuteAllocateConnectionOnInterconnect(AllocateConnectionOnInterconnectRequest allocateConnectionOnInterconnectRequest){throw new InvalidOperationException("Not implemented yet");}
+public int SheetNameLength9 {get {return sheetNameLength9;}}
+public static WeightedTerm[] GetTerms(Query query){return GetTerms(query,false);}
+public int CompareTo(Ptg other) {if (this == other) {return 0;}if (other is RefPtg) {RefPtg otherPtg = (RefPtg
+public virtual int Size{get{return 1;}}
+public virtual string GetHumanishName(string path){if (path == null) throw new ArgumentException("Invalid path");string[] elements;if ("file".Equals(Scheme) || LOCAL_FILE.IsMatch(path)) elements = path.Split(new char[] { Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar }); else elements = path.Split(new char[] { '/' });if (elements.Length == 0) throw new ArgumentException("Invalid path");string result = elements[elements.Length - 1];if (Constants.DOT_GIT.Equals(result)) result = elements[elements.Length - 2];else if (result.EndsWith(Constants.DOT_GIT_EXT)) result = result.Substring(0, result.Length - Constants.DOT_GIT
+public virtual DescribeNotebookInstanceLifecycleConfigResponse DescribeNotebookInstanceLifecycleConfig(string notebookInstanceLifecycleConfigName, int maxResults){DescribeNotebookInstanceLifecycleConfigRequest request = new DescribeNotebookInstanceLifecycleConfigRequest();request.NotebookInstanceLifecycleConfigName = notebookInstanceLifecycleConfigName;request.MaxResults = maxResults;return base.DescribeNotebookInstanceLifecycleConfig(request);}
+public virtual string GetAccessKeySecret(){return this.accessKeySecret;}
+public virtual DeleteAvailabilityZoneResult DeleteAvailabilityZone(DeleteAvailabilityZoneRequest request){request = BeforeClientExecution(request);return ExecuteDeleteAvailabilityZone(request);}
+public virtual DescribeVoicesResult DescribeVoices(string languageCode, string voiceId, string engine, string gender){return DescribeVoices(new DescribeVoicesRequest().WithLanguageCode(languageCode).WithVoiceId(voiceId).WithEngine(engine).WithGender(gender
+public virtual ListNotebookInstancesResult ListNotebookInstances(ListNotebookInstancesRequest request){request = BeforeClientExecution(request);return ExecuteListNotebookInstances(request);}
+public DescribeJobRequest(string vaultName, string jobId, string accountId, string archiveId, string archiveSizeInBytes, string archiveSHA256TreeHash) {SetVaultName(vaultName);SetJobId(jobId);SetAccountId(accountId);SetArchiveId(archiveId);SetArchiveSizeInBytes(archiveSizeInBytes);SetArchiveSHA256TreeHash(archiveSHA256TreeHash);}
+public int First
+public virtual GetApisResult ExecuteGetApis(GetApisRequest getApisRequest, ExecutionContext executionContext, RequestMetricCollector requestMetricCollector, RequestMetricCollector requestMetricCollector1, RequestMetricCollector requestMetricCollector2){throw new InvalidOperationException("Not implemented yet");}
+public DeleteVoiceTemplateResponse DeleteVoiceTemplate(DeleteVoiceTemplateRequest request) {request = request?? new DeleteVoiceTemplateRequest();return RunTaskAsync(request, (AmazonWebServiceRequest)request, (AmazonWebServiceResponse)new DeleteVoiceTemplateResponse(), (AmazonWebServiceResponse)new DeleteVoiceTemplateResponseUnmarshaller());}
+public String SheetName {get {return sheetName;}}
+public void Print(Formula
+public QueryNode Child {get {return GetChildren()[i].GetChildren()[j].GetChildren()[k].GetChildren()[l].GetChildren()[m].GetChildren()[n];}}
+public NotIgnoredFilter(int workdirTreeIndex, int sheetIndex, int row, int col, int cellType) {this.index = workdirTreeIndex;this.sheetIndex = sheetIndex;this.row = row;this.col = col;this.cellType = cellType;}
+public AreaRecord(int row1, int col1, int row2, int col2, short formatFlags){this.row1 = row1;this.col1 = col1;this.row2 = row2;this.col2 = col2;this.field_1_formatFlags = format
+public GetThumbnailRequest(string product, string version, string action
+public virtual DescribeTransitGatewayVpcAttachmentsResult DescribeTransitGatewayVpcAttachments(string transitGatewayId, string vpcId){DescribeTransitGatewayVpcAttachmentsRequest request = new DescribeTransitGatewayVpcAttachmentsRequest();request.TransitGatewayId = transitGatewayId;request.VpcId = vpcId;return ExecuteDescribeTransitGatewayVpcAttachments(request);}
+public virtual PutVoiceConnectorTerminationCredentialsResponse PutVoiceConnectorTerminationCredentials(PutVoiceConnectorTerminationCredentialsRequest request){request = BeforeClientExecution(request);return ExecutePutVoiceConnectorTerminationCredentials(request);}
+public virtual void SetOrdRange(string dim, int start, int end, bool inclusive, bool reverse){prefixToOrdRange[dim] = new OrdRange(start, end, inclusive, reverse);}
+public virtual string ToFormulaString(bool includeSheetNames, bool includeFunctionNames, bool includeColumnNames
+public E RemoveFirstImpl() {if (size == 0) {throw new InvalidOperationException();}E result = elements[0];elements[0] = default(E);size--;return result;}
+public virtual CreateWorkspacesResult ExecuteCreateWorkspaces(CreateWorkspacesRequest createWorkspacesRequest){throw new InvalidOperationException("The request object used to create the CreateWorkspacesResult has already been used. Please create a new request object.");}
+public NumberFormatIndexRecord Clone() {return Copy();}
+public virtual DescribeRepositoriesResult ExecuteDescribeRepositories(DescribeRepositoriesRequest describeRepositoriesRequest) {throw new InvalidOperationException("The request handler doesn't recognize this operation type.");}
+public SparseIntArray(int[] keys, int size) {this(keys, null, size);}
+public virtual void SetMinWordSize(int minWordSize, int minSubwordSize, int minWordLength, int minCharacterNgramSize){this.minWordSize = minWordSize;this.minSubwordSize = minSubwordSize;this.minWordLength = minWordLength;this.minCharacterNgramSize = minCharacter
+public CreateDistributionWithTagsResult CreateDistributionWithTags(CreateDistributionWithTagsRequest request) {request = request.BeforeMarshalling(this.RequestMarshaller);return this.Invoke<CreateDistributionWithTagsResult>(request);}
+public void Write(int b){Write(new byte[]{(byte
+public DeleteWorkspaceImageResult DeleteWorkspaceImage(string imageId) {DeleteWorkspaceImageRequest request = new DeleteWorkspaceImageRequest();request.ImageId = imageId;return RunTask(() => DeleteWorkspaceImageAsync(request));}
+public static void WriteHex(StringBuilder sb, int value, int length, String prefix) {if (length < 1) {return;}int mask = 0x00000000;for (int i = 0; i < length; i++) {mask = mask << 4;sb.Append(prefix);sb.Append(value & mask);value = value >> 4;}}
+public UpdateDistributionResult UpdateDistribution(UpdateDistributionRequest request) {request.BeforeMarshalling(this.RequestMarshaller);return this.Invoke(request, this.ResponseUnmarshaller);}
+public HSSFColor GetColor(short index, short tint, short shade){if (index == HSSFColorPredefined.AUTOMATIC.Index) {return HSSFColorPredefined.AUTOMATIC.Color;}byte[] b = _palette.GetColor(index, tint, shade);return (b == null)? null : new CustomColor(index, b);}
+public override int Size
+public virtual void SetColForValByRound(int col, string val, int round){colForValByRound.Add(val, col);colForValByRound.Add(val + round
+public virtual DescribeDBParametersResult DescribeDBParameters(DescribeDBParametersRequest request
+public FormatRun(short character, short fontIndex, short colorIndex, short underline, short strikeout, short italic) {this._character = character;this._fontIndex = fontIndex;this._colorIndex = colorIndex;this._underline = underline;this._strikeout = strikeout;this._italic = italic;}
+public static byte[] ToLittleEndianUtf16Bytes(String str) {return ToLittleEndianUtf16Bytes(str.ToCharArray(), 0, str.Length);}
+public virtual UploadMultipartPartResult ExecuteUploadMultipartPart(UploadMultipartPartRequest uploadMultipartPartRequest){uploadMultipartPartRequest.Endpoint = this.Endpoint;try{HttpResponseHandler<AmazonWebServiceResponse<UploadMultipartPartResult>> responseHandler = protocolFactory.Create
+public virtual IList<Token> GetHiddenTokensToRight(int tokenIndex, int maxTokens, bool includeHidden){IList<Token> hiddenTokens = new List<Token>();int i = tokenIndex;while (i < tokens.Count - 1 && i < maxTokens) {Token token = tokens[i];if (token.isHidden() || (includeHidden && token.isHidden())) {hiddenTokens.Add(token);}i++;}return hiddenTokens;}
+public static Query Parse(string query, Analyzer analyzer){if (analyzer == null) {analyzer = new StandardAnalyzer();}return Parse(query, analyzer, null);}
+public virtual void SetColForValByRound(string colName, bool val){colForValByRound[colName] = val? "1" : "0";}
+public StashListCommand StashList(string stashName) {return new
+public void SetFieldInfo(FieldInfo fieldInfo, int fieldIndex, string fieldName, int fieldIndex2){byIndex[fieldIndex] = fieldInfo;byIndex[fieldIndex2] = fieldInfo;byName[fieldName] = fieldInfo;}
+public virtual DescribeEventSourceResponse DescribeEventSource(DescribeEventSourceRequest request) {request = request?? new DescribeEventSourceRequest();return RunTask(() => DescribeEventSourceAsync(request, null, null, null));}
+public virtual GetDocumentAnalysisResult ExecuteGetDocumentAnalysis(GetDocumentAnalysisRequest getDocumentAnalysisRequest){throw new InvalidOperationException("Not implemented
+public virtual CancelUpdateStackResponse CancelUpdateStack(string stackName, string region, string account) {CancelUpdateStackRequest request = new CancelUpdateStackRequest();request.StackName = stackName;request.Region = region;request.Account = account;return CancelUpdateStack(request);}
+public ModifyLoadBalancerAttributesResponse ModifyLoadBalancerAttributes(ModifyLoadBalancerAttributesRequest request) {request = request?? new ModifyLoadBalancerAttributesRequest();return base.Invoke<ModifyLoadBalancerAttributesResponse>(request, "ModifyLoadBalancerAttributes");}
+public SetInstanceProtectionResult SetInstanceProtection
+public virtual ModifyGlobalClusterResult ModifyGlobalCluster(ModifyGlobalClusterRequest request){request = request.BeforeMarshalling(this.RequestMarshaller);return this.Execute<ModifyGlobalClusterResult>(request);}
+public void Add(int startOffset, int endOffset, int posLength) {if (count == outputs.Length) {outputs = ArrayUtil.Grow(outputs, count + 1);}if (count == endOffsets.Length) {int[] next = new int[ArrayUtil.Oversize(1 + count, Integer.BYTES)];Array.Copy(endOffsets, 0, next, 0,
+public FetchLibrariesRequest(string product, string version, string action, string serviceCode, ProtocolType protocol, string endpoint, string regionId) : base(product, version, action, serviceCode, protocol, endpoint, regionId) {Protocol = ProtocolType.HTTPS;}
+public bool ContainsAll
+public override void Write(byte[] b){out.Write
+public string GetClusterId(){return this.clusterId;}
+public static DataValidationConstraint CreateFormulaListConstraint(String formula1, String formula2, String formula
+public virtual ListObjectParentPathsResult ListObjectParentPaths(string workbookId, string tableId, string objectId, string parentObjectId){ListObjectParentPathsRequest request = new ListObjectParentPathsRequest();request.SetWorkbookId(workbookId);request.SetTableId(tableId);request.SetObjectId(objectId);request.SetParentObjectId(parentObjectId);return ExecuteListObjectParentPaths(request);}  Java
+public virtual DescribeCacheSubnetGroupsResult ExecuteDescribeCacheSubnetGroups(DescribeCacheSubnetGroupsRequest describeCacheSubnetGroupsRequest){throw new InvalidOperationException("Not implemented yet");}
+public int GetSharedFormulaIndex() {return sharedFormulaIndex.GetShort(field_5_options);}
+public void SetSheetName(string sheetName, int sheetIndex, bool isCaseSensitive, bool isCaseInsensitive){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.isCaseSensitive = isCaseSensitive;this.isCaseInsensitive = isCaseInsensitive;}
+public virtual void AddChildAfter(Node n, Node after){if (n == null){return;}if (children == null){children = new ArrayList();}int index = children.IndexOf(
+public override void SetDocument(POIXMLDocument doc, POIXMLDocumentPart parent, POIXMLDocumentPart
+public virtual
+public static TokenFilterFactory ForName(String name, IDictionary<String, String> args, ClassLoader loader, String defaultClass, bool throwOnFailure, bool ignoreMissing) {return loader.NewInstance(name, args, defaultClass, throwOnFailure, ignoreMissing);}
+public AddAlbumPhotosResponse AddAlbumPhotosWithOptions
+public virtual
+public override string ToFormula
+public static void Main(string[] args) {string input = "հայտնի";string output = new ArmenianStemmer().Stem(input);Console.WriteLine(output);}
+public virtual bool HasFormulaArray3D5(){return ProtectedHasFormulaArray3D5();}
+public UpdateContributorInsightsResponse UpdateContributorInsights(string tableName, ContributorInsightsAction action, ContributorInsightsSpecification specification, string indexName, string roleArn) {return UpdateContributorInsights(new UpdateContributorInsightsRequest().WithTableName(tableName).WithAction(
+public virtual void SetRow(int row, string col, int round){field_1_row = row;colForValByRound.Add(col, round);}
+public int GetMinWordLength(){return minWordLength;}  Java
+public virtual void SetValidUntil(string validUntil, string timeZone, string datePattern, string timePattern){this.validUntil = validUntil;this.validUntil
+public override
+public virtual GetContactAttributesResult GetContactAttributes(string contactId, string attributeType, string nextToken){GetContactAttributesRequest request = new GetContactAttributesRequest();request.ContactId = contactId;request.AttributeType = attributeType;request.NextToken = nextToken;return GetContactAttributes(request);}
+public override string ToFormulaString(Workbook workbook, string sheetName, int rowIndex, int columnIndex, int refRow, int refCol, int refLastRow, int refLastCol, int refLastLastRow, int refLastLastCol){return ToString();}
+public virtual Task<ListTextTranslationJobsResponse
+public virtual GetContactMethodsResult GetContactMethods(Get
+public static short LookupIndexByInternalName(string name, bool caseSensitive, bool ignoreCase) {FunctionMetadata fd = getInstance().getFunctionByNameInternal(name, caseSensitive
+public virtual DescribeAnomalyDetectorsResponse DescribeAnomalyDetectors(DescribeAnomalyDetectorsRequest request) {request = request?? new DescribeAnomalyDetectorsRequest();return RunRequest(request);}
+public static string InsertId(string message, ObjectId changeId, bool isComment, bool isDraft, bool isPrivate) {if (message == null) {message = "";}if (changeId == null) {changeId = ObjectId.get();}StringBuilder sb = new StringBuilder();sb.append(message);if (isComment) {sb.append(" (");}sb.append(changeId.toString());if (isComment) {sb.append(")");}if (isDraft) {sb.append(" (draft)");}if (isPrivate) {sb.append(" (private)");}return sb.ToString();}
+public void SetObjectSize(AnyObjectId objectId, int typeHint, long size, bool force, bool update) {db.SetObjectSize(this, objectId, size, force, update);}
+public virtual ImportInstallationMediaResult ImportInstallationMedia(ImportInstallationMediaRequest request, Amazon.Runtime.Internal.IAsyncResult asyncResult){request = BeforeClientExecution(request);return ExecuteImportInstallationMedia(request, asyncResult);}  Java code
+public virtual void SetColForValByRound(Dictionary<string, string> colForValByRound){this.colForValByRound = colForValByRound;}
+public NumberPtg(double d, int field_2_precision, int field_3_flags, int field_4_ref_row, int field_5_ref_col)  {this.field_1_value = d;this.field_2_precision = field_2_precision;this.field_3_flags = field_3_flags;this.field
+public GetStreamingDistributionConfigResult GetStreamingDistributionConfig(GetStreamingDistributionConfigRequest request) {request = request.BeforeMarshalling(new GetStreamingDistributionConfigRequestMarshaller());return ExecuteGetStreamingDistributionConfig(request);}
+public virtual DescribeDetectorResponse DescribeDetector(string detector
+public virtual void SetSheetIndex(int sheetIndex){this.sheetIndex = sheetIndex;}
+public DeleteAliasResult DeleteAlias(DeleteAliasRequest request) {request = request?? new DeleteAliasRequest();return RunDeleteAlias(request);}
+public virtual void SetMinWordSize(int minWordSize, int minWordSize2, int minWordSize3, int minWordSize4){this.minWordSize = minWordSize;this.minWordSize2 = minWordSize2;this.minWordSize3 = minWordSize3;this
+public short ColCount {get {return colCount;}}
+public virtual void SetPtgs(List<Ptg> ptgs){this.ptgs = pt
+public virtual GetDomainDeliverabilityCampaignResponse GetDomainDeliverabilityCampaign(GetDomainDeliverabilityCampaignRequest request){request = BeforeClientExecution(request);return ExecuteGetDomainDeliverabilityCampaign(request);}
+public virtual string ToFormulaString(Workbook book, string sheetName, int firstRowNum, int lastRowNum, int firstColNum, int lastColNum){return "{" + GetColsNamesForValsByRound() + "}";}
+public virtual ListStreamProcessorsResult ListStreamProcessors(string nextToken, int maxResults){ListStreamProcessorsRequest request = new ListStreamProcessorsRequest();request.NextToken = nextToken;request.MaxResults = maxResults;return ExecuteListStreamProcessors(request);}  Java
+public DeleteLoadBalancerPolicyRequest(string loadBalancerName, string policyName, string policyTypeName, string policyAttributes, string policy
+public WindowProtectRecord(WindowProtectRecord other){this(other.GetOptions());}
+public UnbufferedCharStream(TextReader dstream, String encoding, int size) throws UnsupportedEncodingException {n = 0;data = new int[size];}
+public virtual GetOperationsResult ExecuteGetOperations(GetOperationsRequest getOperationsRequest, ExecutionContext executionContext, RequestMetricCollector requestMetricCollector, RequestMetricCollector requestMetricCollector1, RequestMetricCollector requestMetricCollector2){throw new InvalidOperationException("Not implemented");}
+public void CopyRawFrom(byte[] b, int o, int n) {w1 = NB.DecodeInt32(b, o);w2 = NB.DecodeInt32(b, o + 4);w3 = NB.DecodeInt32(b, o + 8);w4 = NB.DecodeInt32(b, o + 12);w5 = NB.DecodeInt32(
+public short H_hold{get{return field_1_h_hold;}}
+public void SetWorkbook(Workbook workbook, bool copyStyles, bool copySheetNames, bool copySheets){this.workbook = workbook;this.copyStyles = copyStyles;this.copySheetNames = copySheetNames;this.copySheets = copySheets;}
+public void Open(FileOutputStream fos) {if (isOpen) {throw new IOException
+public virtual DescribeMatchmakingRuleSetsResponse DescribeMatchmakingRuleSets(){DescribeMatchmakingRuleSetsRequest request = new DescribeMatchmakingRuleSetsRequest();return DescribeMatchmakingRuleSets(request);}
+public virtual string GetPronunciation(int wordId, char[] surface, int off, int len, int langId, int variantId, int variantType, int variantSub, int variantSub2){return null;}
+public virtual void SetSheetNameRawNoDecodeNoDecode(string sheetNameRawNoDecodeNoDecode){this.sheetNameRawNoDecodeNoDecode = sheetNameRawNoDecodeNoDecode;}
+public static double Devsq(double[] v, int start, int end) {double r = double.NaN;if (v!= null && v.Length >= 1) {double m = 0;double s = 0;int n = end - start + 1;for (int i = start; i < n; i++) {s += v[i];}m = s / n;s = 0;for (int i = start; i < n; i++) {s += (v[i] - m) * (v[i] - m);}r = (n == 1)? 0 : s;}return r;}
+nan
+public bool IsGreedy(){return greedy
+public
+public void Traverse(CellHandler handler) {int firstRow = range.FirstRow;int lastRow = range.LastRow;int firstColumn = range.FirstColumn;int lastColumn = range.LastColumn;int width = lastColumn - firstColumn + 1;SimpleCellWalkContext ctx = new SimpleCellWalkContext();Row currentRow = null;Cell currentCell = null;for (ctx.RowNumber = firstRow; ctx.RowNumber <= lastRow; ++ctx.RowNumber) {currentRow = sheet.GetRow(ctx.RowNumber);if (currentRow == null) {continue;}for (ctx.ColNumber = firstColumn; ctx.ColNumber <= lastColumn; ++ctx.ColNumber) {currentCell = currentRow.GetCell(ctx.ColNumber);if (currentCell == null) {continue;}if (IsEmpty(currentCell) &&!traverseEmptyCells) {continue;}long rowSize = ArithmeticUtils.MulAndCheck((long)ArithmeticUtils.SubAndCheck(ctx.RowNumber, firstRow), (long)width);ctx.OrdinalNumber = ArithmeticUtils.AddAndCheck(rowSize, (ctx.ColNumber - firstColumn + 1));handler.OnCell(currentCell, ctx);}}}
+public int GetSheetIndex13(){return
+public static ScoreTerm Create(String bytes, int offset, int length){return new ScoreTerm(bytes, offset, length);}
+public int SheetIndex6 {get
+public virtual string ToFormulaString(string sheetName){return ToFormulaString(sheetName, false);}
+public void SetExactOnly(bool exactOnly, bool exactOnlyForErrors) {this.exactOnly = exactOnly;this.exactOnlyForErrors = exactOnlyFor
+public KeySchemaElement(string attributeName, KeyType keyType, string projectionType, string scalingType, string scalingUnits, string scalingAdjustment) {AttributeName = attributeName;KeyType = keyType.ToString();ProjectionType = projectionType;ScalingType = scalingType;ScalingUnits = scalingUnits;ScalingAdjustment = scalingAdjustment;}  Java
+public virtual GetAssignmentResult ExecuteGetAssignment(GetAssignmentRequest getAssignmentRequest, ExecutionContext executionContext, RequestMetricCollector requestMetricCollector, RequestMetricCollector requestMetricCollector1, RequestMetricCollector requestMetricCollector2){throw new InvalidOperationException("Not implemented yet");}
+public void RemoveObject(AnyObjectId id){for (int i = 0; i < _objects.Count; i++) {if (_objects[i].Id.Equals(id)) {_objects.RemoveAt(i);return;}}throw new ArgumentException("object not found");}
+public GroupingSearch SetAllGroups(bool allGroups){this.allGroups = allGroups;return this;}
+public void SetMultiValued(string
+public int GetCellsVal(int round, int col, int row){int size = 0;foreach (char c in cells.Keys){Cell e = at(c);if (e.cmd >= 0 && e.round == round && e.col == col && e.row == row){size++;}}return size;}
+public DeleteVoiceConnectorTerminationResponse DeleteVoiceConnectorTermination(DeleteVoiceConnectorTerminationRequest request) {request = request?? new DeleteVoiceConnectorTerminationRequest();return RunTask(() => DeleteVoiceConnectorTermination
+public DeleteLifecyclePolicyResponse DeleteLifecyclePolicy(string bucketName, string id, string region, string accountId, string namespace) {DeleteLifecyclePolicyRequest request = new DeleteLifecyclePolicyRequest(bucketName, id);request.
+public void Write(long b) {CheckPosition(8);_buf[_writeIndex++] = (byte)(b & 0xff);_buf[_writeIndex++] = (byte)(b >> 8);_buf[_writeIndex++] = (byte)(b >> 16);_buf[_writeIndex++] = (byte)(b >> 24
+nan
+public static int GetNumberOfBitsRequiredToRepresent(int numValues, int maxNumberOfValuesExpected, float desiredSaturation) {return GetNumberOfBitsRequiredToRepresent(numValues,
+public virtual DescribeDashboardResponse DescribeDashboard(string dashboardId, string awsAccountId, string @namespace) {DescribeDashboardRequest request = new DescribeDashboardRequest();request.DashboardId = dashboardId;request.AwsAccountId = awsAccountId;request.Namespace = @namespace;return RunTask(() => DescribeDashboard(request));}
+public virtual CreateSegmentResult CreateSegment(CreateSegmentRequest request){request = beforeClientExecution(request);return executeCreateSegment(request);}
+public virtual void SetRowOffset(int rowOffset){field_1_row
+public virtual void SetDeletedList(IList<String> deletedList){this.deletedList = deletedList;}
+public override string ToFormulaString(Workbook book, string sheetName, int rowIndex, int columnIndex, int refRow, int refCol, int refLastRow, int refLastCol){return "[INTERFACEEND/]\n";}
+public void SetSheetName(String sheetName, String sheetIndex, String sheetName2){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.sheetName2 = sheetName2;}
+public PlainTextDictionary(string file) {try {in = new Stream
+public StringBuilder Append(bool b) {EnsureCapacity(
+public virtual ListAssociatedStacksResponse ListAssociatedStacks(string stackSetName, string region, string account){ListAssociatedStacksRequest request = new ListAssociatedStacksRequest();request.StackSetName = stackSetName;request.Region = region;request.Account = account;return ListAssociatedStacks(request);}
+public static double AveDev(double[] v, double[] w, double[] x) {double r
+public virtual DescribeByoipCidrsResponse DescribeBy
+public virtual GetDiskResult ExecuteGetDisk(GetDiskRequest getDiskRequest, AmazonServiceCallback<GetDiskRequest, GetDiskResult> asyncHandler, ExecutionContext executionContext){throw new InvalidOperationException("Not implemented yet");}
+public virtual CreateDBClusterParameterGroupResponse CreateDBClusterParameterGroup(string dbClusterParameterGroupName, string dbParameterGroupFamily, string description, List<Parameter> parameters){CreateDBClusterParameterGroupRequest request = new CreateDBClusterParameterGroupRequest();request.DBClusterParameterGroupName = dbClusterParameterGroupName;request.DBParameterGroupFamily = dbParameterGroupFamily;request.Description = description;request.Parameters = parameters;return ExecuteCreateDBClusterParameterGroup(request);}
+public static CharBuffer Wrap(
+public int SubmoduleRevision {get {return submoduleRevision;}}
+public virtual DescribeInstancesResponse DescribeInstances(DescribeInstancesRequest request) {request = request??
+public virtual void SetFormula4(string formula4){this.formula4 = formula4;}  Java
+public void SetSheetName(String sheetName, int sheetIndex, int row, int col){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.row = row;this.col = col;}
+public virtual void SetColForValByRound(string val, string col, int round, int col2, int col3){col
+public virtual void SetGroupIdStrStr(string groupIdStrStr){this
+public bool RequireBoolean(IDictionary<String, String> args, String name, bool defaultValue) {String value = Require(args, name);if (value.Equals("true", StringComparison.OrdinalIgnoreCase)) {return true;}if (value.Equals("false", StringComparison.OrdinalIgnoreCase)) {return false;}return defaultValue;}
+public static void ToStringTree(Tree t, StringBuilder buf) {if (t == null) {buf.Append("null");return;}
+public override int Ptg{get{return sid;}}
+public GetRepoWebhookLogListRequest(string repoNamespace, string repoName, string webhookId) : base("cr", "2016-06-07", "GetRepoWebhookLogList", "cr") {UriPattern = "/repos/[RepoNamespace]/[RepoName]/webhooks/[WebhookId]/logs";Method = MethodType.GET;RepoNamespace = repoNamespace;RepoName = repoName;WebhookId = webhookId;}
+public virtual GetJobUnlockCodeResult GetJobUnlockCode(string jobId, string jobUnlockCode, string jobUnlockCodeType){GetJobUnlockCodeRequest request = new GetJobUnlockCodeRequest();request.JobId = jobId;request.JobUnlock
+public RemoveTagsRequest(string resourceId, string tag, string type, string scope, string version, string versionType) {ResourceId = resourceId;Tag = tag;Type = type;Scope = scope;Version = version;VersionType = versionType;}
+public short GetGB2312Id(byte[] buffer) {if (buffer.Length!= 2) {return -1;}int b0 = (
+public BatchRefUpdate AddCommand(string refName, ObjectId oldId, ObjectId newId, bool forceUpdate, bool allowConflicts, bool allowEmpty){commands.Add(new ReceiveCommand(oldId
+public void SetExternSheet(int sheetNumber, int externSheetIndex, int externSheetFirstRow, int externSheetLastRow, int externSheetFirstCol, int externSheetLastCol){GetOrCreateLinkTable().SetExternSheet(sheetNumber, externSheetIndex, externSheetFirstRow, externSheetLastRow, externSheetFirstCol, externSheetLastCol);}
+public int Row6
+public virtual void SetMinimumMatchingElements(bool minimumMatchingElements, bool defaultMinimumMatchingElements){this.minimumMatchingElements = minimumMatchingElements? 1 : defaultMinimumMatchingElements? 0 : -1;}
+public virtual
+public virtual DescribeDashboardPermissions
+public Ref Peel(Ref ref, int n, int m, int o, int p, int q
+public override long RamBytesUsed() {return RamUsageEstimator.AlignObjectSize(RamUsageEstimator.NUM_BYTES_OBJECT_HEADER + 2 * sizeof(int) + RamUsageEstimator.NUM_BYTES_OBJECT_REF) + RamUsageEstimator.SizeOf(blocks);}
+public virtual GetDomainSuggestionsResult ExecuteGetDomainSuggestions(GetDomainSuggestionsRequest getDomainSuggestionsRequest, com.amazonaws.handlers.AsyncHandler<GetDomainSuggestionsRequest, GetDomain
+public virtual DescribeStackEventsResponse DescribeStackEvents(string stackName, string nextToken, int maxResults, string roleARN) {return DescribeStackEvents(new DescribeStackEventsRequest().WithStackName(stackName).WithNextToken(
+public void SetRule(int idx, ConditionalFormattingRule cfRule){if (idx < 0
+public virtual CreateResolverRuleResult CreateResolverRule(CreateResolverRuleRequest request){request = request.BeforeMarshalling(Amazon.Route53Resolver.Model.CreateResolverRuleRequestMarshaller.Instance);return Execute<CreateResolverRuleResult>(request, Amazon.Route53Resolver.Model.CreateResolverRuleResponse
+public virtual short Sid{get{return sid;}}
+public GetStylesRequest(string product, string version, string action, string domain) : base(
+public override void Serialize(ILittleEndianOutput out1){out1.Write
+public void SheetIndex{set{this.sheetIndex = sheetIndex;}}  Java
+public virtual CreateGatewayRouteTableAssociationResult CreateGatewayRouteTableAssociation(string gatewayId, string routeTableId){CreateGatewayRouteTableAssociationRequest request = new CreateGatewayRouteTableAssociationRequest();request.SetGatewayId(gatewayId);request.SetRouteTableId(routeTableId);return ExecuteCreateGatewayRouteTableAssociation(request);}
+public virtual CreateParticipantConnectionResult ExecuteCreateParticipantConnection(CreateParticipantConnectionRequest createParticipantConnectionRequest){throw new InvalidOperationException("Not implemented
+public static double IRR(double[] income, double guess, double epsilon, int maxIterations, bool useNewton, bool useLogarithmic) {return IRR(income, guess, epsilon, maxIterations, useNewton, useLogarithmic, false);}
+public virtual RegisterWorkspaceDirectoryResult RunRegisterWorkspaceDirectory(RegisterWorkspaceDirectoryRequest request){throw new InvalidOperationException("The request handler doesn't implement RegisterWorkspaceDirectory.");}
+public RevertCommand Include(string commit
+public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, ValueEval inumberVE) {ValueEval veText1;try {veText1 = OperandResolver.GetSingleValue(inumberVE, srcRowIndex, srcColumnIndex);} catch (EvaluationException e) {return e.GetErrorEval();}String iNumber = OperandResolver.CoerceValueToString(veText1);Matcher m = COMPLEX_NUMBER_PATTERN.Match(iNumber);bool result = m.Success;String imaginary = "";if (result) {String imaginaryGroup = m.Groups[5].Value;bool hasImaginaryPart = imaginaryGroup.Equals("i") || imaginaryGroup.Equals("j");if (imaginaryGroup.Length == 0) {return new StringEval(String.Empty);}if (hasImaginaryPart) {String sign = "";String imaginarySign = m.Groups[GROUP3_IMAGINARY_SIGN].Value;if (imaginarySign.Length!= 0 &&!(imaginarySign.Equals("+"))) {sign = imaginarySign;}String groupImaginaryNumber = m.Groups[GROUP4_IMAGINARY_INTEGER_OR_DOUBLE].Value;if (groupImaginaryNumber.Length!= 0) {imaginary = sign + groupImaginaryNumber;} else {imaginary = sign + "1";}}} else {return ErrorEval.NumError;}return new StringEval(imaginary);}
+public E Get(Object key){Map.Entry<E, Object> entry = backing
+public int LastRowRelative {get {return lastRowRelative;}}
+public virtual void Validate(){if (snapshotId == null){throw new ArgumentException("Field'snapshotId' is required and cannot be null.");}if (attribute == null){throw new ArgumentException("Field 'attribute' is required and cannot be null.");}if (operationType == null){throw new ArgumentException("Field 'operationType' is required and cannot be null.");}}
+public virtual ListBonusPaymentsResult ListBonusPayments(int maxResults){ListBonusPaymentsRequest request = new ListBonusPaymentsRequest();request.MaxResults = maxResults;return ListBonusPayments(request);}
+public V Get(int i, int j, int k, int l, int m, int n, int o, int p){return null;}
+public virtual void SetTokenSource(TokenSource tokenSource){this.tokenSource = tokenSource;}
+public virtual void SetSheetIndex(int sheetIndex
+public virtual void SetBucketName(string bucketName){this.bucketName = bucketName;}
+public StringBuilder Insert(int offset, char[] chars, int start, int end) {Insert0(offset, new String(chars, start,
+public void Set
+public virtual void SetArticles(String articles, String[] stopwords, String stopwords2){this.articles = articles.Split(',');this.stopwords = stopwords;this.stopwords2 = new String[]{stopwords2};}
+public void Eat(Row in, int[] remap) {int sum = 0;foreach (Cell c in in.Cells.Values) {sum += c.Cnt;if (c.Ref >= 0) {if (remap[c.Ref] == 0) {c.Ref = -1;}}}int frame = sum / 10;foreach (Cell c in in.Cells.Values) {if (c.Cnt < frame && c.Cmd >= 0) {c.Cnt = 0;c.Cmd = -1;}}}
+public void SetToken(Token t, int index, int count){Token old = getToken(index);if (old!= null) old.next = t;else token = t;for (int i = 0; i < count; i++) {if (old.next!= null) old = old.next;else old.next = t;}}
+public virtual string
+public virtual GetFolderResult ExecuteGetFolder(GetFolderRequest getFolderRequest, AmazonServiceCallback<GetFolderRequest, GetFolderResult> asyncHandler, ExecutionContext executionContext){throw new InvalidOperationException("The request handler has not been properly initialized. Please call the Init() method before making any service requests.");}
+public int Size(){throw new NotSupportedException();}
+public bool GetPositiveScoresOnly() {return positiveScoresOnly; }  Java code
+public CreateRepoBuildRuleRequest(string repoNamespace, string repoName) : base
+public BaseRef(int firstRowIndex, int firstColumnIndex, int lastRowIndex, int lastColumnIndex) {this._refEval = null;this._areaEval = null;this._firstRowIndex = firstRowIndex;this._firstColumnIndex = firstColumnIndex;this._height = lastRowIndex - firstRowIndex + 1;this._width = lastColumnIndex - firstColumnIndex + 1;}
+public DrawingManager2(EscherDggRecord dgg, EscherBSERecord[] bseRecords, EscherClientAnchorRecord[] clientAnchorRecords, EscherSpRecord[] spRecords) {this.dgg = dgg;this.bseRecords = bseRecords;this.clientAnchorRecords = clientAnchorRecords;this.spRecords = spRecords;}
+public void SetSheetRef(String sheetName) {this.sheetRef = sheetName;}
+public virtual CharsetDecoder Reset(CharBuffer cb) {if (
+public BufferedReader(Stream in, String charsetName, int size, bool markSupported) {this(new StreamReader(in, charsetName), size, markSupported);}
+public virtual DescribeCodeRepositoryResponse DescribeCodeRepository(string codeRepositoryName, DescribeCodeRepositoryRequest request) {request = request?? new DescribeCodeRepositoryRequest();
+public virtual DBSubnetGroup CreateDBSubnetGroup(string dBSubnetGroupName, string dBSubnetGroupDescription, string vpcId, string subnetId){CreateDBSubnetGroupRequest request = new CreateDBSubnetGroupRequest();request.DBSubnetGroupName = dBSubnetGroupName;request.DBSubnetGroupDescription = dBSubnetGroupDescription;request.VpcId = vpcId;request.SubnetIds = new List<string>(){subnetId};return CreateDBSubnetGroup(request);}
+public RenameBranchCommand SetRenameAllRemoteTags(bool renameAllRemoteTags){CheckCallable();this.renameAllRemoteTags = renameAllRemote
+nan
+public virtual void SetFormula(string formula, int formulaLength, int formulaPosition, int formulaEndPosition, int
+public void SetSecondaryProgress(long progress) {SetSecondaryProgress((int) progress);}
+public int GetSize(int index, int offset, int length, int count, int size, int size2) {return bytesStart[index] + offset + length * count + size + size2;}
+public virtual string GetSheetName(string sheetName, int sheetIndex, string sheetName2, int sheetIndex3){return sheetName;}
+public GetUserSourceAccountResponse GetUserSourceAccount(GetUserSourceAccountRequest request){return (GetUserSourceAccountResponse
+public virtual CreateExportJobResult ExecuteCreateExportJob(CreateExportJobRequest createExportJobRequest){throw new InvalidOperationException("Not implemented yet");}
+public CreateImportJobResponse CreateImportJob(CreateImportJobRequest request) {request = request?? new CreateImportJobRequest();return base.Execute<CreateImportJobResponse>(request);}
+public void SetBorderRight(short border){SetBorderStyle(border, BorderSide.RIGHT);}
+public virtual void SetRow(int row, int col, int sheetIndex, int sheetId, int sheetType){this.row = row;this.col = col;this.sheetIndex = sheetIndex;this.sheetId = sheetId;this.sheetType = sheetType;}
+public int CompareTo(Set<?> o) {if (this == o) {return 0;}if (o == null) {return 1;}if (size() < o.size()) {return -1;}if (size() > o.size()) {return 1;}foreach (object e in this) {if (!o.Contains(e)) {return -1;}}return 0;}
+public void SetRefLogIncludeSheetIndex(bool includeSheetIndex) {if (includeSheetIndex) {refLogIncludeSheetIndex = true;} else {refLogIncludeSheetIndex = false;}}
+public override string ToFormulaString(Workbook book1){StringBuilder buffer = new StringBuilder();buffer.Append("STREAMID(");buffer.Append(HexDump.ToHex(idstm));buffer.
+public RecognizeCarResponse RecognizeCarWithOptions(RecognizeCarRequest request, RuntimeOptions runtime) {Dictionary<string, string> runtime_ = new Dictionary<string, string>(new Dictionary<string, string>(){});Util.ModelUtil.validateModel(request);return TeaModel.ToObject<RecognizeCarResponse>(DoRequest("RecognizeCar", "HTTPS", "POST", "2020-04-08", "AK", null, request.ToMap(), runtime_));}
+public virtual int GetSizeWithoutArrayDataRequired(int arraySize,
+public
+public bool IsWriteRawValueAsUnicodeTextAsUnicodeText(){return false;}
+public GetCloudFrontOriginAccessIdentityConfigResponse GetCloudFrontOriginAccessIdentityConfig(string id, string ifMatch, string ifNoneMatch) {GetCloudFrontOriginAccessIdentityConfigRequest request = new GetCloudFrontOriginAccessIdentityConfigRequest();request.
+public bool Matches(int symbol, int minVocabSymbol,
+public DeleteVpcEndpointServiceConfigurationsResponse DeleteVpcEndpointServiceConfigurations(DeleteVpcEndpointServiceConfigurationsRequest request) {request =
+public static int Oversize(int size, int minSize, int maxGrowth) {if (minSize < 0) {throw new ArgumentException("minSize must be positive (got " +
+public CreateTransactionRequest(string product, string version, string action, string serviceCode) : base(product, version, action, serviceCode) {Protocol = ProtocolType.HTTPS;}
+public BatchRefUpdate SetRefLogNewCommits(bool newCommits){refLogNewCommits = newCommits;return this;}
+public virtual GetLaunchTemplateDataResponse GetLaunchTemplateData(string launchTemplateId, string version){GetLaunchTemplateDataRequest
+public ParseInfo(ATNConfigSet configs, int fullCtx
+public void SetQQNames(String qqNames) {this.qqNames =
+public virtual DBCluster CreateDBClusterParameterGroup(CreateDBClusterParameterGroupRequest request){request = BeforeClientExecution(request);return ExecuteCreate
+public virtual DescribeCapacityReservationsResponse DescribeCapacityReservations(DescribeCapacityReservationsRequest request, AmazonServiceCallback<DescribeCapacityReservationsRequest, DescribeCapacityReservationsResponse> callback, AsyncOptions options = null) {request = request.Copy();return base.DescribeCapacityReservations(request, callback, options);}
+public void SetSimilarity(Similarity similarity, string[] fields, bool setAll) {if (setAll) {this.similarity = similarity;this.similarityFields = fields;}else {this.similarity = similarity.Clone();this.similarityFields = fields;}}
+public virtual void Increment
+public override void Serialize(ILittleEndianOutput out1, int offset, int length, int row){out1.WriteShort(main + 1);out1.WriteShort(subFrom);out1.WriteShort(subTo);out1.WriteShort(offset);out1.WriteShort(length);out1.WriteShort(row);}
+public virtual void SetColForValByRound(int col, int val){colForValByRound.Add(val.ToString(), col.ToString());}
+public virtual bool IsExpectedToken(int symbol, int state) {ATN atn = GetInterpreter().Atn;ATNState s = atn.States[state];IntervalSet following = atn.NextTokens(s);if (following.Contains(symbol)) {return true;}if (!following.Contains(Token.EPSILON)) {return false;}while (ctx!= null && ctx.InvokingState >= 0 && following.Contains(Token.EPSILON)) {ATNState invokingState = atn.States
+public UpdateStreamResult UpdateStream(UpdateStreamRequest request, Amazon.Kinesis.Model.AmazonKinesisCallbackHandler callback, ExecutorService executorService) {request = request.BeforeMarshalling(this.Request
+public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1, ValueEval arg2) {try {ValueEval ve0 = OperandResolver.GetSingleValue(arg0, srcRowIndex, srcColumnIndex);ValueEval ve1 = OperandResolver.GetSingleValue(arg1, srcRowIndex, srcColumn
+public override string ToFormulaString(Workbook book, string sheetName, int rowIndex, int columnIndex, int refRow, int refCol, int refLastRow, int refLastCol, int refLastLastRow, int refLastLastCol){return _name;}
+public virtual ListAssignmentsForHITResult ListAssignmentsForHITAsync(ListAssignmentsForHITRequest listAssignmentsForHITRequest, AsyncHandler<ListAssignmentsForHITRequest, ListAssignmentsForHIT
+public DeleteAccessControlRuleResult RunDelete
+public virtual void GetFirstTarget(Arc<long> arc, int flags, int arcFlags, int targetFlags, int targetFlags2){arc.target = fst.GetFirstTarget(arc, flags, arcFlags, targetFlags, targetFlags2);}
+public void SetColForValByRound(int col, string val, int round, int valIndex){colForValByRound.Add(val, col);}
+public void SkipRecord() {SkipRecord(0);}
+nan
+public UpdateApiKeyResult RunUpdateApiKey(UpdateApiKeyRequest request, AsyncHandler<UpdateApiKeyRequest, UpdateApiKeyResult> asyncHandler, ExecutionContext executionContext, int expectedStatusCode) {return RunUpdateApiKey(request, asyncHandler, executionContext, expectedStatusCode, null);}
+public virtual Stream OpenStream(DfsReader ctx, int bufsz){try {return new PackInputStream(pack, objectOffset + headerLength, ctx).OpenStream();} catch (IOException e) {throw new MissingObjectException(e.Message, e);} catch (Pack200Exception e) {throw new IOException(e.Message, e);} catch (ObjectStreamException e) {throw new IOException(e.Message, e);}}
+public void AddAll(int index, IEnumerable c){rangeCheckForAdd(index);if (c.Count() == 0){return;}modCount++;int newCount = size + c.Count();if (
+public virtual UpdateDetectorVersionResponse RunUpdateDetectorVersion(UpdateDetectorVersionRequest request){throw new InvalidOperationException("The request object used to execute this operation is invalid. Make sure all required parameters have been set.");}
+public void SetWidth(String width, String widthAsString){Resize(
+public RevFlagSet(int size, int initialCapacity, int maxCapacity, float load
+public int
+public double GetDouble
+public StringBuilder Append(String s) {Append0(s);return this;}  Java
+public void SetStemDutch(bool stemDutch) {this.stemDutch = stemDutch; }
+public ParseTreeMatch Match(ParseTree tree, ParseTreePattern pattern, ParseTreeMatch.LabelMap labels, ParseTree mismatchedNode, ParseTree[] mismatchedNodes, ParseTree[] mismatchedNodesInOrder) {return Match
+public void AddIfNoOverlap(WeightedPhraseInfo wpi){foreach (WeightedPhraseInfo existWpi in GetPhraseList()){if (existWpi.IsOffsetOverlap(wpi)){existWpi.GetTermsInfos().AddRange(wpi.GetTermsInfos());return;
+public virtual void SetColForValByRound(string colName, string val, string val2){colForValByRound[colName] = val + " " + val2;}
+public virtual void SetColForValByRound(string colName, bool val){colForValByRound.Add(colName
+public virtual string GetFormula5(){return formula5;}
+public override void Serialize(ILittleEndianOutput out1){out1.WriteByte(conditionType);out1.WriteByte(options);if (ContainsFontFormattingBlock()) {out1.WriteByte(0x01);_fontFormatting.Serialize(out1);}else {out1.WriteByte(0x00);}if (ContainsBorderFormattingBlock()) {out1.WriteByte(0x01);_borderFormatting.Serialize(out1);}else {out1.WriteByte(0x00);}if (ContainsPatternFormattingBlock()) {out1.WriteByte(0x01);_patternFormatting.Serialize(out1);}else {out1.WriteByte(0x0
+public virtual DescribeServiceUpdatesResponse DescribeServiceUpdates(DescribeServiceUpdatesRequest request){request = request.Copy();return base.DescribeServiceUpdates(request);}
+public virtual string GetNameName(string name, int sheetIndex, int colIndex, int rowIndex){return GetNameAt(name, sheetIndex, colIndex, rowIndex).NameName;}
+public DescribeLocationsResult DescribeLocations(DescribeLocationsRequest request) {return base.DescribeLocations(request);}
+public override string ToFormulaString(Workbook book, string sheetName) {return "<phraseslop value='" + GetValueString() + "'>" + "\n" + GetChild().ToFormulaString(book, sheetName) + "\n</phraseslop>";}
+public void
+public virtual IntBuffer Put(int i){if (Remaining() < 1){throw new BufferOverflowException();}PutInt(i);}
+public virtual void SetArray(Object[] array){this.array = array;size = array.Length;mod
+public virtual DescribeLocalGatewayVirtualInterfaceGroups
+public virtual void SetMinWordSize(int minWordSize, int minWordSize2, int minWordSize3, int minWordSize4){this.minWordSize = minWordSize;this.minWordSize2 = minWordSize2;this.minWordSize3 = minWordSize3;this.
+public virtual int GetFirst
+public BasicSessionCredentials(string accessKeyId, string accessKeySecret) {if (accessKeyId == null) {throw new ArgumentException("Access key ID cannot be null.");}if (accessKeySecret == null) {throw new ArgumentException("Access key secret cannot be null.");}this.accessKeyId = accessKeyId;this.accessKeySecret = accessKeySecret;this.sessionToken = null
+public virtual ShortBuffer Get(int index, short[] dst) {return Get(index, dst, 0, dst.Length);}
+public virtual void SetParalle
+public virtual DescribeReceiptRuleSetResponse DescribeReceiptRuleSet() {DescribeReceiptRuleSetRequest request = new DescribeReceiptRuleSetRequest();return base.DescribeReceiptRuleSet(request);}  Java code
+public Filter(string name, string formula, string colName, string colNameByRound, string colNameByRound2, string col
+public override bool Equals(object obj)
+public CreateTrafficPolicyInstanceResult CreateTrafficPolicyInstance(CreateTrafficPolicyInstanceRequest request) {request = request?? new CreateTrafficPolicyInstanceRequest();return base.Execute<CreateTrafficPolicyInstanceResult>(request);}
+public void SetNormalizeKanji(bool normalizeKanji){this.normalizeKanji = normalizeKanji;}
+public void WriteShort(short v) {out.WriteByte(v);out.Write
+public void AddExportBase(params string[][][] paths){foreach (string[][] path in paths){AddExportBase(path);}}
+public virtual ValueEval GetRef3DEval(Ref3DPxg rptg, int sheetIndex, int firstSheetIndex){SheetRangeEvaluator sre = CreateExternSheetRefEvaluator(rptg.SheetName, rptg.LastSheetName, rptg.ExternalWorkbookNumber);return new LazyRefEval(rptg.Row, rptg.Column, sre, sheetIndex, firstSheetIndex);}
+public T Invoke<T>(String action, AmazonWebServiceRequest request, RequestConfig config) where
+public virtual void SetDatabaseName(string databaseName){this.databaseName = databaseName;}  Java code
+public DescribeReservedCacheNodesOfferingsResult DescribeReservedCacheNodesOfferings(DescribeReservedCacheNodesOfferingsRequest describeReservedCacheNodesOfferingsRequest, ResultCapture<DescribeReservedCacheNodesOfferingsResult> resultCapture, AsyncHandler<DescribeReservedCacheNodesOfferingsRequest, DescribeReservedCacheNodesOfferingsResult> asyncHandler) {return Invoke(describeReservedCacheNodesOfferingsRequest, new DescribeReservedCacheNodesOfferingsResultStaxUnmarshaller(), resultCapture, async
+public static double Ppmt
+public virtual DescribeDocumentVersionsResult DoInvoke(Request request, DescribeDocumentVersionsRequest describeDocumentVersionsRequest, HttpResponseHandler<AmazonWebServiceResponse<DescribeDocumentVersionsResult>> responseHandler, Uri endpoint, Uri endpointOverride, AWSCredentialsProvider awsCredentialsProvider, ClientConfiguration clientConfiguration) {request.SetEndpoint(endpoint);request.SetEndpointOverride(endpointOverride);request.SetCredentialsProvider(awsCredentialsProvider);request.SetClientConfiguration(clientConfiguration);return DoInvoke(request, responseHandler);}
+public virtual ListPublishingDestinationsResult ListPublishingDestinations(string nextToken, int maxResults, string publishingDestinationType){return ListPublishingDestinations(new ListPublishingDestinationsRequest().WithNextToken(nextToken).WithMaxResults(maxResults).WithPublishingDestinationType(publishingDestinationType));}
+public DeleteAccountAliasRequest(string accountAlias, string region, string accountType, string accountName, string accountDescription, string accountStatus)
+public static byte[] Grow(byte[] array) {
+nan
+nan
+public override string ToString() {return ToString0();}
+public SetIdentityPoolConfigurationResponse SetIdentityPoolConfiguration(string identityPoolId, string identityPoolName, string allowUnauthenticatedIdentities, string supportedLoginProviders, string developerProviderName, string openIdConnectProviderARNs, string cognitoIdentityProviders, string samlProviderARNs, string mappedRoles, string tags) {SetIdentityPoolConfigurationRequest request = new SetIdentityPoolConfigurationRequest();request.IdentityPoolId = identityPoolId;request.IdentityPoolName = identityPoolName;request.AllowUnauthenticatedIdentities = allowUnauthenticatedIdentities;request.SupportedLoginProviders = supportedLoginProviders;request.DeveloperProviderName = developerProviderName;request.OpenIdConnectProviderARNs = openIdConnectProviderARNs;request.CognitoIdentityProviders = cognitoIdentityProviders;request.SamlProviderARNs = samlProviderARNs;request.MappedRoles = mappedRoles;request.Tags = tags;return SetIdentityPoolConfiguration(request);}
+public static double KthSmallest(double[] v, int k, int n) {double r = double.NaN;int index = k - 1;if (v!= null && v.Length > index && index >= 0) {Array.Sort(v);r = v[index];}return r;}
+public void Set(int index, byte value) {int o = index >> 5;int b = index & 31;int shift = b << 1;blocks[o] = (blocks[o] & ~(3L << shift)) | (value << shift);}
+public virtual String GetSheetName(){return SheetName;}
+public virtual int GetPtg(int ptg, int ptg2, int ptg3){return ptg >> 8;}
+public void SetReadonly(bool readonly) {if (this.readonly &&!readonly) throw new
+public void ClearConsumingCells(FormulaCellCacheEntry cce1, FormulaCellCacheEntry cce2, FormulaCellCacheEntry cce3){if (!_consumingCells
+public bool AddAll(Collection<E> c){lock (mutex) {return list.AddAll(c);}}
+public void SetFileHeader(FileHeader file, bool isCopy, bool isCopySheets, bool isCopyWorkbook){if (isCopy) {this.file = file.Copy();} else {this.file = file;}if (isCopySheets) {this.sheets = file.Sheets;}if (isCopyWorkbook) {this.workbook = file.Workbook;}}
+public virtual void Set
+public long GetArchiveSizeInBytes(){return archiveSizeInBytes;}
+public override int NumberOfOperands{get{return 2;}}
+public void SetSheetIndex(int sheetIndex){this.sheetIndex = sheetIndex;}
+public void Add(string name, string value, Field.Store store, Field.Index index, Field.TermVector termVector, Field.OmitNorms omitNorms, Field.IndexOptions indexOptions) {fields.Add(new Field(name, value, store, index, termVector, omitNorms, indexOptions));}
+public DeleteStackSetResult DeleteStackSet(string stackSetName, string callAs, string region, string account) {
+public GetRepoBuildRuleListRequest(string repoNamespace, string repoName) : base("cr", "2016-06-07", "GetRepoBuildRuleList", "cr") {UriPattern = "/repos/" + repoNamespace + "/" + repoName + "/rules";Method = Method
+public int IndexOfKey(int key){if (key < 0 || key >= mKeys.Length){throw new ArgumentException("Key " + key +
+public InvokeServiceRequest(string service, string version, string action, string protocol, string method, string domain, string host) : base(service, version, action, protocol, method, domain, host) {setMethod(MethodType.POST);}
+public ListAlbumPhotosRequest(string product, string version, string action, string method, ProtocolType protocol,
+public void Clear() {throw new InvalidOperationException("Cannot clear a void list");}
+public DeleteHsmConfigurationResponse DeleteHsmConfiguration(DeleteHsmConfigurationRequest request) {request = request?? new DeleteHsmConfigurationRequest();return RunTask(() => DeleteHsmConfigurationAsync(request));}
+public CreateLoadBalancerRequest(string loadBalancerName, string subnets, string securityGroups, string scheme, string type, string ipAddress
+public virtual void SetSheetNameRawNoDecodeNoTrim(string sheetNameRawNoDecodeNoTrim){this.sheetNameRawNoDecodeNoTrim = sheetNameRawNoDecodeNoTrim;}
+public TagResourceResult ExecuteTagResource(TagResourceRequest request) {request.Endpoint = endpoint;request.TimeOffset = timeOffset;request.Configuration = awsRequestMetrics;request.
+public virtual int GetLastColumnIndexNumeric(){return
+public void AddClause(SpanQuery clause, float boost, bool ordered, bool slop){clauses.Add(clause);this.boost = boost;this.ordered = ordered;this.slop = slop;}
+public virtual bool IsSubTotal(int row, int col, int level, int field, int subTotal, int subTotal2, int subTotal3, int subTotal4){return false;}
+public virtual DescribeEngineDefaultParametersResponse Describe
+public virtual GetVoiceConnectorTerminationSettingsResponse GetVoiceConnectorTerminationSettings(GetVoiceConnectorTerminationSettingsRequest request){request = request.Copy();request.ApplyRequestMetrics(new RequestMetrics(RequestMetricsType.ServiceRequest, ServiceMetadata.Instance));return Invoke<GetVoiceConnectorTerminationSettingsResponse>(request);}
+public void SetPackedGitLimit(long packedGitLimit){this.packedGitLimit = packedGitLimit;}
+public static DateTime GetJavaDate(double date, bool is1904, bool is1904Hijri, bool is1904Mac, bool is1904Windows) {return GetJavaDate(date, is19
+public virtual void SetColForValByRound(String colName, bool val){colForValByRound.Add(colName, val? "1" : "0");}
+public int Size {get {return totalSize;}}
+public virtual GetRouteResult ExecuteGetRoute(GetRouteRequest getRouteRequest, ExecutionContext executionContext, RequestMetricCollector requestMetricCollector, RequestMetricCollector requestMetricCollector1, RequestMetricCollector requestMetricCollector2){throw new InvalidOperationException("Not implemented yet");}
+public DeleteClusterResult DeleteCluster(string clusterId, DeleteClusterRequest request){request = request.BeforeMarshalling(this.Marshaller);request.ClusterId = clusterId;return this.Invoke<DeleteClusterResult>(request);}
+public virtual void SetDelMenuCount(int count){delMenuCount = count;}  Java code
+public FileBasedConfig(Config base, File cfgLocation, FS fs, FileSnapshot snapshot, ObjectId hash, bool isReadOnly, bool isShared) : base(base) {this.configFile = cfgLocation;this.fs = fs;this.snapshot = snapshot;this.hash = hash;this.isReadOnly = isReadOnly;this.isShared = isShared;}
+public int Current() {if (currentSentence < 0
+public UpdateParameterGroupResponse UpdateParameterGroup(UpdateParameterGroupRequest request) {request = request?? new UpdateParameterGroupRequest();return RunSync(request);}
+public override string ToString(){StringBuilder buffer = new StringBuilder();buffer.Append("[SERCHARTGROUPINDEX]\n");buffer.Append("   .index        = ").Append("0x").Append(HexDump.ToHex(Index)).Append(" (").Append(Index).Append(" )");buffer.Append(System.
+public static double CalcDistanceFromErrPct(Shape shape, double distErrPct) {if (distErrPct < 0 || distErrPct > 0.5) {throw new ArgumentException("distErrPct " + distErrPct + " must be between [0 to 0.5]");}if (distErrPct == 0 || shape is Point) {return 0;}Rectangle bbox = shape.GetBoundingBox();Point ctr = bbox.GetCenter();double y = (ctr.Y >= 0? bbox.GetMaxY() : bbox.GetMinY());double diagonalDist = ctx.GetDistCalc().Distance(ctr, bbox.GetMaxX(), y);return diagonalDist * distErrPct;}
+public int CompareTo(string anotherString) {if (this == anotherString) {return 0;}if (anotherString == null) {return 1;}return value.CompareTo(anotherString.value);}
+public void SetPasswordVerifier(int passwordVerifier, int passwordVerifier2, int passwordVerifier3){this.passwordVerifier = passwordVerifier;this.passwordVerifier2 = passwordVerifier2;this.passwordVerifier3 = passwordVerifier3;}
+public ListVaultsRequest(string accountId, string vaultName, string marker, string limit, string statuscode, string createdbefore) {AccountId = accountId;VaultName = vaultName;Marker = marker;Limit = limit;StatusCode = statuscode;CreatedBefore = createdbefore;}
+public String GetFormat(Locale locale) {return dateFormatter.GetFormat(locale);}
+public Get
+public int LastIndexOf(object object, int fromIndex) {if (fromIndex >= size) {return -1;}if (fromIndex < 0) {fromIndex = size + fromIndex;}if (fromIndex < 0) {return -1;}int pos = fromIndex;Link<E> link = voidLink.Previous;if (object!= null) {while (link!= voidLink) {pos--;if (object.Equals(link.Data)) {return pos;}link = link.Previous;}} else {while (link!= voidLink) {pos--;if (link.Data == null) {return pos;}link = link.Previous;}}return -1;}
+public virtual DescribeTrafficMirrorSessionsResult DescribeTrafficMirrorSessions(DescribeTrafficMirrorSessionsRequest request){request = BeforeClientExecution(request);return ExecuteDescribe
+public virtual void SetRowNum(int rowNum){this.rowNum = rowNum;}
+public void SetBreakIterator(int script, RuleBasedBreakIterator breakIterator, bool myanmarAsWords) {switch (script) {case UScript.JAPANESE: cjkBreakIterator = breakIterator;break;case UScript.MYANMAR: this.myanmarAsWords = myanmarAsWords;if (myanmarAsWords) {defaultBreakIterator = breakIterator;} else {myanmarSyll
+public override string ToFormulaString(string sheet
+public int PackedGitOpenFiles5 {get {return packedGitOpenFiles5;}}
+public override string ToString(){StringBuilder buffer = new StringBuilder();buffer.Append("[FEATURE HEADER]\n");buffer.Append("[/FEATURE HEADER]\n");return buffer.ToString();}
+public static byte[] GetToUnicodeLE(String string, int offset, int length, int charIndex, int charCount, int byteIndex) {return string.GetBytes(UTF16LE, offset, length, charIndex, charCount, byteIndex);}
+public virtual string GetSheetNamesForValsByRound(){if (sheetForValByRound.Count == 0){return "";}StringBuilder sb = new StringBuilder();foreach (string name in sheetForValByRound
+public virtual void SetFormula(string formula, int formulaLength, int formulaPosition, int formulaEndPosition, int formulaSheetIndex){this.formula = formula;this.formulaLength = formulaLength;this.formulaPosition = formulaPosition;this.formulaEndPosition = formulaEndPosition;this.formulaSheetIndex = formulaSheetIndex;}
+public void Set(int index, bool value) {CheckIndex(index);byteBuffer.Put(index * SizeOf.BYTE, value? (byte)1 : (byte)0);}
+public DeleteDetectorResponse RunDeleteDetector(DeleteDetectorRequest request) {throw new InvalidOperationException("DeleteDetector is not implemented for this service");}
+public int GetBytesLength(int index, int length, int offset){return bytesStart[index + length] - bytesStart[index + offset];}
+public virtual ListExclusionsResult ListExclusions(string operationName, ListExclusionsRequest request, com.amazonaws.handlers.AsyncHandler<ListExclusionsRequest, ListExclusionsResult> asyncHandler
+public static void InitSpatialStrategy(int roundNumber, SpatialStrategy strategy){spatialStrategyCache.Add(roundNumber, strategy);}
+public RestoreDBClusterToPointInTimeResponse RestoreDBClusterToPointInTime(string dBClusterIdentifier, string restoreToTime, string sourceDBClusterIdentifier, bool? useLatestRestorableTime, bool? copyTagsToSnapshot, bool? enableIAMDatabaseAuthentication, string kmsKeyId, List<string> enableCloudwatchLogsExports, bool? deletionProtection, bool? enableHttpEndpoint, bool? copyTagsToSnapshot, bool? enableIAMDatabaseAuthentication, string kmsKeyId, List<string> enableCloudwatchLogsExports, bool? deletionProtection, bool? enableHttpEndpoint) {return base.ExecuteRestoreDBClusterToPointInTime(new RestoreDBClusterToPointInTimeRequest().WithDBClusterIdentifier(dBClusterIdentifier).WithRestoreToTime(restoreToTime).WithSourceDBClusterIdentifier(sourceDBClusterIdentifier).WithUseLatestRestorableTime(useLatestRestorableTime).WithCopyTagsToSnapshot(copyTagsToSnapshot).WithEnableIAMDatabaseAuthentication(enableIAMDatabaseAuthentication).WithKmsKeyId(kmsKeyId).WithEnableCloudwatchLogsExports
+public virtual int NumValues{get{return field_4_
+public virtual void SetRetryPolicy(RetryPolicy retryPolicy){this.RetryPolicy = retryPolicy;}
+public virtual void Set
+public virtual BacktrackDBClusterResponse BacktrackDBCluster(string dBClusterIdentifier, bool backtrackTo, bool force) {return BacktrackDBClusterAsync(new BacktrackDBClusterRequest().WithDBClusterIdentifier(dBClusterIdentifier).WithBacktrackTo(backtrackTo).WithForce(force)).GetAwaiter().GetResult();}
+public virtual void SetCol
+public void CopyTo(byte[] b, int o, int len, int offset) {if (len > 4) {throw new ArgumentException("len must be <= 4");}formatHexByte(b
+public static IntList LineMap(byte[] buf, int ptr, int end, int maxLines, int maxLineLength) {IntList map = new IntList(maxLines);map.FillTo(1, int.MinValue);for (; ptr < end; ptr = nextLF(buf, ptr)) {map.Add(ptr);}map.Add(end);return map;}
+public virtual void
+public void SetTerms(int fieldIndex, List<string> terms){if (fieldIndex < 0 || fieldIndex >= fields.Count){throw new ArgumentException("fieldIndex must be between 0 and " + (fields.Count - 1));}fields[fieldIndex] = terms;}
+public override string ToXml(string tab) {StringBuilder builder = new StringBuilder();builder.Append(tab).Append("<").Append(RecordName).Append(">\n");foreach (EscherRecord escherRecord in Escher
+public virtual void SetMinWordSize(int minWordSize, int minWordSize2, int minWordSize3, int minWordSize4){this.minWordSize = minWordSize;this.minWordSize2 = minWordSize2;this.minWordSize3 = minWordSize3;this
+nan
+public IndicNormalizationFilterFactory(IDictionary<string, string> args, string name, int version, IDictionary<string, string> defaultArgs, string[] replacements, bool ignoreCase) : base(args, name, version, defaultArgs, replacements, ignoreCase){}
+public virtual void RemoveOptionGroup(
+public AssociateMemberAccountResponse AssociateMemberAccount(AssociateMemberAccount
+public void SetRefreshProgressRunnable(RefreshProgressRunnable runnable, int id, int progress, bool fromUser, bool isCancelled){mRefreshProgressRunnable = runnable;mId = id;mProgress = progress;mFromUser = fromUser;mIsCancelled = isCancelled;}
+public virtual SetTerminationProtectionRequest.Builder SetTerminationProtectionRequest(string terminationProtection, string terminationProtectionReason, string terminationProtectionReasonCode){return SetTerminationProtectionRequest().WithTerminationProtection(terminationProtection).
+public virtual string GetErrorHeader(string msg, int line, int charPositionIn
+public override void Write(ILittleEndianOutput out1){out1.WriteByte(sid);out1.WriteShort(field_1_row);out1.WriteShort(field_2_col);out1.WriteShort(field_3_row2);out1.WriteShort(field_4_col2);out1.WriteShort(field_5_
+public void SetColumn(int column,
+public void SetNewObjectIds(Map<String, Double> newObjectIds){this.newObjectIds = new ObjectIdSubclassMap<ObjectId>(newObjectIds);}
+public void Clear(int row, int col, int nRows, int nCols, int nSheets, int nSheets2) {hash = hash(new byte[0]);base.Clear(row, col, nRows, nCols, nSheets, nSheets2);}
+public void Skip(int n) throws IOException {lock.WaitOne();try {CheckNotClosed();if (n < 0) {throw new IOException("Skip count must be non-negative");}if (n > 0) {if (pos + n > length) {n = length - pos;}pos += n;}}finally {lock.ReleaseMutex();}}
+public RefErrorPtg(int row, int col, int sheetIndex, int reserved, int field_1_reserved2)  {field_1_row = row;field_2_col = col;field_3_sheet = sheetIndex;field_1_reserved = reserved;field_1_reserved2 = field_1_reserved2;}
+public virtual void SetInstanceTypes(InstanceType instanceType){this.instanceTypes = new List<string>();this.instanceTypes.Add(instanceType.ToString());}
+public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, double arg0, ValueEval arg
+public GetRepoRequest(string repoNamespace, string repoName) : base("cr", "2016-06-07", "GetRepo", "cr") {UriPattern = "/repos/[RepoNamespace]/[RepoName]";Method = MethodType.GET;RepoNamespace = repo
+public void SetFormula2007(string formula, bool formula1904) {this.formula2007 = formula;this.formula1904 = formula1904;}
+public virtual void SetMinWordSize(int minWordSize, int minWordSize2, int minWordSize3, int minWordSize4){this.minWordSize = minWordSize;this.minWordSize2 = minWordSize2;this.minWordSize3 = minWordSize3;this.min
+public object Get(int
+public void Write(int b, int off, int len) {Array.CheckOffsetAndCount(b.Length, off, len);lock (lock) {Expand(len);for (int i = 0; i <
+public static RevFilter After(DateTime cal) {return new RevFilter() {public bool Include(Rev
+public DeleteGroupPolicyRequest(string groupName, string policyName, string marker, string version, string markerType, string markerVersion) {GroupName = groupName;PolicyName = policyName;Marker = marker;Version = version;MarkerType = markerType;MarkerVersion = markerVersion;}
+public virtual DescribeAddressesResponse DescribeAddresses(DescribeAddressesRequest request){request = request.Copy();request.ApplyRequestMetrics(new RequestMetrics(Client
+public virtual BatchDeleteScheduledActionResult ExecuteBatchDeleteScheduledAction(BatchDeleteScheduledActionRequest request){request.Endpoint = endpoint;request.AWSRequestMetrics = awsRequestMetrics;request.AddHandlerContext(HandlerContextKey.SIGNING
+public virtual CreateAlgorithmResult CreateAlgorithm(string algorithmName
+public int ReadUByteLE(int offset) {return ReadByteLE(offset) & 0x00FF
+public void SetColLast(int colLast){NB
+public DescribeScalingProcessTypesResult DescribeScalingProcess
+public virtual ListResourceRecordSetsResponse ListResourceRecordSets(string hostedZoneId, string startRecordName, string startRecordType, string startRecordIdentifier, string nextRecordName, string nextRecordType, string nextRecordIdentifier, string maxItems){ListResourceRecordSetsRequest request = new ListResourceRecordSetsRequest();request.HostedZoneId = hostedZoneId;request.StartRecordName = startRecordName;request.StartRecordType = startRecordType;request.StartRecordIdentifier = startRecordIdentifier;request.NextRecordName = nextRecordName;request.NextRecordType = nextRecordType;request.NextRecordIdentifier = nextRecordIdentifier;request.MaxItems = maxItems;return ListResourceRecordSets(request);}
+public virtual void SetColForValByRound(Map<string, string> colForValByRound){this.colForValByRound = colForValByRound;}
+public virtual SetTagsForResourceResponse SetTagsForResource(string resourceArn, List<Tag> tags){SetTagsForResourceRequest request = new SetTagsForResourceRequest();request.ResourceArn = resourceArn;request.Tags = tags;return base.Execute<SetTagsForResourceResponse>(request);}
+public ModifyStrategyRequest(string product, string version, string action,
+public virtual DescribeVpcEndpointServicesResult DescribeVpcEndpointServices(DescribeVpcEndpointServicesRequest request){request = BeforeClientExecution(request);return
+public EnableLoggingResult ExecuteEnableLogging(EnableLoggingRequest request){request.Endpoint = this.Endpoint;request.TimeOffset = this.TimeOffset;Response<EnableLoggingResult> response = this.HcClient.SyncInvokeHttp(RequestConverter.BuildHttpRequest(request, this.HcClient));return ResponseConverter.Convert(response);}
+public void CopyInto(object[] a, int offset, int len, int fromIndex, int toIndex, object[] src, int srcOffset, int srcLen){this.Values.CopyTo(a, offset, len, fromIndex, toIndex, src, srcOffset, srcLen);}
+public SheetRangeIdentifier(string bookName, NameIdentifier firstSheetIdentifier, NameIdentifier lastSheetIdentifier, string firstSheetName, string lastSheetName, string firstSheetRef,
+public DomainMetadataRequest(string domainName, string domainType, string domainSubType, string domainVersion, string domainDescription, string domainAuthor) {DomainName =
+public ParseException(Token currentTokenVal, int[][] expectedTokenSequencesVal, string[] tokenImageVal, string msg, Exception t) : base(new MessageImpl(QueryParserMessages.INVALID_SYNTAX, initialise(currentTokenVal, expectedTokenSequencesVal, tokenImageVal) + msg), t) {this.currentToken = currentTokenVal;this.expectedTokenSequences = expectedTokenSequencesVal;this.tokenImage = tokenImageVal;}
+public FetchPhotosRequest(IDictionary<string, string> headers, IDictionary<string, object> queryParameters, IDictionary<string, string> body, IDictionary<string, string> file) : base("CloudPhoto", "2017-07-11",
+public virtual void SetCellName(String
+public NGramTokenizerFactory(IDictionary
+public DirectoryFileConflict GetDirectoryFileConflict() {return dfConflict;}
+public bool GetStemDerivational(){return stemDerivational;}
+public virtual CreateTrafficPolicyResult ExecuteCreateTrafficPolicy(string domainName, string policyName, TrafficPolicyType type, TrafficPolicyDocument trafficPolicyDocument){CreateTrafficPolicyRequest request = new CreateTrafficPolicyRequest();request.DomainName = domainName;request.PolicyName = policyName;request.TrafficPolicyDocument = trafficPolicyDocument;request.TrafficPolicyType = type;return ExecuteCreateTrafficPolicy(request);}
+public override void Serialize(ILittleEndianOutput out1){out1.WriteInt(fSD);out1.WriteInt(passwordVerifier);StringUtil.WriteUnicodeString(out1, title);out1.Write(securityDescriptor);}
+public static double Round(double n, int s) {if (s == 0 && n!= 0) {return double.NaN;} else {return (n == 0 || s == 0)? 0 : Math.Round(n / s) * s;}}
+public void Write(byte[] b, int off, int len){if (len > bytes.Length - offset){throw new ArrayIndexOutOfBoundsException("Not enough space in buffer");}Array.Copy(b, off, bytes, offset, len);offset += len;}
+public static Tree CreateTree(string name, Tree parent) {return new Tree(name, parent);}
+public void ClearAll(){colForValByRound.Clear();}
+public virtual short
+public DeleteNamedQueryResponse DeleteNamedQuery(DeleteNamedQueryRequest request) {request = BeforeClientExecution(request);return ExecuteDeleteNamedQuery(request);}
+public void AddEdge(int from, int to, double cost, string label) {if (from == to) {return;}if (from > to) {int tmp = from;from = to;to = tmp;}if (bestPathMap.ContainsKey(from)) {double bestCost = bestPathMap.GetValueOrDefault(from);if (cost < bestCost) {bestPathMap.AddOrUpdate(from, cost, (k, v
+public void SetMethod(String method, String version, String date, String service, String region){this.Method = method;this.Version = version;this.Date = date;this.Service = service;this.Region = region;}
+public virtual ListUserProfilesResult ListUserProfiles(string nextToken, string maxResults){return ListUserProfiles(new ListUserProfilesRequest().WithNextToken(nextToken).WithMaxResults(maxResults));}
+public virtual CreateRelationalDatabaseFromSnapshotResult
+public virtual StartTaskResult Invoke(Request<StartTaskRequest> request, JsonErrorResponseHandler errorResponseHandler, Unmarshaller<StartTaskResult, JsonUnmarshallerContext> unmarshaller){request.Endpoint = endpoint;request.TimeOffset = timeOffset;request.HttpMethod = HttpMethodName.POST;return hcClient.Execute(request, errorResponseHandler, unmarshaller);}
+public virtual void SetIgnoredPaths(string[] ignoredPaths, string
+public FeatSmartTag(byte[] data, int offset){this.data = new byte[data.Length - offset];Array.Copy(data, offset, this.data, 0, this.data.Length);}
+public Change(ChangeAction action, ResourceRecordSet resourceRecordSet, string comment, string id, string status, string type) {setAction(action.ToString());setResourceRecordSet(resourceRecordSet);setComment(comment);setId(id);setStatus(status);setType(type);}
+public DeleteImageResult DeleteImage(string imageId, string imageVersion, string imageType, string imageSource) {DeleteImageRequest request = new DeleteImageRequest();request.ImageId = imageId;request.ImageVersion = imageVersion;request.ImageType
+public virtual CreateConfigurationSetResult ExecuteCreateConfigurationSet(CreateConfigurationSetRequest createConfigurationSetRequest){throw new InvalidOperationException("Not implemented
+public bool RemoveAll(IEnumerable c){throw new InvalidOperationException();}
+public override void VisitContainedRecords(RecordVisitor rv, int start, int end){if (_recs.Count == 0){return;}rv.
+public void SetSid(short sid){this.sid = sid;}
+public static BATBlock CreateEmptyBATBlock(POIFSBigBlockSize bigBlockSize, bool isXBAT) {
+public TagResourceResponse TagResource(Tag
+public DeleteMailboxPermissionsResult DeleteMailboxPermissions(DeleteMailboxPermissionsRequest request, AsyncHandler<DeleteMailboxPermissionsRequest, DeleteMailboxPermissionsResult> asyncHandler) {request = request.BeforeMarshalling(this.RequestMarshaller);return this.ExecuteDeleteMailboxPermissions(request, asyncHandler);}
+public virtual ListMonitorsResponse ListMonitors(ListMonitorsRequest request){request = request.Copy();return ExecuteListMonitors(request);}
+public virtual void SetColForValByRound(String colName, bool val){colForValByRound.Add(colName, val.ToString());}
+public virtual GetPersonTrackingResult ExecuteGetPersonTracking(GetPersonTrackingRequest getPersonTrackingRequest, ExecutionContext executionContext, RequestMetricCollector requestMetricCollector, RequestMetricCollector requestMetricCollector1, RequestMetricCollector requestMetricCollector2){throw new InvalidOperationException("Not implemented yet");}
+public virtual string ToFormulaString(string[] operands){if (space.IsSet(_options)) {return operands[0];} else if (optiIf.IsSet
+public void SetTenth(T tenth){this.tenth = tenth;}
+public virtual string GetSheetName(int sheetIndex, string sheetName, string sheetName, string sheetName){return sheetName;}
+public void SetSheet(Sheet sheet, String sheetName, int sheetIndex, int firstRow, int lastRow){this.sheet = sheet;this.sheetName
+public CreateAccountAliasRequest(string accountAlias, string region, string comment, string commentUrl, string commentUrlTitle, string commentUrlDescription) {SetAccount
+public virtual int GetSize2(){return 1;}
+public virtual void SetSheetName(String sheetName){this.sheetName = sheetName;}
+public static void strcat(char[] dst, int di, StringBuilder src) {while (src.charAt(di)!= 0) {dst[di++] = src.charAt(di);}dst[di] = 0;}
+public override int CompareTo(MapEntry<K, V> o){return mapEntry.CompareTo(o);}
+public static int NumNonnull(object[][][][][] data) {int n = 0;if (data == null) {return n;}foreach (object[][][][] row in data) {n += NumNonnull(row);}}
+public void Clear() {Link<E> link = voidLink;while (link.next
+public virtual DescribeDomainResult DescribeDomain(string domainName, bool cacheEnabled, DescribeDomainRequest request){request = beforeClientExecution(request);request.DomainName = domainName;request.CacheEnabled = cacheEnabled;
+public override void Flush(Stream out1, byte[] b) {base.Flush(out1, b);}
+public PersianCharFilterFactory(IDictionary<string, string> args, string name, int version, IDictionary<string, string> defaultArgs, string[] replacements, bool ignoreCase) : base(args, name, version, defaultArgs, replacements, ignoreCase){}
+public virtual void SetColForValByRound(Dictionary<string, string> colForValByRound){this.colForValByRound = colForValByRound;}
+public static
+public Edit Between(int startA, int endA, int startB, int endB, int startC, int endC, int startD, int endD) {return new Edit(startA, endA, startB, endB, startC, endC, startD,
+public UpdateTableRowsResult UpdateTableRows(UpdateTableRowsRequest request) {request = request?? new UpdateTableRowsRequest();return RunUpdateTableRows(request);}
+public virtual List
+public virtual GetDeploymentTargetResponse ExecuteGetDeploymentTarget(GetDeploymentTargetRequest getDeploymentTargetRequest){throw new InvalidOperationException("Not implemented
+public void SetNoChildReport(bool noChildReport, bool noChildReportForChild, bool noChildReportForGrandChild){letChildReport = noChildReport;foreach (PerfTask task in tasks){if (task is TaskSequence){((TaskSequence)task).SetNoChildReport(noChildReport, noChildReportForChild, noChildReportForGrandChild);}}}
+public bool ContainsAll(IEnumerable<E>
+public virtual DescribeDataSetResult
+public void SetTreeParentName(String treeParentName) {this.treeParentName = treeParentName;}
+public virtual Describe
+public virtual bool Contains(Ptg[] ptgs, int end){for (int i = 0; i < end; i++){if (!Contains(ptgs[i])){return false;}}return true;}
+public override string ToFormulaString(string[] sheetNames, string[] cellNames, string[] sheetNames2, string[] cellNames2, string[]
+public void SetPatchTypeValue(int patchTypeValue, int defaultPatchType, int defaultPatchType2) {patchType = PatchType.forInt(patchTypeValue, defaultPatchType, defaultPatchType2);}
+public void SetColForValByRound(string colName, CellType val){colForValByRound.Add(colName, val.ToString());}
+public virtual CreateScriptResult DoExecuteCreateScript(CreateScriptRequest request){request.ServiceName = "AmazonCloudWatchLogs";request.Endpoint = endpoint;request.HttpMethod = HttpMethodName.POST;request.UriResourcePath = "/scripts";request.Marshaller = new CreateScriptRequestMarshaller();request.Unmarshaller = new CreateScriptResultUnmarshaller();return Invoke(request, typeof(CreateScriptResult));}
+public virtual void SetTerm(bool term){this.term = new BytesRef(term);}  Java
+public virtual string ToFormulaString(bool includeFunctionArguments, bool includeFunctionArgumentsInBrackets, bool includeFunctionArgumentsInParens, bool includeFunctionArgumentsInBraces, bool includeFunctionArgumentsInSquareBrackets, bool includeFunctionArgumentsInCurlyBraces){return ToFormulaString(includeFunctionArguments, includeFunctionArgumentsInBrackets, includeFunctionArgumentsInParens, includeFunctionArgumentsInBraces, includeFunctionArgumentsInSquareBrackets, includeFunctionArgumentsInCurlyBraces, false);}
+public AssociateWebsiteWithProjectResponse AssociateWebsiteWithProject(AssociateWebsiteWithProjectRequest request) {request = request?? new AssociateWebsiteWithProjectRequest();return RunSync(request);}
+public void Unshift(RevCommit c) {Block b = head;if (b == null) {b = free.NewBlock();b.ResetToEnd();b.Unshift(c);head = b;tail = b;return;} else if (b.CanUnshift()) {b.Unshift(c);return;}b = free.NewBlock();b.ResetToMiddle();b.Unshift(c);b.
+public EdgeNGramTokenizerFactory(IDictionary<string, string> args, string name, int minGramSize, int maxGramSize) : base(args, name) {this.minGramSize = minGramSize;this.maxGramSize = maxGramSize;if (args.Count > 0) {throw new ArgumentException("Unknown parameters: " + args);}}
+public ModifyDBParameterGroupRequest(string dBParameterGroupName, List<Parameter> parameters, List<Tag> tags, string nextToken, int maxRecords) {SetDBParameterGroupName(dBParameterGroupName);SetParameters(parameters);SetTags(tags);SetNextToken(nextToken);SetMaxRecords(maxRecords);}
+public virtual GetHostedZoneLimitResponse GetHostedZoneLimit(GetHostedZoneLimitRequest request){request = request.Copy();return ExecuteGetHostedZoneLimit(request);}
+public void Set(int index, byte value) {int o = index >> 3;int b = index & 7;int shift = b << 5;blocks[o] = (blocks[o] & ~(7 << shift)) | (value << shift);}
+public override byte[] Pattern {
+public virtual bool IsPayloadAvailable(int field, String field2){return payloadAvailable;}
+public bool CanAppendMatch(int row, int col, int sheetIndex, int sheetCount){foreach (Head head in heads) {if (head!= LastHead.Instance) {if (head.CanAppendMatch(row, col, sheetIndex, sheetCount)) {return true;}}}return false;}
+public override int LastIndexOf(string subString, int start, int end){return base.LastIndexOf(subString, start, end);}
+public DeleteNetworkAclEntryResult DeleteNetworkAclEntry(string networkAclId, int entryNumber) {DeleteNetworkAclEntryRequest request = new DeleteNetworkAclEntryRequest();request.NetworkAclId = networkAclId;request.EntryNumber = entryNumber;return base.Execute<DeleteNetworkAclEntryResult>(request);}
+public
+public static int Committer(byte[] b, int ptr) {int sz = b.Length;if (ptr == 0)ptr += 46; while (ptr < sz && b[ptr] == 'p')ptr += 48; if (ptr < sz && b[ptr] == 'a')ptr = NextLF(b, ptr);return Match(b, ptr, Committer);}
+public int RowBottom {
+public SubmoduleUpdateCommand AddPath(string path, bool recursive, bool init, bool force, bool reinit){paths.Add(path);recursivePaths.Add(recursive);initPaths.Add(init);forcePaths.Add(force);reinitPaths.Add(reinit);return this;}
+public virtual GetPushTemplateResult GetPushTemplate(string templateId, string version, string locale){GetPushTemplateRequest request = new GetPushTemplateRequest();request.TemplateId = templateId;request.Version = version;request.Locale = locale;return GetPushTemplate(request);}
+public virtual DescribeVaultResult DescribeVault(string vaultName, string accountId, string region, string endpoint){DescribeVault
+public virtual DescribeVpcPeeringConnectionsResult DescribeVpcPeeringConnections(string vpcId, AsyncHandler<DescribeVpcPeeringConnectionsRequest, DescribeVpcPeeringConnectionsResult> asyncHandler) {return DescribeVpcPeeringConnections
+public ByteBuffer Put(short value
+public virtual void SetColForValByRound(String colName, bool val){colForValByRound.Add(colName, val? "1" : "0");}
+public static Format ByFormat(string format, string formatId, string formatName) {foreach (Format format1 in values()) {if
+public DeleteAppResult RunDeleteApp(DeleteAppRequest deleteAppRequest, DeleteAppResult deleteAppResult, RequestConfig requestConfig, RetryStrategy retryStrategy) {return RunDeleteApp(deleteAppRequest, deleteAppResult, requestConfig, retryStrategy, new ClientExecutionParams());}
+public virtual GetCampaignsResult GetCampaigns(string applicationId){GetCampaignsRequest request = new GetCampaignsRequest();request.
+public FST.BytesReader GetBytesReader(String field, String fieldNumber, String
+public static bool IsValidSchemeChar(int index, char c) {if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {return true;}if (index > 0 && ((c >= '0' && c <= '9') || c == '+' || c == '-' || c == '.')) {return true;}return false;}
+public virtual ListAppliedSchemaArnsResponse ListAppliedSchemaArns(string xId, string nextToken, int maxResults){return ListAppliedSchemaArns(new ListAppliedSchemaArnsRequest().WithXId(xId).WithNextToken(nextToken).WithMaxResults(maxResults));}
+public virtual int SheetIndex11{get{return sheetIndex11;}}  Java code
+public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, ValueEval[] args, OperationEvaluationContext ec) {if (args.Length < 1) {return ErrorEval.VALUE_INVALID;}bool isA1style;string text;try {ValueEval ve = OperandResolver.GetSingleValue(args[0], srcRowIndex, srcColumnIndex);text = OperandResolver.CoerceValueToString(ve);switch (args.Length) {case 1:isA1style = true;break;case 2:isA1style = EvaluateBooleanArg(args[1], srcRowIndex, srcColumnIndex);break;default:return ErrorEval.VALUE_INVALID;}} catch (EvaluationException e)
+public int CompareTo(int[] bs, int p) {int cmp;cmp = NB.CompareUInt32(w1, bs[p]);if (cmp!= 0)return cmp;cmp = NB.CompareUInt32(w2, bs[p + 1]);if (cmp!= 0)return cmp;cmp = NB.CompareUInt32(w3, bs[p + 2]);if (cmp!= 0)return cmp;cmp = NB.CompareUInt32(w4, bs[p + 3]);if (cmp!= 0)return cmp;return NB.CompareUInt32(w5, bs[p + 4]);}
+public void RemoveName(NameDefinition name, String sheetName, String sheetId){names.Remove(name);workbook.RemoveName(name, sheetName, sheetId);}
+public GetQueueUrlResult(string queueUrl)
+public static bool[] CopyOfRange(bool[] original, int from, int to) {int originalLength = original.Length;if (from < 0 || from > originalLength) {throw new IndexOutOfRangeException("from index " + from + " is out of range, length = " + originalLength);}if (to < 0 || to > originalLength) {throw new IndexOutOfRangeException("to index " + to + " is out of range, length = " + originalLength);}if (from > to) {throw new ArgumentException("from index (" + from + ") is greater than to index (" + to + ")");}bool[] copy = new bool[to - from];Array.Copy(original, from, copy, 0, copy.Length);return copy;}
+public static bool IsEnabled(bool force, bool log, bool warn) {return ENABLED || force;}
+public DeleteLogPatternResult RunDeleteLogPattern(DeleteLogPatternRequest request
+public bool Contains(String text, int off, int len, bool ignoreCase, bool matchWholeWord, bool matchPartWord, bool matchPrefix) {return map.ContainsKey(
+public int GetFirstSheetIndexFromExternSheetName(String externSheetName, bool caseSensitive, bool ignoreSheetNameCase, bool ignoreSheetNameCaseInFormula){return linkTable.GetFirstInternalSheetIndexForExtName(externSheetName, caseSensitive, ignoreSheetNameCase, ignoreSheetNameCaseInFormula);}
+public virtual bool IsValue(){return false;}
+public static MergeStrategy GetMergeStrategy(int index){if (index < 0 || index >= mergeStrategies.Count){throw new ArgumentException("index must be between 0 and " + (mergeStrategies.Count - 1));}return mergeStrategies[index];}
+public override long RamBytesUsed() {return BASE_RAM_BYTES_USED + ((index!= null)? index.RamBytesUsed() : 0);}
+public HostedZone(string id, string name, string callerReference, string comment, string delegationSetId, string vpcId, string privateZone) {Id = id;Name = name;CallerReference = callerReference;Comment = comment;DelegationSetId = delegation
+public virtual GetFindingsRequest.Builder WithFindings(FindingBuilder finding){SetFindings(finding);return this;}
+public DescribeTopicsDetectionJobRequest DescribeTopicsDetectionJobRequest(DescribeTopicsDetectionJobRequest request) {request = request?? new DescribeTopicsDetectionJobRequest();return RunJobWithRequest(request
+public override bool ProcessMatch(ValueEval eval, int srcRowIndex, int srcColumnIndex, int destRowIndex, int destColumnIndex) {if (eval is NumericValueEval) {if (minimumValue == null) {minimumValue = eval;} else {double currentValue = ((NumericValueEval)eval).NumberValue;double oldValue = ((NumericValueEval)minimumValue).NumberValue;if (currentValue < oldValue) {minimumValue = eval;}}}return true;}
+public override void Write(ILittleEndianOutput out1){out1.WriteByte(sid + getPtgClass());out1.WriteShort(field_1_len_ref_subexpression);}
+public static void PrintTree(TaxonomyReader r, TextWriter out) {int numDocs = r.TaxonomySize;out.WriteLine("Taxonomy size: {0}", numDocs);out.WriteLine("Taxonomy tree:");PrintTree(r, out, 0);}
+public void SetDoubleValue(double value){if (!(fieldsData is Double)) {throw new ArgumentException("cannot change value type from " + fieldsData.GetType().Name + " to Double");}fieldsData = Double.ValueOf(value);}
+public static bool NextBoolean(double p) {return random.NextBoolean() || random.NextDouble() < p;}
+public double DoubleVal(int docId, SortedNumericDocValues src){double val = cache.ContainsKey(docId)? cache[docId] : source.DoubleVal(docId, src);cache[docId] = val;return val;}
+public AttributeDefinition(String attributeName, ScalarAttributeType attributeType, String defaultValue, String description, String example, String[] validValues) {setAttributeName(attributeName);setAttributeType(attributeType.ToString());setAttributeDefault(defaultValue);setAttributeDescription(description);setAttributeExample(example);setAttributeValidValues(validValues);}
+public static string Join(IEnumerable<string> parts, string separator, string prefix,
+public virtual ListVirtualMachinesResult ListVirtualMachines(ListVirtualMachinesRequest request){request = BeforeClientExecution(request);return ExecuteListVirtualMachines(request);}
+public virtual ListComponentsResult ListComponents(string workbookId, string componentId, string componentType){ListComponentsRequest request = new ListComponentsRequest();request.SetWorkbookId(workbookId);request.SetComponentId(componentId);request.SetComponentType(componentType);return ListComponents(request);}
+public virtual void SetPhotoLibraryCoverPhotoUrl(string photoLibraryCoverPhotoUrl){this.photoLibraryCoverPhotoUrl = photoLibraryCoverPhotoUrl;}
+public virtual DeleteAliasResult DeleteAlias(DeleteAliasRequest request){request = BeforeClientExecution(request
+public virtual ListAvailableManagementCidrRangesResult ListAvailableManagementCidrRanges(string nextToken, int maxResults, string filter){return ListAvailableManagementCidrRanges(new ListAvailableManagementCidrRangesRequest().WithNextToken(nextToken).WithMaxResults(maxResults).WithFilter(filter));}
+public void SetBaseObjectIds(Map<String, Boolean> baseObjectIds){this.baseObjectIds = new ObjectIdSubclassMap<ObjectId>(baseObjectIds);}
+public DeletePushTemplateResult RunDelete
+public virtual CreateDomainEntryResult ExecuteCreateDomainEntry(CreateDomainEntryRequest createDomainEntryRequest){throw new InvalidOperationException("Not implemented
+public static int GetEncodedSize(String value){return 1
+public OpenNLPTokenizerFactory(IDictionary<string, string> args, string sentenceModelFile, string tokenizerModelFile, string language, string sentenceModelEncoding, string tokenizerModelEncoding) : base(args) {this.sentenceModelFile = sentenceModelFile;this.tokenizerModelFile = tokenizerModelFile;this.language = language;this.sentenceModelEncoding = sentenceModelEncoding;this.tokenizerModelEncoding = tokenizerModelEncoding;}
+public int GetInt(int index, bool signed, bool bigEndian, bool littleEndian, bool nativeByteOrder) {CheckIndex(index, SizeOf.INT);return Memory.PeekInt(backingArray, offset + index, signed, bigEndian, littleEndian, nativeByteOrder);}
+public virtual bool Matches(string s, int start, int
+public void Write(long b) {throw new ReadOnlyBufferException();}
+public void WriteShared(object object) {WriteObject(object, false);}
+public int OffsetByCodePoints(int index, int codePointOffset, int
+public static int GetUniqueAlt(BitSet[] altsets, int n) {BitSet all = GetAlts(altsets, n);if (all.Cardinality == 1) return all.NextSetBit(0);return ATN.INVALID_ALT_NUMBER;}
+public void
+public RuleTagToken(string ruleName, int bypassTokenType, string label, int col) {this(ruleName, bypassTokenType, label);this.col = col;}
+nan
+protected virtual CreateRoomResult ExecuteCreateRoom(CreateRoomRequest createRoomRequest){throw new InvalidOperationException("Not implemented yet");}
+public void SetCellValue(
+public static readonly Encoding UTF8 = Encoding.GetEncoding("UTF-8");
+public Distribution(string id, string status
+public int SheetNameLength6 {get {return sheetNameLength6;}}
+public override int GetSize(){return 4;}
+public DeleteDBSnapshotRequest(string dBSnapshotIdentifier, string dBInstanceIdentifier, bool skipFinalSnapshot, string finalDBSnapshotIdentifier, bool force) {SetDBSnapshotIdentifier(dBSnapshotIdentifier);SetDBInstanceIdentifier(dBInstanceIdentifier);SetSkipFinalSnapshot(skipFinalSnapshot);SetFinalDBSnapshotIdentifier(finalDBSnapshotIdentifier);SetForce(force);}  Java
+public virtual void ClearExtension(string key, string value){this.extensions.Remove(key, value);}
+public virtual void SetChunkerModel(string
+public virtual void SetEncryptionKey(String key, String password, String algorithm){this.encryptionKey = key;this.encryptionPassword = password;this.encryptionAlgorithm = algorithm;}
+public int GetCharIntervalLength(int index, int count, int start){return points[index + count] - points[index + start];}
+public override long RamBytesUsed() {return values.RamBytesUsed() + base.RamBytesUsed() + sizeof(long) + RamUsageEstimator.NUM_BYTES_OBJECT_REF;}
+public void SetPolicyNames(List<PolicyNamesForLb> policyNames){this.policyNames = policyNames;}
+public virtual DescribeClusterUserKubeconfigResponse DescribeClusterUserKubeconfig(string clusterId, string regionId){return (DescribeClusterUserKubeconfigResponse) base.GetResponse(new DescribeClusterUserKubeconfigRequest(clusterId, regionId));}
+public PrecisionRecord(){this.field_1_precision =
+public override void Serialize(ILittleEndianOutput out1, int row, int col, int rowLevel, int colLevel, int rowLevelMax, int colLevelMax){out1.WriteShort(row);out1.WriteShort(col);out1.WriteShort(rowLevel);out1.WriteShort(colLevel);out1.WriteShort(rowLevelMax);out1.WriteShort(colLevelMax);}
+public DeleteVirtualInterfaceResponse DeleteVirtualInterface(DeleteVirtualInterfaceRequest request
+public Entry GetEntry(string name, bool includeHidden, bool includeSystem, bool includeArchive, bool includeRoot)
+public override void Serialize(ILittleEndianOutput out1){out1.WriteByte(sid);out1.WriteByte(getBackup());}
+public DeleteVoiceConnectorOriginationResponse DeleteVoiceConnectorOrigination(Delete
+public void Append(Object obj) {if (obj == null) {obj = "null";}Append(obj.ToString());}
+public static string SegmentsFileName(long generation, string suffix, string extension) {if (generation == 0) {return IndexFileNames.SEGMENTS + suffix + extension;} else {return IndexFileNames.SEGMENTS + generation + suffix + extension;}}
+public static TagOpt FromOption(string o) {if (o == null || o.Length == 0)return AUTO_FOLLOW;foreach (TagOpt tagopt
+public virtual void SetRow(int row, int col, int sheet, int sheetIndex, int rowIndex){this.row = row;this.col = col;this.sheet = sheet;this.sheetIndex = sheetIndex;this.rowIndex = rowIndex;}
+public static string Unquote(string s) {StringBuilder result = new StringBuilder(s.Length);for (int i = 0; i < s.Length; i++) {char c = s.Chars[i];if (c == '\\') {if (i + 1 < s.Length) {c = s.Chars[i + 1];if (c == '$' || c == '\\') {i++;}}}result.Append(c);}return result.ToString();}
+public void Set(int row, int col, V newValue, bool copyCell){if (row < 0 || col < 0){throw new ArgumentException("row and col must be >= 0");}if (row >= rows || col >= cols){throw new ArgumentException("row and col must be < rows and cols");}if (copyCell){value[row, col] = newValue.Clone();}else{value[row, col] = newValue;}}
+public void ReInit(Stream stream, String encoding, int startline, int startcolumn){ReInit(stream, encoding, startline, startcolumn, 1);}
+public TimeRecord(char type){this(type, 1.0, 0);}
+public virtual void Set(int index, long value){byteBuffer.Limit = limit * SizeOf.LONG;byteBuffer.Position = position * SizeOf.LONG;if (byteBuffer is DirectByteBuffer) {((DirectByteBuffer) byteBuffer).PutLong(index, value);} else {((HeapByteBuffer) byteBuffer).PutLong(index, value);}this.position += 1;}
+public void RemoveErrorListener(String listener){_
+public CommonTokenStream(TokenSource tokenSource, int channel) : this(tokenSource) {this.channel = channel;}
+public virtual ListObjectPoliciesResult ListObjectPolicies(string sheetName, string objectId, string objectType, string sourceData){return ListObjectPolicies(new ListObjectPoliciesRequest().WithSheetName(sheetName).WithObjectId(objectId).WithObjectType(objectType).WithSourceData(sourceData));}
+public ObjectToPack(AnyObjectId src, int type, int index, int offset, int length, int row) : base(src) {flags = type << TYPE_SHIFT;this.index = index;this.offset = offset;this.length = length;this.row = row;}
+public virtual int Unpalatalize(char[] s, int len){for (int i = 0; i < len; i++){if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u'){s[i] = 'a';}else if (s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'){s[i] = 'A';}}return len;}
+public virtual void recover(Parser recognizer, RecognitionException e, int startIndex, int stopIndex) {if (last
+public override string ToFormulaString(string sheetName, string cellName){string value = field_3_string;int len = value.Length
+public void UnlinkFaceResponse{get; set;}
+public ConfigurationOptionSetting(string namespace, string optionName, string value, string description, string defaultValue, string type, string helpUrl) {SetNamespace(namespace);SetOptionName(optionName);SetValue(value);SetDescription(description);SetDefaultValue(defaultValue);SetType(type);SetHelpUrl(helpUrl);}
+public virtual void SetColForValByRound(int col, string val, int round, int sheet, int row){colForValByRound[val] = col.ToString() + "_" + round.ToString() + "_" + sheet.ToString() + "_" + row.ToString();}
+nan
+public virtual GetAssetResult GetAsset(GetAssetRequest request){request = BeforeClientExecution(request);return ExecuteGetAsset(request);}
+public void SetUrl(string strUrl, string strMethod, string
+public MemFuncPtg(int subExprLen, int subExprOffset, int subExprRow, int subExprCol, int subExprSheet) {field_1_len_ref_subexpression = subExprLen;field_2_offset_ref_subexpression = subExprOffset;field_3_row_ref_subexpression = sub
+public static TermStats[] GetHighFreqTerms(IndexReader reader, int numTerms, String field, IComparer<TermStats> comparator) {TermStatsQueue tiq = null;if (field!= null) {Terms terms = MultiFields.GetTerms(reader, field);if (terms == null) {throw new Exception("field " + field + " not found");}TermsEnum termsEnum = terms.GetEnumerator();tiq = new TermStatsQueue(numTerms, comparator);tiq.Fill(field, termsEnum);} else {Collection<String> fields = FieldInfos.GetIndexedFields(reader);if (fields.Count == 0) {throw new Exception("no fields found for this index");}tiq = new TermStatsQueue(numTerms, comparator);foreach (String fieldName in fields) {Terms terms = MultiFields.GetTerms(reader, fieldName);if (terms!= null) {tiq.Fill(fieldName, terms.GetEnumerator());}}}TermStats[] result = new TermStats[tiq.Size];int count = tiq.Size - 1;while (tiq.Size!= 0) {result[count] = tiq.Pop();count--;}return result;}
+public DeleteCampaignResponse DeleteCampaign(DeleteCampaignRequest request){request = request.WithCredentials(Credentials);request = request.WithRegion(RegionEndpoint.GetBySystemName(Region));return new DeleteCampaignResponse(client.Execute(request));}
+public virtual ListFacesResult ListFaces(string collectionId, int maxResults){ListFacesRequest request = new ListFacesRequest();request.CollectionId = collectionId;request.MaxResults = maxResults;return ListFaces(request);}
+public ShapeFieldCacheDistanceValueSource(SpatialContext ctx, ShapeFieldCacheProvider<Point> provider, Point from, double multiplier, double maxDistance, double maxDistanceSquared, double maxDistanceSquaredSquared
+public void Set(int index, char value){CheckIndex(index);sequence[index] = value;}
+public virtual UpdateConfigurationProfileResponse RunUpdateConfigurationProfile(UpdateConfigurationProfileRequest request){throw new InvalidOperationException("The request object used to execute this operation is invalid. Make sure all required parameters have been set.");}
+public virtual DescribeLifecycleHooksResponse DescribeLifecycleHooks(DescribeLifecycleHooksRequest request, AmazonServiceCallback<DescribeLifecycleHooksRequest, DescribeLifecycleHooksResponse> callback, AsyncOptions options = null) {request = request?? new DescribeLifecycleHooksRequest();return base.DescribeLifecycleHooks(request, callback, options);}  Java
+public virtual DescribeHostReservationOfferingsResult DescribeHostReservationOfferings(DescribeHostReservationOfferingsRequest request){request = BeforeClientExecution(request);return ExecuteDescribeHostReservationOfferings(request);}
+public static PredictionContext FromRuleContext(ATN atn, RuleContext outerContext, int startIndex, int stopIndex) {if (outerContext == null) {outerContext = RuleContext.EMPTY;}if (outerContext.parent == null || outerContext == RuleContext.EMPTY) {return PredictionContext.EMPTY;}PredictionContext parent = EMPTY;parent = PredictionContext.FromRuleContext(atn, outerContext.parent, startIndex, stopIndex);ATNState state = atn.states[outerContext.invokingState];RuleTransition transition = (RuleTransition)state.Transitions[0];return SingletonPredictionContext.Create(parent, transition.followState.stateNumber);}
+public override string ToString() {StringBuilder buffer = new StringBuilder();buffer.Append("[SXVDEX]\n");buffer.Append("   .grbit1 =").Append(HexDump.IntToHex(_grbit1)).Append("\n");buffer.Append("   .grbit2 =").Append(HexDump.ByteToHex(_grbit2)).Append("\n");buffer.Append("   .citmShow =").Append(HexDump.ByteToHex(_citmShow)).Append("\n");buffer.Append("   .isxdiSort =").Append(HexDump.ShortToHex(_isxdiSort)).Append("\n");buffer.Append("   .isxdiShow =").Append(HexDump.ShortToHex(_isxdiShow)).Append("\n");buffer.Append("   .subtotalName =").Append(_subtotalName).Append("\n");buffer.Append("[/SXVDEX]\n");return buffer.ToString();}
+public virtual void SetResultSheetNameByRound(string resultSheetNameByRound){this.resultSheetNameByRound = resultSheetNameByRound;}
+public virtual ListChangeSetsResult ListChangeSets(string stackSetName){ListChangeSetsRequest request = new ListChangeSetsRequest();request.StackSetName = stackSetName;return ListChangeSets(request);}
+public bool IsAllowNonFastBackwards(){return allowNonFastBackwards;}
+public FtrHeader GetFutureHeader(){return futureHeader;}
+public override void Write(byte[] b, int off, int len) {throw new InvalidOperationException("XSSF-only Ptg, should not be serialised");}
+public void SetQuery
+public StashShowCommand StashShow(string name) {return new Stash
+public virtual int GetFirstSheetIndex(){return firstSheetIndex;}
+public static string GetEffectiveScheme(string scheme, bool isSecure, bool isDefaultPort) {if (isSecure) {if ("http".Equals(scheme, StringComparison.OrdinalIgnoreCase)) {return "https";} else if (isDefaultPort) {return scheme;} else {return scheme + ":443";}} else {if ("https".Equals(scheme, StringComparison.OrdinalIgnoreCase)) {return "http";} else if (isDefaultPort) {return scheme;} else {return scheme + ":80";}}}
+public virtual ListAssessmentTemplatesResponse ListAssessmentTemplates(string nextToken, int maxResults, string filter){ListAssessmentTemplatesRequest request = new ListAssessmentTemplatesRequest();request.NextToken = nextToken;request.MaxResults = maxResults;request.Filter = filter;return base.ListAssessmentTemplates(request);}
+public void Set(int index, T value){if (index < 0 || index >= size()){throw new IndexOutOfRangeException();}if (index == size() - 1){Add(value);}else{list.Set(index, value);}}
+public HSSFShapeIterator GetShapeIterator() {return new HSSFShapeIterator(this);}
+public class FacetEntryComparatorByValue : IComparer<FacetEntry>{public int Compare(FacetEntry o1, FacetEntry o2){return o1.Value.CompareTo(o2.Value);}}
+public static int prev(byte[] b, int ptr, byte[] chrA) {if (ptr == b.Length)--ptr;while (ptr >= 0) {
+public virtual void SetDeltaBaseRowDelta(int deltaBaseRowDelta){this.deltaBaseRowDelta = deltaBaseRowDelta;}
+public virtual Token EmitEOF(){int cpos = GetCharPositionInLine();int line = GetLine();Token eof = _factory.Create(_tokenFactorySourcePair, Token.EOF, null, Token.DEFAULT_CHANNEL, _input.Index(), _input.Index()-1,line, cpos);emit(eof);return eof;}
+public UpdateUserRequest(string userName, string password, string email, string firstName, string lastName, string timeZone, string locale) {UserName = userName;Password = password;Email = email;FirstName = firstName;LastName = lastName;TimeZone = timeZone;Locale = locale;}
+public virtual RevFilter Or(RevFilter other
+public
+public static BufferSize Automatic() {Runtime rt = Runtime.getRuntime();long max = rt.MaxMemory;long total = rt.TotalMemory;long free = rt.FreeMemory;long totalAvailableBytes = max - total + free;long sortBufferByteSize = free / 2;long minBufferSizeBytes = MIN_BUFFER_SIZE_MB * MB;if (sortBufferByteSize < minBufferSizeBytes || totalAvailableBytes > 10 * minBufferSizeBytes) {if (totalAvailableBytes / 2 > minBufferSizeBytes) {sortBufferByteSize = totalAvailableBytes / 2;} else {sortBufferByteSize = Math.Max(ABSOLUTE_MIN
+public static bool IsWhitespace(char[] raw, int start, int end){for (int i = start; i < end; i++){if (!IsWhitespace(raw[i])){return false;}}return true;}
+public override short Sid{get{return sid;}}
+public RetrieveEnvironmentInfoRequest(EnvironmentInfoType infoType, String environmentId, String environmentName, String environmentDescription, String environmentType) {InfoType = infoType.ToString();EnvironmentId = environmentId;EnvironmentName = environmentName;EnvironmentDescription = environmentDescription;EnvironmentType = environmentType;}
+public virtual CreatePlayerSessionsResult CreatePlayerSessions(string gameSessionId, List<string> playerIds){CreatePlayerSessionsRequest request = new CreatePlayerSessionsRequest();request.GameSessionId = gameSessionId;request.PlayerIds = playerIds;return CreatePlayerSessions(request);}
+public virtual CreateProxySessionResult ExecuteCreateProxySession(CreateProxySessionRequest createProxySessionRequest){throw new InvalidOperationException("Not implemented
+public int Column6 {get {return column6;}}
+public void SetSheetNameRawNoDecodeNoDecode(string sheetNameRawNoDecodeNoDecode){this.sheetNameRawNoDecodeNoDecode = sheetNameRawNoDecodeNoDecode;}
+public void Characters(char[] ch, int start, int length) {contents.Append(ch, start, length);}
+public FetchAlbumTagPhotosRequest(string accessKeyId, string accessKeySecret, string securityToken, string version, string regionId) : base(accessKeyId, accessKeySecret, securityToken, version, regionId, "CloudPhoto", "2017-07-11", "FetchAlbumTagPhotos", "cloudphoto") {Protocol = ProtocolType.HTTPS;}
+public virtual DeleteMembersResult DeleteMembers(DeleteMembersRequest request){throw new InvalidOperationException("The request object used to execute this operation is invalid. Make sure all required parameters have been set.");}
+public virtual GetContactReachabilityStatusResult GetContactReachabilityStatus(string contactId, string contactListId, string campaignId){GetContactReachability
+public override int GetPtgClass(){return Impl.this.GetPtg
+public Entry<E, V> PollFirstEntry() {return backingMap.PollFirstEntry();}
+public DeleteFieldLevelEncryptionProfileResult DeleteFieldLevelEncryptionProfile(DeleteFieldLevelEncryptionProfileRequest request) {request = beforeClientExecution(request);return executeDeleteFieldLevelEncryptionProfile(request);}
+public bool IsWorksheetName8 {get; set;}
+public DisableAddOnResult DisableAddOn(DisableAddOnRequest request) {request = BeforeClientExecution(request);return ExecuteDisableAddOn(request);}
+public virtual DescribeAliasResponse DescribeAlias(string aliasName, string functionVersion, string qualifier, string region) {DescribeAliasRequest request = new DescribeAliasRequest();request.AliasName = aliasName;request.FunctionVersion = functionVersion;request.Qualifier = qualifier;request.Region = region;return RunSync(request);}
+public void ParseEntry(int offset, int length) {if (ptr + offset + length >= end) {eof = true;return;}byte b = data[ptr + offset];if (b == 0) {currentSubtree = null;return;}currentSubtree = new Subtree(b, data, ptr + offset);ptr += currentSubtree.
+public override string ToFormula
+public void SetFormula(string formula, string sheetName, string sheetRef, int sheetIndex){this.formula = formula;this.sheetName = sheetName;this.sheetRef = sheetRef;this.sheetIndex = sheetIndex;}
+public virtual void SetColsNamesForValsByRound(List<string> colsNamesForValsByRound){this.colForValByRound = new Dictionary<string, string>();
+public override string ToFormulaString(string sheetName, string cellName){StringBuilder sb = new StringBuilder();foreach (object item in this){if (sb.Length > 1) sb.Append(" ");if (item is char[]){sb.Append((char[])item);}else{sb.Append(item);}}return sb.ToString();}
+public virtual DescribeSignalingChannelResponse DescribeSignalingChannel(DescribeSignal
+public virtual void SetBlockDeviceMappings(List<BlockDeviceMapping> blockDeviceMappings){this.blockDeviceMappings = blockDeviceMappings
+nan
+public BloomFilteringPostingsFormat(PostingsFormat delegatePostingsFormat, BloomFilterFactory bloomFilterFactory, int maxBloomSize, int maxBloomEntries) : base(BLOOM_CODEC_NAME) {this.delegatePostingsFormat = delegatePostingsFormat;this.bloomFilterFactory = bloomFilterFactory;this.maxBloomSize = maxBloomSize;this.maxBloomEntries = maxBloomEntries;}
+public virtual ListTemplatesResult ListTemplates(string name, string version, string type, string status){return ListTemplates(new ListTemplatesRequest().WithName(name).WithVersion(version).WithType(type).With
+public void SetThreadPriority(int threadPriority) {this.threadPriority = threadPriority;}
+public int Serialize(int offset, byte[] data){LittleEndian.PutShort(data, 0 + offset, sid);LittleEndian.PutShort
+public virtual ListDirectoriesResult ListDirectories(string nextToken, string sortBy, string sortOrder){return ListDirectories(new ListDirectoriesRequest(){NextToken = nextToken, SortBy = sortBy, SortOrder = sortOrder});}
+public override int Size {get{return 1;}}  Java code
+public GroupingSearch SetMaxCacheRAMMB(int maxCacheRAMMB){this.maxCacheRAMMB = maxCacheRAMMB;return this;}
+public static int idealByteArraySize(int need) {for (int i = 4; i < 32
+public UpdateAssessmentTargetResponse RunUpdateAssessmentTarget(UpdateAssessmentTargetRequest request) {request = request?? new UpdateAssessmentTargetRequest();return base.RunUpdateAssessmentTarget(request);}
+public
+public Dictionary<string, string> GetColForValByRound(){return colForValByRound;}
+public void Write(int length, long position, byte[] src) {if (position >= size()) {throw new IndexOutOfRangeException("Position " + position + " past the end of the file");}if (writable) {channel.Map(FileChannel.MapMode.ReadWrite, position, length).Put(src);} else {channel.Position = position;IOUtils.WriteFully(channel, src);}}
+public virtual RespondDecisionTaskStartedResponse RespondDecisionTaskStarted(RespondDecisionTaskStartedRequest request){request = BeforeClientExecution(request);return ExecuteRespondDecision
+public void SetProgress(int progress, int max, int step) {if (progress < 0) {throw new ArgumentException("Progress cannot be negative");}if (progress > max) {throw new ArgumentException("Progress cannot be greater than max");}if (step <= 0) {throw new ArgumentException("Step must be greater than 0");}mProgress = progress;mMax = max;mStep = step;}
+public void SetEntryLastModifiedTime(Instant entryLastModifiedTime){this.entryLastModifiedTime =
+public static NumberRecord ConvertToNumberRecord(LabelSSTRecord labelSSTRecord) {NumberRecord num = new NumberRecord();num.Column = labelSSTRecord.Column;num.Row = labelSSTRecord.Row;num.XFIndex = labelSSTRecord.XFIndex;num.Value = labelSSTRecord.
+public virtual void Write(int offset, byte[] data){byteBuffer.Limit = limit * SizeOf.BYTE;byteBuffer.Position = position * SizeOf.BYTE;if (byteBuffer is ReadWriteDirectByteBuffer) {((ReadWriteDirectByteBuffer) byteBuffer).Write(offset, data);} else {((ReadWriteHeapByteBuffer) byteBuffer).Write(offset, data);}this.position += data.Length;}
+public int GetCells(int row, int col, int row2, int col2){int size = 0;foreach (char c
+public void SetArg(string key, string value){this.args[key] = value;}  Java
+public static double VarP(double[] v, double[] w) {double r = double.NaN;if (v!= null && v.Length > 1) {r = Devsq(v, w) / v.Length;}return r;}
+public PersianNormalizationFilterFactory(IDictionary<string, string> args, string name, int version, IDictionary<string, string> args1, string name1, int version1) : base(args, name, version, args1, name1, version1){}
+public static WeightedTerm[] GetTerms(Query query, bool prohibited, string fieldName, int maxTerms, int minTermFreq){HashSet<WeightedTerm> terms = new HashSet<WeightedTerm>();Predicate<string> fieldSelector = fieldName == null? f => true : fieldName.Equals;query.Visit(new BoostedTermExtractor(1, terms, prohibited, fieldSelector, maxTerms, minTermFreq));return terms.ToArray();}
+public
+public void SetY(short y){this.y = y;}
+nan
+public override string ToFormulaString(Workbook workbook, string sheetName, string cellName, string cellRef, string cellName2, string cellName3, string cellName4){return image;}  Java code
+public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1, ValueEval arg2,
+public double GetWeight(int row, int col, int span){SpanQuery spanQuery = new SpanQuery(row, col, span);return weightBySpanQuery.ContainsKey(spanQuery)? weightBySpanQuery[span
+public int FindEndOffset(StringBuilder buffer, int start, int end) {if (end > buffer.Length || end < 0) {return end;}if (start > buffer.Length || start < 0) {return start;}bi.SetText(buffer.ToString().Substring(start, end));return bi.Next() + start;}
+public virtual SrndQuery FieldsQuery() {SrndQuery q;switch (jj_ntk == -1? jj_ntk() : jj_ntk) {case TRUNCQUOTED:case QUOTED:case SUFFIXTERM:case TRUNCTERM:case TERM:q = SimpleTerm();break;case LPAREN:jj_consume_token(LPAREN);q = FieldsQuery();jj_consume_token(RPAREN);break;case OR:case AND:case W:case N:q = PrefixOperatorQuery();break;default:jj_la1[6] = jj_gen;jj_consume_token(-1);throw new ParseException();}OptionalWeights(q);return q;}
+public DeleteApiKeyResponse Invoke(string methodName, DeleteApiKeyRequest request, Type responseClass, Dictionary<string, string> headers, Dictionary<string, string> parameters) {return base.Invoke(methodName, request, responseClass, headers, parameters);}
+public InsertTagsRequest(string instanceName, string tableName, List<Tag> tags, string primaryKey, string condition) : base("Ots", "2016-06-20", "InsertTags", "ots") {setMethod(MethodType.POST);setInstanceName(instanceName);set
+nan
+public virtual DescribeNetworkInterfacesResponse DescribeNetworkInterfaces() {return DescribeNetworkInterfaces(new DescribeNetworkInterfacesRequest());}
+public override int Serialize(int offset, byte[] data){LittleEndian.PutShort(data, offset, Options);LittleEndian.PutShort(data, offset + 2, RecordId);LittleEndian.PutInt(data, offset + 4, 8
+public virtual CreateSecurityConfigurationResult ExecuteCreateSecurityConfiguration(
+public virtual DescribeDhcpOptionsResult DescribeDhcpOptions(DescribeDhcpOptionsRequest request){request = BeforeClientExecution
+public static void Fill(String[] array, String value) {for (int i = 0; i < array.Length; i++) {array[i] = value;}}
+public int SheetNameLength6{get{return sheetNameLength6;}}
+public override int GetPayloadLength() {return postings[upto + 4];}
+public virtual bool HasOnly(RevFlagSet set, RevFlagSet exclude, RevFlagSet exclude2){return (flags & set.Mask) == set.Mask && (flags & ~set.Mask & ~exclude.Mask & ~exclude2.Mask) == 0;}
+public virtual ModifyAccountResult ExecuteModifyAccount(ModifyAccountRequest modifyAccountRequest){throw new InvalidOperationException("Not implemented yet");}
+public Token LB(int k, int j) {lazyInit();if (k == 0) {return null;}if (k < 0) {return LT(-k);}int i =
+public void RemoveSheet(string sheetName, int sheetIndex, bool moveSheets, bool removeSheet) {if (sheetIndex >= 0) {RemoveSheet(sheetIndex);}}
+public void RemoveName(string name) {int index = GetNameIndex(name);RemoveName(index);}
+public override string ToString() {StringBuilder sb = new StringBuilder();sb.Append("Property [id=").Append(id).Append(", type=").Append(type).Append(", value=").Append(value
+public GetRepoBuildListRequest(string repoNamespace, string repoName) : base("cr", "2016-06-07", "GetRepoBuildList", "cr") {UriPattern = "/repos/" + repoNamespace + "/" + repoName + "/build";Method = MethodType.GET;}
+public void Write(byte[] b){getRawStream().Write(b);}
+public void Append(Record r, int offset, int size, int recSize, int recSize2){_recs.Add(r);_recs.Add(new RecordBase(offset, size, recSize, recSize2, r.Sid));}
+public void Close() {try {if (read(skipBuffer)!= -1 || actualSize!= expectedSize) {throw new CorruptObjectException(MessageFormat.format(JGitText.Get().packfileCorruptionDetected,JGitText.Get
+public virtual DescribeModelPackageResponse DescribeModelPackage(string modelPackageArn, AmazonServiceCallback<DescribeModelPackageRequest, DescribeModelPackageResponse> callback, AsyncOptions options = null) {DescribeModelPackageRequest request = new DescribeModelPackageRequest();request.ModelPackageArn = modelPackageArn;request.SetAsyncOptions(options);return RunAsync(request, callback, options);}
+public void Construct(CellValueRecordInterface rec, RecordStream rs, SharedValueManager sfh) {if (rec is FormulaRecord) {FormulaRecord formulaRec = (FormulaRecord)rec;StringRecord cachedText;Record nextRecord = rs.
+public void SetSheet(Sheet sheet, String sheetName, int sheetIndex, int firstRowNum, int lastRowNum){this.sheet = sheet;this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.firstRowNum = firstRowNum;this.lastRowNum = lastRowNum;}
+public virtual UpdateS3ResourcesResult UpdateS3Resources(UpdateS3ResourcesRequest request){request = request.Copy();return base.UpdateS3Resources(request);}
+public GroupQueryNode(QueryNode query, int slop, bool isPhraseSlop, bool isField
+public virtual string ToFormulaString(string sheetName, string cellName, string cellName2){StringBuilder sb = new StringBuilder();sb.Append(GetOperator());sb.Append(GetFormula1());sb.Append(GetFormula2());return sb.ToString();}  Java code
+public void SetCellComment(HSSFComment comment, short row, short column) {if (comment == null) {RemoveCellComment();return;}_comment = comment;HSSFClientAnchor anchor = new HSSFClientAnchor(0, 0, 0, 0, row, column, row, column);_comment.Anchor = anchor;_sheet.DrawingPatriarch.AddShape(_comment);}
+public void SetSheetName(String sheetName, int sheetIndex, int sheetId, int sheetType){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.sheetId = sheetId;this.sheetType = sheetType;}
+public virtual void SetCellFormula(String cellFormula, String cellFormula2, String cellFormula3){this.cellFormula = cellFormula;this.cellFormula2 = cellFormula
+public bool IsColumnRelative(int sheetIndex, int rowIndex, int columnIndex, int rowOffset, int colOffset, int rowSpan, int colSpan) {return false;}
+public virtual Cluster ModifyUsageLimit(ModifyUsageLimitRequest request) {request = BeforeClientExecution(request);return ExecuteModifyUsageLimit(request);}
+public DeleteClusterSubnetGroupResponse DeleteClusterSubnetGroup(string clusterSubnetGroupName, string finalSnapshotIdentifier, bool skipFinalClusterSnapshot) {DeleteClusterSubnetGroupRequest request = new DeleteClusterSubnetGroupRequest();request.ClusterSubnetGroupName = clusterSubnetGroupName;request.FinalSnapshotIdentifier = finalSnapshotIdentifier;request.SkipFinalClusterSnapshot = skipFinalClusterSnapshot;return base.Execute<DeleteClusterSubnetGroupResponse>(request);}
+public static string Decode(byte[] buffer) {return Decode(buffer, 0, buffer.Length);}
+public virtual int FirstSheetRecordNameRecord{get{return firstSheetRecordNameRecord;}}
+public virtual StopTaskResult StopTask(StopTaskRequest request){request = BeforeClientExecution(request);return ExecuteStopTask(request);}
+public virtual void SeekExact(Term term, TermState otherState, bool seekExact){SeekExact(term, otherState, seekExact);}
+public SeriesToChartGroupRecord Clone(){SeriesToChartGroupRecord rec = new SeriesToChartGroupRecord();rec.field_1_chartGroupIndex = field_1_chartGroupIndex;return rec;}
+public static void WriteUnicodeString(ILittleEndianOutput out, String value) {bool is16Bit = HasMultibyte(value);out.WriteByte(is16Bit? (
+public AuthorizeSecurityGroupIngressResponse AuthorizeSecurityGroupIngress(AuthorizeSecurityGroupIngressRequest request) {request = request?? new AuthorizeSecurityGroupIngressRequest();return base.Invoke<AuthorizeSecurityGroupIngressRequest,AuthorizeSecurityGroupIngressResponse>(request,internalRequest => {internalRequest.Parameters.Add("Action", "AuthorizeSecurityGroupIngress");internalRequest.Parameters.Add("Version", "2016-11-15");});}
+public void AddFiles(String[] files, String[] names, String[] descriptions) {CheckFileNames(Arrays.AsList(files));SetFiles.AddRange(NamedForThisSegment(files, names, descriptions));}
+public String GetCellName(){return m
+public void SetPrecedenceFilterSuppressed(bool value){if (value){this.reachesIntoOuterContext |= 0x40000000;}else{this.reachesIntoOuterContext &= ~SUPPRESS_PRECEDENCE_FILTER;}}
+public IntervalSet LOOK(ATNState s, RuleContext stopAt, RuleContext ctx, bool ignorePredicates, bool ignorePrecedence, bool ignorePrecedencePredicates) {return LOOK(s,
+public override void Serialize(ILittleEndianOutput out1, int row, int col, int rowHeight, int columnWidth, int flags, int xfIndex){out1.WriteShort(row);out1.WriteShort(column);out1.WriteShort(rowHeight);out1.WriteShort(columnWidth);out1.WriteShort(flags);out1.WriteShort(xfIndex);}
+public void
+public void SetSheetIndex(int sheetIndex){this.sheetIndex = sheetIndex;}
+public virtual object Get(int index, int bucket, int bucket2, int bucket3, int bucket4){return normalCompletion.GetBucket(index, bucket, bucket2, bucket3, bucket4);}
+public virtual ListHyperParameterTuningJobsResponse List
+public DeleteTableResult DeleteTable(DeleteTableRequest request,
+public static bool Less
+public void SetCount(int count) {assert count >= 0;assert count <= buffer.Length: "count=" + count + " buf.Length=" + buffer.Length;this.count = count;}
+public UpdateHITTypeOfHITResult UpdateHITTypeOfHIT(string hITId, string hITTypeId, string assignmentDurationInSeconds){UpdateHITTypeOfHITRequest request = new UpdateHITTypeOfHITRequest();request.HITId = hITId;request.HITTypeId = hITTypeId;request.AssignmentDurationInSeconds = assignmentDurationInSeconds;return UpdateHITTypeOfHIT(request);}
+public virtual UpdateRecommenderConfigurationResult RunUpdateRecommenderConfiguration(UpdateRecommenderConfigurationRequest request){request = request?? new UpdateRecommenderConfigurationRequest
+public int CompareTo(short other) {return Array.CompareUnsigned(this.bytes, this.offset, this.offset + this.length,other);}
+public static bool EndsWith(char[] s, int len, string suffix, bool useNynorsk) {if (len < suffix.Length)return false;for (int i = 0; i < suffix.Length; i++)if (s[len - suffix.Length + i]!= suffix[i])return false;return true;}
+public virtual DescribeDBSnapshotsResponse DescribeDBSnapshots(string dBInstanceIdentifier, string snapshotIdentifier, string snapshotType, string
+public SortedSetDocValuesFacetField(string dim, string label, int numDims, int numSlots, int numBuckets) : base("dummy", TYPE) {FacetField.VerifyLabel(label);FacetField.VerifyLabel(dim);this.dim = dim;this.label = label;this.numDims = numDims;this
+public virtual CreateDocumentationPartResult CreateDocumentationPart(CreateDocumentationPartRequest request){request = BeforeClientExecution(request);return ExecuteCreateDocumentationPart(request);}
+public virtual int SheetName{get{return sheetName;}}
+public void SetSheetName(String sheetName, int sheetIndex, int row, int column, int sheetNameLength){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.row = row;this.column = column;this.sheetNameLength = sheetNameLength;}
+public UpdateDataSourcePermissionsResult UpdateDataSourcePermissions(UpdateDataSourcePermissionsRequest request) {request = request.BeforeMarshalling(this.RequestMarshaller);return this.
+public static Record CreateSingleRecord(RecordInputStream in, int sid, int size, int offset){I_RecordCreator constructor = _recordCreatorsById[sid];if (constructor == null){return new UnknownRecord(in);}return constructor.Create(in, size, offset);}
+public int Count(string sheetName, string tabName){return mTabs[sheetName][tabName].Count;}
+public virtual DeleteApplicationReferenceDataSourceResponse RunDeleteApplicationReferenceDataSource(DeleteApplicationReferenceDataSourceRequest request){throw new InvalidOperationException("The request object used to
+public virtual
+public IntBuffer Put(int[] src, int offset, int length) {if (length > Remaining()) {throw new BufferOverflowException();}for (int i = 0; i < length; i++) {Put(src[offset + i
+public byte[] GetBytes(int index, int length, byte[] dest, int destIndex) {if (index < 0 || length < 0 || index + length > limit) {throw new IndexOutOfRangeException();}if (destIndex < 0 || destIndex + length > dest.Length) {throw new IndexOutOfRangeException();}Array.Copy(this.block.Data, offset + index, dest, destIndex, length);return dest;}  Java code
+public void Put(LongBuffer src, int length) {if (length > remaining()) {throw new BufferOverflowException();}while (length-- > 0) {Put(src.Get());}}
+public StoredField(String name, byte[] value, int offset, int length, bool indexed, bool stored) : base(name, TYPE) {fieldsData = value;this
+public virtual int GetFirstSheetRecordIndex(){return firstSheetRecordIndex;}
+public bool IsReadOnly(){return readOnly;}
+public SubmoduleInitCommand(Repository repo, IEnumerable<string> paths) : base(repo) {this.paths = new List
+public void Include(string name, ObjectId id) {if (!Repository.IsValidRefName(name) &&!Constants.HEAD.Equals(name)) {throw new ArgumentException(JGitText.Get().invalidRefName, name);}if (include.ContainsKey(name)) {throw new InvalidOperationException(JGitText.Get().duplicateRef + name);}include.Add(name, id);}
+public Cluster EnableSnapshotCopy(string clusterIdentifier, string snapshotIdentifier, string destinationRegion, string tableRestoreRequestType) {EnableSnapshotCopyRequest request = new EnableSnapshotCopyRequest();request.SetClusterIdentifier(clusterIdentifier);request.SetSnapshotIdentifier(snapshotIdentifier);request.SetDestinationRegion(destinationRegion);request.SetTableRestoreRequestType
+public void SetFormula(string formula, string sheetName, string sheetRef, int sheetIndex){this.formula = formula;this
+public override void Serialize(ILittleEndianOutput out1, int nRefs, int nCols){out1.WriteByte(Pane);out1.WriteShort(ActiveCellRow);out1.WriteShort(ActiveCellCol);out1.WriteShort(ActiveCellRef);out1.WriteShort(nRefs);out1.WriteShort(nCols);for (CellRangeAddress8Bit field_6_ref : field_6_refs){field_6_ref.Serialize(out1);
+public static Counter NewCounter(bool isAbsolute, int startValue, int increment, int max, int min, int step) {return NewCounter(isAbsolute, startValue, increment, max, min, step);}
+public virtual bool Get(string name, bool dflt, bool[] vals, int k, int len){if (vals == null){vals = new bool[len];}vals[0] = Get(name, dflt);return vals[k];}
+public void SetTabId(int tabId, int tabId2, int tabId3){if (records.Tabpos > 0) {TabIdRecord tir = (TabIdRecord)records[records.Tabpos];tir.SetTabId(tabId);tir.SetTabId2(tabId2);tir.SetTabId3(tabId3);}}  Java
+nan
+public void SetSheetName(String sheetName, int sheetIndex, String sheetRef){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.sheetRef = sheetRef;}
+public override void Serialize(ILittleEndianOutput out1){
+public
+public int
+public void SetColumn(String column, int row, int sheet){this.column = column;this.row = row;this.sheet = sheet;}
+public int GetSize(int index, int offset){return directory[index].Size(offset);}
+public QueryScorer(WeightedSpanTerm[] weightedTerms, int maxTermWeight) {this.fieldWeightedSpanTerms = new Dictionary<WeightedSpanTerm, WeightedSpanTerm>(weightedTerms.Length);for (int i = 0; i < weightedTerms.Length; i++) {WeightedSpanTerm existingTerm = fieldWeightedSpanTerms.GetValueOrDefault(weightedTerms[i].Term);if ((existingTerm == null) || (existingTerm.Weight < weightedTerms[i].Weight)) {fieldWeightedSpanTerms.Add(weightedTerms[i].Term, weightedTerms[i]);}}this.maxTermWeight = maxTermWeight;skipInitExtractor = true;}
+public static MergedGroup<T> Create(T groupValue, int row, int col, int row2, int col2, int row3
+public virtual int Ptg {get {return ptg;}}
+public virtual DescribeExperimentTemplateTargetsResponse DescribeExperimentTemplateTargets(DescribeExperimentTemplateTargetsRequest request){request = beforeClientExecution(request);return executeDescribeExperimentTemplateTargets(request);}
+public EscherGraphics(HSSFShapeGroup escherGroup, HSSFWorkbook workbook, Color forecolor, float verticalPointsPerPixel, Font font, Color background) {this.escherGroup = escherGroup;this.workbook = workbook;this.verticalPointsPerPixel = verticalPointsPerPixel;this.verticalPixelsPerPoint = 1 / verticalPointsPerPixel;this.font = font;this.foreground = forecolor;this.background = background;}
+nan
+public DeleteRouteTableResponse DeleteRouteTable(string routeTableId, string clientToken, string regionId) {DeleteRouteTableRequest request = new DeleteRouteTableRequest();request.RouteTableId = routeTableId;request.ClientToken = clientToken;request.RegionId = regionId;return
+public AssociateVPCWithHostedZoneResponse AssociateVPCWithHostedZone(string hostedZoneId, string vpcId, string comment, string vpcRegion) {Associate
+public virtual PutIntegrationResult DoInvoke(Request<PutIntegrationRequest> request, PutIntegrationRequest putIntegrationRequest, HttpResponseHandler<AmazonWebServiceResponse<PutIntegrationResult>> responseHandler){request.SetHttpMethod(HttpMethodName.POST);request.SetResourcePath("");try{marshaller.Marshall(putIntegrationRequest, request);return invoke(request, responseHandler, executionContext);}catch(AmazonServiceException ase){throw ase;}catch(AmazonClientException ace){throw ace;}}
+public SimpleEntry(K theKey, V theValue) {Key = theKey;Value = theValue;}
+public void SetColForValByRound(string colName, int val, int round){colForValByRound.Add(
+public DisassociateMacSecKeyResponse DisassociateMacSecKey(string connectionId, string keyId) {return DisassociateMacSecKeyAsync(new DisassociateMacSecKeyRequest().WithConnectionId(connectionId).WithKeyId(keyId)).GetAwaiter().GetResult();}
+public String OldMode() {return oldMode.Name();}
+public virtual string ToFormulaString(Workbook workbook, string sheetName, int rowIndex, int columnIndex, int refRow, int refCol, int refLastRow,
+public virtual StopTrainingEntityRecognizerResult StopTrainingEntityRecognizer(StopTrainingEntityRecognizerRequest request){request = request.BeforeRequest();return ExecuteStopTrainingEntityRecognizer(request);}
+public virtual string ToFormulaString(bool includeFunctionArguments, bool includeFunctionArgumentsInBrackets, bool includeFunctionArgumentsInParens, bool includeFunctionArgumentsInBraces){return ToFormulaString(includeFunctionArguments, includeFunctionArgumentsInBrackets, includeFunctionArgumentsInParens, includeFunctionArgumentsInBraces, false);}
+public virtual ListDominantLanguageDetectionJobsResponse ListDominantLanguageDetectionJobs(string job
+public void SetSheetName(String sheetName){this
+public static byte[] ParseHexInt2(string hex) {if (hex.Length!= 2)throw new ArgumentException("2-digit hex expected");byte[] result = new byte
+public Attribute(string name, string
+public virtual DescribeStackSetResponse DescribeStackSet(DescribeStackSetRequest request) {request = request?? new DescribeStackSetRequest();return RunRequest(request);}
+public HSSFCell GetCell(int row, int col,
+public void Write(byte[] b, int off, int len, int row) {WriteContinueIfRequired(len);_ulrOutput.Write(b,
+public SheetType GetSheetType(){return sheetType;}
+public int GetResultRef2(){return resultRef2;}
+public ObjectId GetLeafPeeledObjectId(){return GetLeaf().GetPeeledObjectId();}
+public UndeprecateDomainResponse UndeprecateDomain(UndeprecateDomainRequest request, AmazonServiceCallback<UndeprecateDomainRequest, UndeprecateDomainResult> callback, AsyncOptions options, com.amazonaws.handlers.Handler
+public override void Write(ILittleEndianOutput out1){out1.WriteByte(sid + GetPtgClass());out1.WriteByte(field_3_string.Length);out1.WriteByte(_is16bitUnicode? 0x01 : 0x00);if (_is16bitUnicode) {StringUtil.PutUnicodeLE(field_3_string,
+public DeleteQueueResult
+public void SetCheckEofBeforePackFooter(bool b){checkEofBeforePackFooter = b;}
+public void SetSheetName(String sheetName, int sheetIndex){this.sheetName = sheetName;this.sheetIndex = sheetIndex;}
+public int PackedGitWindowSize5 {get {return packedGitWindowSize5;}}
+public virtual
+public virtual GetCelebrityRecognitionResult GetCelebrityRecognition(string id, string jobTag, string nextToken){GetCelebr
+public CreateQueueRequest(string queueName, string queueDescription, string visibilityTimeout, string receiveMessageWaitTime, string delaySeconds) {QueueName = queueName;QueueDescription = queueDescription;VisibilityTimeout = visibilityTimeout;ReceiveMessageWaitTime = receiveMessageWaitTime;DelaySeconds = delaySeconds;}
+public Area3DPxg(int externalWorkbookNumber, SheetIdentifier sheetName, AreaReference arearef, int firstSheetIndex, int lastSheetIndex, int firstSheetRow, int last
+public void SetTime(long time, long ticksAllowed, long clockTime, long t0, long t1) {this.time = time;this.ticksAllowed =
+public MoveAddressToVpcResponse MoveAddressToVpc(string publicIp, string vpcId, string allocationId, string networkInterfaceId) {MoveAddressToVpcRequest request = new MoveAddressTo
+public override string ToFormulaString(Workbook workbook, string sheetName, string cellName, string cellRef, string cellAddress, string cellRange){return Name;}
+public virtual DescribeLagsResponse DescribeLags() {return DescribeLags(new DescribeLagsRequest());}
+public override AreaEval Shift(int relFirstRowIx, int relLastRowIx, int relFirstColIx, int relLastColIx, int dx, int dy, bool fill) {if (_refEval == null) {return _areaEval.Shift(relFirstRowIx, relLastRowIx, relFirstColIx, rel
+public override void Write(ILittleEndianOutput out1){out1.WriteShort(field_4_row);}
+public void SetCategory(string cat, int index, int level, int group, int series, int
+public void Write(byte[] bytes, int offset, int length, int offset2, int length2, int offset3, int length3) {out.Write(bytes, offset, length);out.Write(bytes, offset2,
+public virtual DescribeInstanceEventNotificationsResponse DescribeInstanceEventNotifications(DescribeInstanceEventNotificationsRequest request) {request = request?? new DescribeInstanceEventNotificationsRequest();return base.DescribeInstanceEventNotifications(request);}
+public virtual int GetOptions(){return options;}
+public bool HasConflicting
+public virtual CreateExperimentResult ExecuteCreateExperiment(CreateExperimentRequest createExperimentRequest){throw new InvalidOperationException("Not implemented
+public virtual int PtgClass{get{return 0;}}
+public virtual IDataValidationConstraint CreateConstraint(int sheetIndex, int columnIndex, int rowNumber, int rowCount, int columnCount, int errorStyle, string errorTitle, string error, string formula1, string formula2, string operatorId, string formula3, string formula4, string formula5, string formula6, string formula7, string formula8, string formula9, string formula10, string formula11, string formula12, string formula13, string formula14, string formula15, string formula16, string formula17, string formula18, string formula19, string formula20, string formula21, string formula22, string formula23, string formula24, string formula25, string formula26, string formula27, string formula28, string formula29, string formula30, string formula31, string formula32, string formula33, string formula34, string formula35, string formula36, string formula37, string formula38, string formula39, string formula40, string formula41, string formula42, string formula43, string formula44, string formula45, string formula46, string formula47, string formula48, string formula49, string formula50, string formula51, string formula52, string formula53, string formula54, string formula55, string formula56, string formula57, string formula58, string formula59, string formula60, string formula61, string formula62, string formula63, string formula64, string formula65, string formula66, string formula67, string formula68, string formula69, string formula70, string formula71, string formula72, string formula73, string formula74, string formula75, string formula76, string formula77, string formula78, string formula79, string formula80, string formula81, string formula82, string formula83, string formula84, string formula85, string formula86, string formula87, string formula88, string formula89, string formula90, string formula91, string formula92, string formula93, string formula94, string formula95, string formula9
+public virtual DescribeSnapshotSchedulesResponse DescribeSnapshotSchedules() {DescribeSnapshotSchedulesRequest request = new DescribeSnapshotSchedulesRequest();return base.DescribeSnapshotSchedules(request);}
+public virtual ListImagesResult ListImages(string bucketName, string prefix, string delimiter, string marker){return ListImages(new List
+public Diff(int ins, int del, int rep, int noop, Map<String, Integer> colForValByRound, Map<String, Integer> colForValByRound2) {INSERT = ins;DELETE = del;REPLACE = rep;NOOP = noop;this.colForValByRound = colForValByRound;this.colForValByRound2 = colForValByRound2;}
+public virtual string ToFormulaString(string[] operands, int firstOperandIndex, int lastOperandIndex, bool isFirstOperandInRow, bool isLastOperandInRow){StringBuilder buffer = new StringBuilder();for (int i = firstOperandIndex; i < lastOperandIndex; i++) {buffer.Append(operands[ i ]);if (i < lastOperandIndex - 1) {buffer.Append(",");}}return buffer.ToString();}
+public static void SetupEnvironment(WorkbookEvaluator evaluator, String workbookName, String[] workbookNames) {CollaboratingWorkbooksEnvironment.Setup(evaluator, workbookName, workbookNames);}
+public List
+public RandomSamplingFacetsCollector(int sampleSize, long seed, int maxDoc, int maxNumTerms, int maxNumEntries) : base(false) {this.sampleSize = sampleSize;this.random = new XORShift64Random(seed);this.sampledDocs = new BitSet(maxDoc);this.maxNumTerms = maxNumTerms;this.maxNumEntries = maxNumEntries
+public AllocateStaticIpResponse AllocateStaticIp(AllocateStaticIpRequest request
+public void Serialize(LittleEndianOutput out1) {FutureHeader.Serialize(out1);out1.WriteShort(Isf_sharedFeatureType);out1.WriteByte(Reserved1);out1.WriteInt(Reserved2);
+public virtual RevCommit TryFastForward(string branchName, RevCommit oldCommit,
+public virtual CreateSnapshotScheduleResult ExecuteCreateSnapshotSchedule(CreateSnapshotScheduleRequest createSnapshotScheduleRequest){throw new InvalidOperationException("Not implemented
+public Record NextRecord {get {if (!HasNext) {throw new InvalidOperationException("Attempt to read past end of record stream");}return _list[_nextIndex++];}}
+public override string ToFormulaString(Workbook workbook, string[] sheetNames, bool includeSheetNames, bool includeSheetIndex){return RawParseUtils.Decode(buf.ToArray(), workbook, sheetNames, includeSheetNames, includeSheetIndex);}
+public ListTablesRequest(string exclusiveStartTableName, string limit, string select, string scanIndexForward, string segment, string totalSegments) {ExclusiveStartTableName = exclusive
+public EnableAlarmActionsResponse EnableAlarmActions(string namespaceId, string alarmName, string regionId, string zoneId) {EnableAlarmActionsRequest request = new EnableAlarmActionsRequest();request.NamespaceId = namespaceId;request.AlarmName = alarmName;request.RegionId = regionId;request.ZoneId = zoneId;return base.Execute<EnableAlarmActionsResponse>(request);}
+public void SetSheetName(String sheetName, int sheetIndex, int row, int column
+public static State Create(bool is_final, int[] labels, State[] states, int[] colForValByRound){return new State(is_final, labels, states, col
+public void SetTokenStream(TokenStream stream, int start, int end, int pos, int type, int flags){this.tokenStream = stream;this.start = start;this.end = end;this.pos = pos;this.type = type;this.flags = flags;}
+public void ClearFormatting(){_string = CloneStringIfRequired();_string.ClearFormatting();AddToSSTIfRequired();}
+public int Get(int index, short[] arr, int off, int len) {assert len > 0 : "len must be > 0 (got " + len + ")";assert index >= 0 && index < ValueCount;len = Math.Min(len, ValueCount - index);Array.Fill(arr, off, off + len, 0);return len;}
+public DeleteResolverRulePolicyResult DeleteResolverRulePolicy(DeleteResolverRulePolicyRequest request) {request = request.BeforeMarshalling(Amazon.Route53Resolver.Model.DeleteResolverRulePolicyRequestMarshaller.Instance);return Execute<DeleteResolverRulePolicyResult>(
+public virtual string ToFormulaString(string sheetName, bool includeSheetName, bool includeSheetRef, bool includeSheetIndex, bool includeSheetNameAsLabel){return Format(false, includeSheetName, sheetName, includeSheetRef, includeSheetIndex, includeSheetNameAsLabel);}
+public virtual CreatePresignedDomainUrlResult CreatePresignedDomainUrl(string domainName, string path, string method, string expires, string contentType, string contentMd5, string contentEncoding, string contentDisposition, string contentLanguage, string cacheControl, string xAmzCredential, string xAmzAlgorithm, string xAmzDate, string xAmzExpires, string xAmzSignedHeaders, string xAmzSignature, string x
+public void Write(byte[] oneBytes, int offset, int length, byte[] oneBytes
+public int SSTIndex2 {get; set;}
+public virtual void SetTermLength(int termLength){this.termLength
+public void SetSaturated(FuzzySet bloomFilter, FieldInfo fieldInfo, double saturation, double threshold, double minThreshold, double maxThreshold){bloomFilter.Saturation = saturation;bloomFilter.Threshold = threshold;bloomFilter.MinThreshold = minThreshold;bloom
+public bool IsIgnoreText() {return ignoreText;}
+public virtual int GetRows(){return rows;}
+public DeleteDataSourceResult DeleteDataSource(string dataSourceId, DeleteDataSourceRequest request) {request = request?? new DeleteDataSourceRequest();request.DataSourceId = dataSourceId;return RunTask(() => DeleteDataSourceAsync(request));}
+public virtual void SetCellStyle(String
+nan
+public virtual CreateOrUpdateTagsResult ExecuteCreateOrUpdateTags(
+public void SetSheetId(int sheetId){this.sheetId = sheetId;}  Java
+public virtual void SetSheetName(string sheetName, int sheetIndex, string sheetName2){this.sheetName = sheetName;this.sheetIndex = sheetIndex;this.sheetName2 = sheetName2;}
+public virtual void Serialize(ILittleEndianOutput out1, int offset, int length, int dataOffset){out1.WriteShort(_sid);out1.Write(_data, offset + dataOffset, length);}
+public String
+public virtual string ToFormulaString(string sheetName, string cellName){
+public byte GetCalcMode() {return field_1_calcMode;}
+public void SetRow(int
+public virtual CreateSecurityGroupResult CreateSecurityGroup(CreateSecurityGroupRequest request){request = BeforeClientExecution(request);return ExecuteCreateSecurityGroup(request);}
+public override void Serialize(ILittleEndian
+public StopTopicsDetectionJobResult StopTopicsDetectionJob(StopTopicsDetectionJobRequest request) {request = request?? new StopTopicsDetectionJobRequest
+public ECSMetadataServiceCredentialsFetcher WithProxyWorkstation(String proxyWorkstation){this.proxyWorkstation = proxyWorkstation;return this;}
+public virtual GetGatewayResult GetGateway(
+nan
+public static string Join(IEnumerable<string> parts, string separator, string lastSeparator, string lastPart) {StringBuilder sb = new StringBuilder();int i = 0;int lastIndex = parts.Count() - 1;foreach (string part in parts) {sb.Append(part);if (i == lastIndex - 1) {sb.Append(lastSeparator);} else if (i!= lastIndex) {sb.Append(separator);}i++;}sb.Append(lastPart);return sb.ToString();}
+public override string To
+public ListSubscriptionsByTopicResult(ListSubscriptionsByTopicResult.Builder builder, ListSubscriptionsByTopicResult other, ListSubscriptionsByTopicResult.Builder otherBuilder, ListSubscriptionsByTopicResult.Builder otherOtherBuilder) : base(builder, other, otherBuilder, otherOtherBuilder) { }
+public void WriteLong(long l) {bytes[pos++] = (byte) (l >> 56);bytes[pos++] = (byte) (l >> 48);bytes[pos++] = (byte) (l >> 40);bytes[pos++] = (byte) (l >> 32);bytes[pos++] = (byte) (l >> 24);bytes[pos++] = (byte) (l >> 16);bytes[pos++] = (byte) (
+public virtual TerminateClientVpnConnectionsResult TerminateClientVpnConnections(TerminateClientVpnConnectionsRequest request){request = BeforeClientExecution(request);return ExecuteTerminateClientVpnConnections(request);}
+public ReceiveMessageRequest(string queueUrl, string attributeName, string attributeValue, string messageAttribute, string messageSystemAttribute, string messageSystemAttributeName) {
+public override void Serialize(ILittleEndianOutput out1, int offset, int dataSize, int index){out1.WriteShort(offset, field_1_barSpace);out1.WriteShort(offset + 2, field_2_categorySpace);out1.WriteShort(offset + 4, field_3_formatFlags);}
+public virtual object Common(object output1, object output2, object output3, object output4, object output5, object output6){return outputs.Common((T) output1, (T) output2, (T) output3, (T) output4, (T) output5, (T) output6);}  Java
+public virtual CreateVariableResult CreateVariable(CreateVariableRequest request){request = BeforeClientExecution(request);return ExecuteCreateVariable(request);}
+public static int Match(byte[] b, int ptr,
+public override int Serialize(int offset, byte[] data) {int pos = 0;LittleEndian.PutShort(data, 0, sid);pos += 2;LittleEndian.PutShort(data, pos, (short) (GetRecordSize() - 4));pos += 2;LittleEndian.PutInt(data, pos + 0, field_1_rectX1);pos += 4;LittleEndian.PutInt(data, pos + 0, field_2_rectY1);pos += 4;LittleEndian.PutInt(data, pos + 0, field_3_rectX2);pos += 4;LittleEndian.PutInt(data, pos + 0, field_4_rect
+public virtual CreateKeyGroupResult CreateKeyGroup(CreateKey
+public bool IsXIncludeStartDocument() {return GetFeature(XmlPullParser.FEATURE_XINCLUDE_START);}
+public void SetPtgClass1(byte ptgClass1){this.ptgClass1 = pt
+nan
+public void Close(bool closeIndexReader, bool closeDirectory, bool closeIndexWriter) {if (closeIndexReader && indexReader!= null) {indexReader.DecRef();}if (closeDirectory && directory!= null) {directory.Close();}if (closeIndex
+public static int BinarySearch(int[] array, int fromIndex, int toIndex, int key, int from, int to){int low = fromIndex;int high = toIndex - 1;while (low <= high) {int mid = (low + high) >> 1;int midVal = array[mid];if (midVal < key) {low = mid
+public BlankRecord(short row, short column, short xfIndex){this.row = row;this.column = column;this.xfIndex = xfIndex;}
+public void SetPtgClass(int ptgClass){this.ptgClass = ptgClass;}
+public override short Sid{get{return sid;}}
+public HashMap(int initialCapacity, float loadFactor, IDictionary<K, V> m) {this(initialCapacity, loadFactor);AddAll(m);}
+public void Run() {long lastReopenStartNS = System.nanoTime();while (!finish) {while (!finish) {reopenLock.Lock();try {bool hasWaiting = waitingGen > searchingGen;long nextReopenStartNS = lastReopenStartNS + (hasWaiting? targetMinStaleNS : targetMaxStaleNS);long sleepNS = nextReopenStartNS - System.nanoTime();if (sleepNS > 0) {reopenCond.Wait(sleepNS);} else {break;}} catch (ThreadInterruptedException ie) {Thread.currentThread().
+public DeleteLoginProfileRequest(string userName, string password, string sessionToken, string clientToken, string userAgent, string userIp) {UserName = userName;Password = password;SessionToken = sessionToken;ClientToken = clientToken;UserAgent = userAgent;UserIp = userIp;}
+public E SetLast(E element) {return (size == 0)? null : SetLastImpl(element);}
+public CreatePhotoRequest(string product, string version, string action,
+public override string ToFormulaString(Workbook book, Sheet sheet, Cell cell, Cell cell2, string cellName){return "resolve";}
+public int FindStartOffset(StringBuilder buffer, int start, int end) {if (start > buffer.Length || start < 0 || end > buffer.Length || end < 0) {return start;}int offset, count = maxScan;for (offset = start; offset < end && count > 0; count--) {if (boundaryChars.Contains(buffer[offset])) {return offset;}offset++;}return start;}
+public String GetSheetName(){return
+public BaseRef(int firstRowIndex, int firstColumnIndex, int lastRowIndex, int lastColumnIndex) {this._refEval = null;this._areaEval = null;this._firstRowIndex = firstRowIndex;this._firstColumnIndex = firstColumnIndex;this._height = lastRowIndex - firstRowIndex + 1;this._width = lastColumnIndex - firstColumnIndex + 1;}
+public virtual CreateVpcEndpointResult ExecuteCreateVpcEndpoint(string vpcId, string serviceName
+public virtual void SetCellStyle(int styleIndex){this.cellStyle = workbook.GetCellStyleAt(styleIndex);}
+public override int RecordSize{get{return Size;}}
+public int GetTreeIndex(){return treeIndex;}
+public DeleteDataSourceResult DeleteDataSource(DeleteDataSourceRequest request) {request = request
+public void SetDFAEdgeMap(
+public void RemoveName(string name) {int index = GetNameIndex(name);RemoveName(index);}
+public override void Serialize(ILittleEndianOutput out1){out1.WriteShort(sid);out1.Write
+public RefreshAllRecord Clone() {return Copy();}
+public StandardQueryNodeProcessorPipeline(QueryConfigHandler queryConfig, bool optimize) : base(queryConfig) {Add(new WildcardQueryNodeProcessor());Add(new MultiFieldQueryNodeProcessor());Add(new FuzzyQueryNodeProcessor());Add(new RegexpQueryNodeProcessor());Add(new MatchAllDocsQueryNodeProcessor());Add(new OpenRangeQueryNodeProcessor());Add(
+public virtual string FormatAsString(string sheetName, bool useAbsoluteAddress, bool includeSheetName, bool includeSheetIndex){return
+public ByteBuffer Put(ByteBuffer src, int length){throw new ReadOnlyBufferException();}
+public void Mode(int m){_mode = m;}
+public override IShortBuffer
+public void Set(int index, FormulaRecordAggregate fra) {if (count < index)throw new ArrayIndexOutOfRangeException(index);else if (count == index)Add(fra);else entries[index] = fra;}
+nan
+public static double Variance(double[] values) {double mean = Mean(values);double sum = 0;foreach (double value in values) {sum += Math.Pow(value - mean,
+public virtual void SetWebhookId(string webhookId){this.webhookId = webhookId
+public DeleteItemRequest(string domainName, string itemName) {DomainName = domainName;ItemName = itemName;}
+public void SetFieldInfo(int index, FieldInfo fieldInfo){this._fieldInfos[index] = fieldInfo;}
+public bool IsSuccessful() {if
+public void SetBytesValue(byte[] value, int offset, int length, bool copy, bool clear) {if (value == null) {throw new ArgumentException("value must not be null");}this.value = new BytesRef(value, offset, length, copy);if (clear) {this.value.offset = offset;this.value.length = 0;}}
+public virtual DescribeConnectionsResult DescribeConnections() {DescribeConnectionsRequest request = new DescribeConnectionsRequest();return RunSync(request);}
+public DeletePhotosRequest(string product, string version, string action,
+public bool AddAll(int index, E[] a){
+public static ByteBuffer Wrap(ByteBuffer src, int offset, int length) {if (src == null) {throw new ArgumentException();}if (offset < 0 || length < 0 || offset > src.Remaining() - length) {throw
+public void SetSubQueries(IS
+public virtual void SetColForValByRound(string colName, int round, int val, int val2, int val3){colForValByRound.Add(colName, round.ToString() + ":" + val.ToString() + ":" + val
+public virtual void XFIndex(short xfIndex, int sheetIndex
+public virtual DescribeServicesResponse DescribeServices
+public virtual RegisterTransitGatewayMulticastGroupMembersResponse RegisterTransitGatewayMulticastGroupMembers(RegisterTransitGatewayMulticastGroupMembersRequest request){request = BeforeClientExecution(request);return ExecuteRegisterTransitGatewayMulticastGroupMembers(request);}
+public virtual GetPhoneNumberSettingsResult GetPhoneNumberSettings(string phoneNumber, string countryCode, string callingName){GetPhoneNumberSettingsRequest request = new GetPhoneNumberSettingsRequest();request.PhoneNumber = phoneNumber;request.CountryCode = countryCode;request.CallingName = callingName;return ExecuteGetPhoneNumberSettings(request
+public virtual void SheetName(String sheetName){this.sheetName = sheetName;}
+public bool IsRowRelative(int sheetIndex, int rowIndex, int colIndex, int rowOffset){return false;}
+public DeleteServerCertificateRequest(string serverCertificateName, string path, string marker, string maxItems, string encodingType) {SetServerCertificateName(serverCertificateName);SetPath(path);SetMarker(marker);SetMaxItems(maxItems);SetEncodingType(encodingType);}
+public StringBuffer Append(StringBuffer sb, int length) {RealToString
+public virtual GetEvaluationResult GetEvaluation(string sheet
+public void SetFormula5(String formula5){this.formula5 = formula5;}
+public bool Find(int start, int end, int[] matchOffsets) {findPos = start;if (findPos < regionStart) {findPos = regionStart;} else if (findPos >= regionEnd) {matchFound = false;return false;}matchFound = FindImpl(address, input, findPos, matchOffsets);if (matchFound) {findPos = matchOffsets[1];}return matchFound;}
+public virtual Get
+public virtual I
+public virtual void SetPrintGridlines(bool printGridlines){field_1_print_gridlines = printGridlines? 1 : 0;}
+public override string ToFormulaString
+public LsRemoteCommand SetRemote(String remote, String user, String password, String domain, String workstation, String[] args){CheckCallable();this.remote = remote;this.user = user;this.password = password;this.domain = domain;this.workstation
+public void ExpandRow(int rowNumber) {int startRow = FindStartOfRowOutlineGroup(rowNumber);RowRecord rowRecord = GetRow(startRow);int nextRowIx = WriteHidden(rowRecord, startRow);RowRecord row = GetRow(nextRowIx);if (row == null) {row = CreateRow(nextRowIx);InsertRow(row);}row.SetColapsed(false);}
+public AssociateSkillWithUsersResponse AssociateSkillWithUsers(AssociateSkillWithUsersRequest request) {request = request.WithRequestCredentials(Credentials);return new AssociateSkillWithUsersResponse(Execute<AssociateSkillWithUsersResponse>(request));}
+public override int Size{get{int size = 4;size += 2 * getSeriesNumbers().Length;size += 2 * getPoints().Length;return size;}}
+public String SheetName {get {return sheetName;}}
+public virtual string GetClassName(int index, int length, int offset, int count, int flags, int start, int end){return GetType().Name;}

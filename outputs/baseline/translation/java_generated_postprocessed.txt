@@ -1,0 +1,1000 @@
+public void serialize(LittleEndianOutput out1) {out1.writeShort(field_1_vcenter);out1.writeShort(field_2_hcenter);out1.writeShort(field_3_width);out1.writeShort(field_4_height);out1.writeShort(field_5_level);out1.writeShort(field_6_precision);}
+public void addAll(BlockList<T> src, int srcOff, int len, int srcBlkIdx) {if (len == 0) {return;} int srcDirIdx = 0; for (; srcDirIdx < src.tailDirIdx; srcDirIdx++) {addAll(src.directory[
+public void writeBytes(byte[] b, int offset, int len, int docID) {if (
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public DeleteDeviceGroupMemberResponse deleteDeviceGroupMember(DeleteDeviceGroupMemberRequest request){return hcClient.syncInvokeHttp(request, IoTDcMeta.deleteDeviceGroupMember);}
+public long ramBytesUsedForCachePerLevelPerLevel() {long sum = 0;for (int i = 0; i < cache.numCacheLevels; i++){for
+public String getMessage(int index) {byte[] raw = buffer;int msgB = RawParseUtils.TagMessage(raw, 0);if (msgB < 0){return "";}Encoding enc = RawParseUtils.ParseEncoding(raw);return RawParseUtils.Decode(enc, raw, msgB + 1 + index * 2, msgB + 1 + (index + 1) * 2);}
+public void write(OutputStream stream, boolean leaveOpen, boolean writeProperties, boolean writeRoot, boolean writeDocumentBlocks, boolean writeSmallBlocks) throws IOException {write(stream, leaveOpen, writeProperties, writeRoot, writeDocumentBlocks, writeSmallBlocks, false);}
+public void init(int address, int length, int offset, int maxOffset) {slice = pool.buffers[address >> ByteBlockPool.BYTE_BLOCK_SHIFT]; Debug.Assert(slice!= null); upto = address & ByteBlockPool.BYTE_BLOCK_MASK; offset0 = address + offset; max
+public SubmoduleAddCommand setNoRecurse(boolean no
+public ListJobsByDeviceGroupResponse listJobsByDeviceGroup(ListJobsByDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.listJobsByDeviceGroup);}
+public void ReInit(ICharStream stream, int lexState, int startLine, int startColumn) {m_lexState = lexState;m_done = false;m_start = 0;m_count = 0;m_token
+public GetShardIteratorResponse getShardIterator(GetShardIteratorRequest request, String shardId, String streamName, String shardIteratorType) {var options = new InvokeOptions();options.requestMarshaller = GetShardIteratorRequestMarshaller.getInstance();options.responseUnmarshaller = GetShardIteratorResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void toMap(HashMap<String, String> map, String prefix) {this.setParamSimple(map, prefix + "StrategyDescription", this.strategyDescription);}
+public void reset() throws IOException {if (in == null) {throw new IOException("InputStreamReader is closed");}bytes.clear();in.mark(1024);}
+public void serialize(LittleEndianOutput out1) {out1.WriteShort(EscherOptRecord.RECORD_ID);out1.WriteShort(EscherOptRecord.RECORD_VERSION);}
+public void write(int b) throws IOException {if (pos >= buffer.length) {throw new IllegalArgumentException("pos >= buffer.length");}this.buffer[pos++] = unchecked((byte)b);}
+public int prevSentence(int start, int limit, int max, int min) {return sentenceOp.prevSentence(start, limit, max, min);}
+public void println(String str) {print(str);write(SystemProperties.getLineSeparator());}
+public void dispose(boolean disposing, boolean callGC, boolean callFinalize) {if (m_disposed)return;m_disposed = true;if (disposing){if (m_credentials!= null){m_credentials.dispose();m_credentials =
+public void putAll(Map<K, V> map) {if (map == null) {throw new NullPointerException("map");}for (Entry<K
+public void readBytes(byte[] b, int offset, int len, boolean useBuffer) throws IOException {int available = bufferLength - bufferPosition;if (len <= available) {if (len > 0) {System.arraycopy(m_buffer, bufferPosition, b, offset, len);}bufferPosition += len;}else{if (available > 0){System.arraycopy(m_buffer, bufferPosition, b, offset, available);offset += available;len -= available;bufferPosition += available;}if (useBuffer && len < bufferSize) {refill();if (bufferLength < len) {System.arraycopy(m_buffer, 0, b, offset, bufferLength);throw new EOFException("read past EOF: " + this);}else{System.arraycopy(m_buffer, 0, b, offset, len);bufferPosition = len;}}else{long after = bufferStart + bufferPosition + len;if (after > Length) {throw new EOFException("read past EOF: " + this);}readInternal(b, offset, len);bufferStart = after;bufferPosition = 0;bufferLength = 0; }}}
+public TagQueueResponse tagQueue(TagQueue
+public void setLevelForDistance(int level, double width, double height) {if (level < 1 || level > maxLevels) {throw new IllegalArgumentException("level must be between 1 and " + maxLevels);}if (width == 0 || height == 0) {throw new IllegalArgumentException("width and height must be greater than 0");}levelW[level - 1] = width;levelH[level - 1] = height;}
+public ModifyCacheSubnetGroupResponse modifyCacheSubnetGroup(ModifyCacheSubnetGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.modifyCacheSubnetGroup);}
+public void setParams(String params) {super.setParams(params);String[] parts = params.split(",");if (parts.length > 0)culture = parts[0
+public DeleteIntegrationResponse deleteIntegration(DeleteIntegrationRequest request, GenericInvokeRequest invokeRequest, RuntimeOptions runtime){return hc
+public void read(BinaryReader reader) {length = reader.readInt();components = new String[length];for (int i = 0; i < length; i++) {components[i] = reader.readString();} }
+public GetInstanceTypesFromInstanceFamilyResponse getInstanceTypesFromInstanceFamily(GetInstanceTypesFromInstanceFamilyRequest request) {final com.aliyuncs.RpcRequest httpRequest = new com.aliyuncs.RpcRequest("Ecs", "2014-05-26", "GetInstanceTypesFromInstanceFamily", "ecs", "openAPI");httpRequest.setMethod(com.aliyuncs.http.MethodType.POST);httpRequest.setEndpoint("ecs.aliyuncs.com");httpRequest.addQueryParameters(com.aliyuncs.
+public HSSFSimpleShape createSimpleShape(HSSFChildAnchor anchor, HSSFSimpleShape shape, HSSFSimpleShape shape1) {shape.setParent(this);shape.setAnchor(anchor);shapes.add(shape);onCreate(shape);shape1.setParent(this);shape1.setAnchor(anchor);shapes.add(shape1);onCreate(shape1);return shape;}
+public int getSheetIndex(String sheetName, boolean caseSensitive, boolean ignoreMissing, boolean create, boolean notify, boolean notifyDataFormatChanged) {return getSheetIndex
+public GetDashboardResponse getDashboard(GetDashboardRequest request) {  InvokeOptions options = new Invoke
+public AssociateSigninDelegateGroupsWithAccountResponse associateSigninDelegateGroupsWithAccount(AssociateSigninDelegateGroupsWithAccountRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = AssociateSigninDelegateGroupsWithAccountRequestMarshaller.getInstance();options.responseUnmarshaller = AssociateSigninDelegateGroupsWithAccountResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void addMultipleStringCells(MulBlankRecord mbr) {for (int j = 0; j < mbr.getNumColumns(); j++) {StringRecord sr = new StringRecord();sr.setColumn(j + mbr.getFirstColumn());sr.setRow(
+public static String escape(String string) {StringBuilder sb = new StringBuilder();int apos = 0;int k;while ((k = string.indexOf(" ", apos)) >= 0){sb.append(string.substring(apos, k)).append("\\ ");apos = k + 1;}sb.append(string.substring(apos));return sb.toString();}
+public java.nio.ByteBuffer put(java.nio.DoubleBuffer src) {throw new java.nio.ReadOnlyBufferException();}
+public ArrayPtg(Object[][] values2d) {int nColumns = values2d[0].length;int nRows = values2d.length;nColumns = (short)nColumns;nRows = (short)nRows;Object[] vv = new Object[nColumns * nRows];for (int r = 0; r < nRows; r++) {Object[] rowData = values2d[r];for (int c = 0; c < nColumns; c++) {vv[getValueIndex(c, r)] = rowData[c];}}arrayValues = vv;reserved0Int = 0;reserved1Short = 0;reserved2Byte = 0;}
+public GetIotDeviceGroupResponse getIotDeviceGroup(GetIotDeviceGroupRequest request){return
+public static void write(BinaryWriter writer, Geohash[] values) {for (int i = 0; i < values.length; i++) {values[i].write(writer
+public String toString(String field) {return "ToChildBlockJoinQuery (" + parentQuery + ")";}
+public void read(BinaryReader reader)
+public UpdateReceiptRulePositionResponse updateReceiptRulePosition(UpdateReceiptRulePositionRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.updateReceipt
+public int getYBATEntryCount() {return m_yBATEntryCount;}
+public void setLevelForDistance(int level, double dist) {if (level == 0) {maxLevels = 1;bits = 0;shift = 0;return;}maxLevels = level;bits = 0;shift = 0;for (int i = 0; i < level; i++) {bits += levelW[i];shift += levelH[i];}}
+public String toString(String format, IFormatProvider provider) {StringBuilder builder = new
+public void withFetcher(ECSMetadataServiceCredentialsFetcher fetcher) {this.fetcher = fetcher;this.fetcher.setRolePolicyArn(rolePolicyArn);}
+public void setProgressMonitor(ProgressMonitor pm, int max, int current, int
+public void setLevelForDistance(int level, double width, double height, double precision) {if (level < 1 || level > maxLevels) {throw new IllegalArgumentException("Level must be between 1 and " + maxLevels);}levelW[level - 1] = width;levelH[level - 1] = height;precisionW[level - 1] = precision;precisionH[level -
+public int hashCode() {return maxLevels ^ levelW.hashCode() ^ levelH.hashCode() ^ start ^ end ^ iterator.hashCode();}
+public String getSecurityTokenUrlInternal() {return this.securityTokenUrlInternal;}
+public int indexOfValue(int value) {for (int i = 0;
+public List<CharsRef> uniqueStems(char[] word, int length) {List<CharsRef> stems = stem(word, length);if (stems.size() < 2) {return stems;}Set<CharsRef> terms = new HashSet<CharsRef>(dictionary.ignoreCase);List<CharsRef> deduped = new ArrayList<CharsRef>();for (CharsRef s : stems) {if (!terms.contains(s)) {deduped.add(s);terms.add(s);}}return deduped;}
+public GetIntegrationResponseResponse getIntegrationResponse(GetIntegrationResponseRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetIntegrationResponseRequestMarshaller.getInstance();options.responseUnmarshaller = GetIntegrationResponseResponseUnmarshaller.getInstance();return invoke(request, options);}
+public long getLevelForDistance(long dist, long level, long precision) {return currentBlock.getLevelForDistance(currentBlockUpto, dist, level, precision);}
+public boolean canWrite() {return false;}
+public boolean canConvert(Class<?> objectType) {return objectType == BootstrapActionDetail.class;}
+public void serialize(LittleEndianOutput out1) {out1.writeShort(field_1_row);out1.writeShort(field_2_col);out1.writeShort(field_3_flags);out1.writeShort(field_4_shapeid);out1.writeShort(field_6_author.length);out1.writeByte(field_5_hasMultibyte? 0x01 : 0x00);if (field_5_hasMultibyte) {StringUtil.putUnicodeLE(field_6_author, out1);} else {StringUtil.putCompressedUnicode(field_6_author, out
+public int lastIndexOf(String @string, int startIndex, int count) {if (startIndex < 0 || startIndex > count)throw new ArgumentOutOfRangeException(nameof(startIndex));if (count < 0 || startIndex - count > this.Length)throw new ArgumentOutOfRangeException(nameof(count));if (@string == null)throw new ArgumentNullException(nameof(@string));if (@string
+public int indexOf(Object o) {return indexOfImpl(o);}
+public void setSection(String section, String subsection, String key, long value) {ConfigSnapshot src;ConfigSnapshot res;do{src = state.get();res = setSection(src, section, subsection, key, value);}while (!state.compareAndSet(src, res));}
+public String toString() {StringBuilder sb = new StringBuilder("class Tag {\n");sb.append("    id: ").append(toIndentedString(id)).append("\n");sb.append("    name: ").append(toIndentedString(name)).append("\n");sb.append("    level: ").append(toIndentedString(level)).append("\n");sb.append("    levelW: ").append(toIndentedString(levelW)).append("\n");sb.append("    levelH: ").append(toIndentedString(levelH)).append("\n");sb.append("    maxLevels: ").append(toIndentedString(maxLevels)).append("\n");sb.append("    tagName: ").append(toIndentedString(tagName)).append("\n");sb.append("    credentials: ").append(toIndentedString(credentials)).append("\n");sb.append("}");return sb.toString();}  ## 3.2.2. Data Structure  The data structure of the tag is as follows:  { "id": "12345678901234567890123456789012", "name": "tag1", "level": 1, "levelW": 10000000, "levelH": 10000000, "maxLevels": 10, "tagName": "tag1", "credentials": { "accessKeyId": "xxxx", "accessKeySecret": "xxxx", "endpoint": "xxxx", "regionId": "xxxx", "bucket": "xxxx" } }  ## 3.2.3. Parameter Description  Parameter Description  id  The unique ID of the tag.  name  The name of the tag.  level  The level
+public void
+public boolean remove(Object object) {lock.lock();try{return c.remove(object);}finally{lock
+nan
+nan
+public void setValue(byte[] newValue, int offset, int length, int index, int count) {value = Arrays.copyOfRange(newValue, offset, offset + length);}
+public boolean equals(Object obj) {if (obj == null ||!(obj instanceof Pair))return false;final Pair other = (Pair)obj;return oldSource.getId() == other.oldSource.getId() && newSource.getId() == other.newSource.getId();}
+public int get(int i, int j, int k, int l, int m) {if (count <= i) {throw new IndexOutOfRangeException(i);}return entries[i * 5 + j * 4 + k * 3 + l * 2 + m];}
+public CreateRepoResponse createRepoWithOptions(CreateRepoRequest request, RuntimeOptions runtime) {Dictionary<string, string> runtime_ = new Dictionary<string, string>(Util.toMap(runtime));return CreateRepoWithOptions(request, runtime_);}
+public boolean isDeltaBaseAsOffset()
+public void remove(int index) {if (index < 0 || index >= size()) {throw new java.lang.IndexOutOfBoundsException();}if (index == 0) {removeFirst();} else if (index == size() - 1) {removeLast();} else {java.util.LinkedList.Link<ET> link = this.link;for (int i = 0; i < index; i++) {link = link.next;}java.util.LinkedList.Link<ET> previous = link.previous;java.util.LinkedList.Link<ET> next = link.next;previous.next = next;next.previous = previous;expectedModCount++;size--;}}
+public RemoveTagsFromStreamResponse removeTagsFrom
+public AllocateTransitVirtualInterfaceResponse allocateTransitVirtualInterface(AllocateTransitVirtualInterfaceRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = AllocateTransitVirtualInterfaceRequestMarshaller.getInstance();options.responseUnmarshaller = AllocateTransitVirtualInterfaceResponseUnmarshaller.getInstance();return invoke(request, options);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public static WeightedTerm[] getTerms(Query query, boolean includeBoost, boolean includePayloads, boolean includePositions, boolean includeOffsets, boolean includeFreqs) {return getTerms(query, includeBoost, includePayloads, includePositions, includeOffsets, includeFreq
+public java.nio.ByteBuffer put(byte[] src
+public int getMaxDecodedLength(int numValues) {return
+public String getHumanishNameForPath(String path) {if (path == null || path.isEmpty()) {throw new IllegalArgumentException();}String[] elements = path.split("[/\\\\]");if (elements.length == 0) {throw new IllegalArgumentException();}String result = elements[elements.length - 1];if (Constants.DOT_GIT.equals(result)) {result = elements[elements.length - 2];}else if (result.endsWith(Constants.DOT_GIT_EXT)) {result = Sharpen.Runtime.Substring(result, 0, result.Length - Constants.DOT_GIT_EXT.Length);}return result;}
+public DescribeNotebookInstanceLifecycleConfigResponse describeNotebookInstanceLifecycleConfig(DescribeNotebookInstanceLifecycleConfigRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeNotebookInstanceLifecycleConfig);}
+public String getFileSha256() {return this.fileSha256;}
+public DeleteAlarmHistoryResponse deleteAlarmHistory(DeleteAlarmHistoryRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteAlarmHistory);}
+public DetachPolicyFromUserResponse detachPolicyFromUser(DetachPolicyFromUserRequest request){return hcClient.syncInvokeHttp(request, IotMeta.detachPolicyFromUser);}
+public ListPipelineExecutionStepsResponse listPipelineExecutionSteps(ListPipelineExecutionStepsRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.listPipelineExecutionSteps);}
+public GetJobOutputRequest(String vaultName, String jobId, String range) {this.vaultName = vaultName;this.jobId = jobId;this.range = range;}
+public EscherRecord getEscherRecord(String name, int index, int count) {for (int i = 0; i < escherRecords.length; i++){if (escherRecords[i].getRecordName().equals(name)){if (index == 0
+public GetApisResponse getApis(GetApisRequest request){RuntimeOptions runtime = new RuntimeOptions();return getApisWithOptions(request, runtime);}
+public DeleteUserProjectResponse deleteUserProject(DeleteUserProjectRequest request){return hcClient.syncInvokeHttp(request, IamMeta.deleteUserProject);}
+public void init(Map<String, String> config, Map<String, String> systemConfig, Map<String, String> userConfig, Map<String, String> globalConfig) {this.config = config;this.systemConfig = systemConfig;this.userConfig = userConfig;this.globalConfig = globalConfig;}
+nan
+public IQueryNode getRootParentOrSelfOrSelf() {IQueryNode node = this;while (node.parent!= null){node = node.parent;}return node;}  C#
+public void dispose(boolean disposing, boolean disposingManagedResources) {if (disposing) {if (ignoredPaths!= null) {for (int i = 0; i
+public short
+public GetVideoInfoResponse getVideoInfo(GetVideoInfoRequest request) {return JdCloud.callApi(request, GetVideoInfoResponse.class);}
+public DescribeTransitGatewayVpcAttachmentsResponse describeTransitGatewayVpcAttachments(DescribeTransitGatewayVpcAttachmentsRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeTransitGatewayVpcAttachments);}
+public UpdateVoiceConnectorStreamingConfigurationResponse updateVoiceConnectorStreamingConfiguration(UpdateVoiceConnectorStreamingConfigurationRequest request){return hcClient.sync
+public OrdRange getOrdRange(String dim) {OrdRange result = prefixToOrdRange.get(dim);return result;}
+public String toString(String[] ruleNames, String[] tokenNames) {StringBuilder s = new StringBuilder();s.append(getClass().getSimpleName()).append(": (").append(startIndex).append(":").append(stopIndex).append(")=").append(getText()).append(" rule=");if (ruleIndex >= 0 && ruleIndex < ruleNames.length) {s.append(ruleNames[ruleIndex]);}else {s.append("<INVALID>");}s.append(" token=");if (tokenIndex >= 0 && tokenIndex < tokenNames.length) {s.append(tokenNames[tokenIndex]);}else {s.append("<INVALID>");}return s.toString();}
+public void push(E e, int level, int distance, int weight, int count) {offerFirstImpl(e, level, distance, weight, count);}
+public CreateWorkspaceResponse createWorkspace(CreateWorkspaceRequest request){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.createWorkspace);}
+public short getSid() { return sid; }
+public DescribeRepositoriesResponse describeRepositories(DescribeRepositoriesRequest request){RuntimeOptions runtime = new RuntimeOptions();return describeRepositoriesWithOptions(request, runtime);}
+public SparseIntArray(int[] keys, int[] values) {mKeys = keys;mValues = values;mSize = keys.length;}
+public TokenStream create(TokenStream input) {return new KeywordTokenizer(input, KeywordAttribute.KeywordAttributeImpl.DEFAULT_BUFFER_SIZE, KeywordAttribute.KeywordAttributeImpl.DEFAULT_DETERMINIZE_ONLY, KeywordAttribute.KeywordAttributeImpl.DEFAULT_BUFFER_SIZE);}
+public CreateRoleVersionResponse createRoleVersion
+public RandomAccessFile(String fileName, String mode, boolean useUNC, boolean useLongPath, boolean useUTF8, boolean useBOM, boolean useUTF16) throws FileNotFoundException {this(new File(fileName), mode);}
+public DescribeWorkspaceImageResponse describeWorkspaceImage(DescribeWorkspaceImageRequest request){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.describeWorkspaceImage);}  C# code
+public static String toHex(byte[] bytes) {return toHex(bytes, 0, bytes.length);}
+public UpdateDeviceGroupResponse updateDeviceGroup(UpdateDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.updateDeviceGroup);}
+public void setColor(short index, byte[] rgb) {palette.setColor(index, rgb);}
+public String toOdfFormula(int srcRowIndex, int srcColumnIndex, int destRowIndex, int destColumnIndex, int sheetIndex, int destSheetIndex) {return FunctionName.NAME;}
+public void setSheetTableIndex(int index, int level, int firstRow, int lastRow) {field_2_sheet_table_index = index;field_1_number_crn_records = level;field_3_first_row = firstRow;field_4_last_row = lastRow;}
+public DescribeDBInstancesResponse describeDBInstances(DescribeDBInstancesRequest request)
+public FormatRun(short character, short fontIndex, short colorIndex, short underlineIndex, short strikethroughIndex, short superscriptIndex) {this._character = character;this._fontIndex = fontIndex;this._colorIndex = colorIndex;this._underlineIndex = underlineIndex
+public static byte[] toBigEndianUtf16Bytes(String str, int offset, int length) {byte[] result = new byte[length * 2];int end = offset + length;int resultIndex = 0;for (int i = offset; i < end; ++i) {char ch = str.charAt(i);result[resultIndex++] = (byte)(ch >> 8);result[resultIndex++] = (byte)ch;}return result
+public UploadPartResponse uploadPart(UploadPartRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = UploadPartRequestMarshaller.getInstance();options.responseUnmarshaller = UploadPartResponseUnmarshaller.getInstance();return invoke(request, options);}
+public List<Token> getHiddenTokensToRight(int tokenIndex, int stopIndex, int stopTokenType) {return getHiddenTokensToRight(tokenIndex, stopIndex, stopTokenType, -1);}
+public void readFields(BinaryReader input) throws IOException {
+public void write(JsonWriter out, T value) throws IOException {out.beginObject();out.name(ID);out.value(value.getId());out.name(NAME);out.value(value.getName());out.name(DESCRIPTION);out.value(value.getDescription());out.name(PRICE);out.value(value.getPrice());out.name(STOCK);out.value(value.getStock());out.name(IMAGE);out.value(value.getImage());out.name(CATEGORY);out.value(value.getCategory());out.name(TAGS);out.value(String.join(",", value.getTags()));out.name(CREATED);out.value(value
+public StashApplyCommand stashApply(String stashId) {return new StashApplyCommand(repo, stashId);}
+public void getPoint(int docID, double[] point, double[] dist, int[] level, int[] precision) {point[0] = latValues[docID];point[1] = lonValues[docID];dist[0] = distValues[docID];level[0] = levelValues[docID];precision[0] = precision
+public DescribeEventResponse describeEvent(DescribeEventRequest request, GenericInvokeRequest requestOptions){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.describeEvent, requestOptions);}
+public GetDocumentAnalysisResponse getDocumentAnalysis(String jobId, GetDocumentAnalysisRequest request) {final InvokeOptions options = new InvokeOptions();options
+public CreateAccessKeyResponse createAccessKey(
+public ModifyLoadBalancerAttributesResponse modifyLoadBalancerAttributes(ModifyLoadBalancerAttributesRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.modifyLoadBalancerAttributes);}
+public SetInstanceProtectionResponse setInstanceProtection(SetInstanceProtectionRequest request){return hcClient.syncInvokeHttp(request, IoT.SetInstanceProtection);}
+public ModifyDBProxyEndpointResponse modifyDBProxyEndpoint(ModifyDBProxyEndpointRequest request){return hcClient.syncInvokeHttp(request, IotMeta.modifyDBProxyEndpoint);}
+public void add(char[] output, int offset, int len, int endOffset, int posLength) {if (count == outputs.length) {CharsRef[] next = new CharsRef[ArrayUtil.oversize(1 + count, RamUsageEstimator.NUM_BYTES_OBJECT_REF)]; System.arraycopy(outputs, 0, next, 0, count); outputs = next;} if (count == endOffsets.length) {int[] next = new int[ArrayUtil.oversize(1 + count, RamUsageEstimator.NUM_BYTES_INT32)]; System.arraycopy(endOffsets, 0, next, 0, count); endOffsets = next;} if (count == posLengths.length) {int[] next = new int[ArrayUtil.oversize(1 + count, RamUsageEstimator.NUM_BYTES_INT32)]; System.arraycopy(posLengths, 0, next, 0, count); posLengths = next;} if (outputs[count] == null) {outputs[count] = new CharsRef();} outputs[count].copyChars(output, offset, len); endOffsets[count] = endOffset; posLengths[count] = posLength; count++;}
+public void toMap(HashMap<String, String> map, String prefix) {this.setParamSimple(map, prefix + "LibraryId", this.libraryId);}
+public void saveAsync(Action<Boolean> callback, Action<Boolean> progressCallback) {if (objects!= null){objects.saveAsync(callback, progressCallback
+public void writeLine(string format, object arg0) throws IOException {@out.writeLine(format, arg0);}
+public ScaleClusterResponse scaleClusterWithCoreSpot(ScaleClusterWithCoreSpotRequest request) {return this.invoke(request, new ScaleClusterResponseUnmarshaller());}
+public IDataValidationConstraint createIconSetConstraint(int operatorType, String formula1, String formula2) {return DVConstraint.createIconSetConstraint(operatorType, formula1, formula2);}
+public ListObjectsResponse listObjects(ListObjectsRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller(ListObjectsRequestMarshaller.getInstance());options.responseUnmarshaller(ListObjectsResponseUnmarshaller.getInstance());return invoke(request, options);}
+public DescribeCacheSubnetGroupsResponse describeCacheSubnetGroups(DescribeCacheSubnetGroupsRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeCacheSubnetGroups);}
+public
+public boolean isUseCacheForLevel(int level, int zoom, int x, int y, int width, int height) {return useCacheForLevel && level < maxLevels && zoom < maxZoom && x >= 0 && x < levelW[level] && y >= 0 && y <
+public ITerminalNode addTerminalNode(String text, int type, int channel, int start, int stop) {TerminalNodeImpl t = new TerminalNodeImpl(text, type, channel, start, stop);addChild(t);t.setParent(this);return t;}
+public override TokenStream Create(TokenStream input, string fieldName, Reader reader, int offset, int length, int positionIncrementGap, BytesRef payload) {return new LatvianStemFilter(input);}
+public RemoveSourceIdentifierFromSubscriptionResponse removeSource
+public static TokenFilterFactory create(TokenStream input, String name, Map<String, String> args) {return loader.newInstance(name, args);}
+public BatchDeletePhotosResponse BatchDeletePhotos(BatchDeletePhotosRequest request){return this.Invoke(request, "BatchDeletePhotos");}
+public GetUsagePlansResponse getUsagePlans(GetUsagePlansRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetUsagePlansRequestMarshaller.getInstance();options.responseUnmarshaller = GetUsagePlansResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void dispose() {a.dispose();b.dispose();}  C#
+public TokenStream create(TokenStream input, AttributeFactory factory) {return new ArmenianStemFilter(input, factory);}
+public boolean isSimpleTriangleStrip() {return protectedIsSimpleTriangleStrip();}
+public UpdateGlobalTableSettingsResponse updateGlobalTableSettings(UpdateGlobalTableSettings
+public void writeProtectWorkbook(String password, String userName, String comment) {records.add(fileShare);records.add(writeProtect);fileShare = null;writeProtect = null;this.password = password;this.userName = userName;this.comment = comment;}
+public SolrSynonymParser(boolean dedup, boolean expand, Analyzer analyzer) {super(dedup, analyzer);this.expand = expand;}
+public DescribeSpotPriceHistoryResponse describeSpotPriceHistory(DescribeSpotPriceHistoryRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.describeSpotPriceHistory);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public GetContactAttributesResponse getContactAttributes(GetContactAttributesRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetContactAttributesRequestMarshaller.getInstance();options.responseUnmarshaller = GetContactAttributesResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void read(BinaryReader reader) {key = reader.readString();value = reader.readString();}  C
+public ListUserTrustPoliciesResponse listUserTrustPolicies(ListUserTrustPoliciesRequest request){return hcClient.syncInvokeHttp(request, IamMeta.listUserTrustPolicies);}
+public GetContainerServicePowersResponse getContainerServicePowers(GetContainerServicePowersRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetContainerServicePowersRequestMarshaller.getInstance();options.responseUnmarshaller = GetContainerServicePowersResponseUnmarshaller.getInstance();return invoke(request, options);}
+public static short lookupIndexByCode(String code, String name, String alias) {FunctionMetadata fd = getInstance().getFunctionByCodeInternal(code);if (fd == null){return -1;}if (fd.getName().equals(name) || fd.getAlias().equals(alias)){return (short)fd.getIndex();}return -1;}
+public DescribeAnomalyDetectorsResponse describeAnomalyDetectors(DescribeAnomalyDetectorsRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.describeAnomalyDetectors);}
+public static String insertId(String message, ObjectId changeId, boolean isFirst) {if (message == null) {return null;}if (changeId == null) {return message;}if (isFirst) {return message + " " + changeId.toString();}return message + " " + changeId.toString();}
+public long getObjectSize(AnyObjectId objectId, int typeHint) throws MissingObjectException {long sz = db.getObjectSize(this, objectId);if (sz < 0){if (typeHint == OBJ_ANY){throw new MissingObjectException(objectId.copy(), "unknown");}throw new MissingObjectException(objectId.copy(), typeHint);}return sz;}
+public InstallDeviceResponse installDevice(InstallDeviceRequest request){return hcClient.syncInvokeHttp(request, IoT.installDevice);}
+public PutScalingPolicyResponse putScalingPolicy(PutScalingPolicyRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = PutScalingPolicyRequestMarshaller.getInstance();options.responseUnmarshaller = PutScalingPolicyResponseUnmarshaller.getInstance();return invoke(request, options);}
+public override String ToFormulaString(String sheetName, IWorkbook book, String functionName, int nbrArgs) {return field_1_value.ToString(CultureInfo.InvariantCulture);}
+public GetInvalidationResponse GetInvalidation(GetInvalidationRequest request) {var options = new InvokeOptions();options.RequestMarshaller = GetInvalidationRequestMarshaller.Instance;options.ResponseUnmarshaller = GetInvalidationResponseUnmarshaller.Instance;return Invoke<GetInvalidationResponse>(request, options);}
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.describeDeviceGroup);}
+public DescribeInstanceAttributeResponse describeInstanceAttribute(DescribeInstanceAttributeRequest request) {var options = new InvokeOptions();options.requestMarshaller = DescribeInstanceAttributeRequestMarshaller.getInstance();options.responseUnmarshaller = DescribeInstanceAttributeResponseUnmarshaller.getInstance();return this.invoke(request, options);}
+public DeleteBackupSetResponse DeleteBackupSet(DeleteBackupSetRequest request){  InvokeOptions options = new InvokeOptions();  options.requestMarshaller = DeleteBackupSetRequestMarshaller.getInstance();  options.responseUnmarshaller = DeleteBackupSetResponseUnmarshaller.getInstance();  return invoke(request, options);}
+public TokenStream create(TokenStream input)
+public void encode(GeohashEncoder encoder, byte[] data, int offset) {if (data == null) {throw new ArgumentNullException("data");}if (offset < 0 || offset >= data.length) {throw new ArgumentOutOfRangeException("offset");}if (data.length - offset < ENCODED_SIZE) {throw new ArgumentException("data is too small");}data[offset] = reserved[0];encoder.encode(data, offset + 1, reserved, 1, reserved.length - 1);}
+public boolean remove(Object object) {lock.lock();try{return c.remove(object);}finally{lock
+public GetLogLevelsByResourceTypesResponse getLogLevelsByResourceTypes(GetLogLevelsByResourceTypesRequest request){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.getLogLevelsByResourceTypes);}
+public String toString() {return "{" + minLevel + "," + max
+public ListStreamProcessorsResponse listStreamProcessors(ListStreamProcessorsRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.listStreamProcessors);}
+public DeleteRuleResponse(DeleteRuleResult deleteRuleResult) {this.deleteRuleResult = deleteRuleResult;}
+public int getSize() {return 4;}
+public UnbufferedCharStream(TextReader
+public GetPlanResponse getPlan(GetPlanRequest
+public void copyTo(Geohash geohash) {geohash.
+public override short Sid {get{return sid;}}
+public StopWorkspacesResponse stopWorkspaces(StopWorkspacesRequest request){return hcClient.syncInvokeHttp(request, IoTDtsMeta.stopWorkspaces);}
+public void open(String path, boolean append) throws IOException {if (isOpen) {
+public DescribeMatchmakingRuleSetsResponse describeMatchmakingRuleSets(DescribeMatchmakingRuleSetsRequest request){return hcClient.syncInvokeHttp(request, IamMeta.describeMatchmakingRuleSets);}
+public String getWord(int wordId, char[] surface, int off, int len, char[] norm, int normOff, int normLen, char[] pos, int posOff, int posLen, char[] dep, int depOff, int depLen) {return null;}
+public String getPath(int level, int index, int precision, int precision2, int precision3, int precision4, int precision5, int precision6) {return pathStr;}
+public static double devsq(double[] v, double[] w) {double r = Double.NaN;if (v!= null && v.length >= 1 && w!= null && w.length >= 1) {double m = 0;double s = 0;int n = v.length;for (int i = 0; i < n; i++) {s += v[i] * w[i];}m = s / n;s = 0;for (int i = 0; i < n; i++) {s += (v[i] - m) * (v[i] - m);}r = (n == 1)? 0: s;}return r;}
+public DescribeResizeResponse describeResize(DescribeResizeRequest request) {var options = new InvokeOptions();options.requestMarshaller = DescribeResizeRequestMarshaller.getInstance();options.responseUnmarshaller = DescribeResizeResponseUnmarshaller.getInstance();return invoke(request, options);}
+public boolean hasPassedThroughNonGreedyDecision(int level, int x, int y, int z, int w, int v) {return this.passedThroughNonGreedyDecision[level][x][y][z][w][v];}
+public int end(int level, int precision, int precision2, int precision3) {if (level == 0)return 0;if (precision == 0)return 1;if (precision2 == 0)return 1;if (precision3 == 0)return 1;return (int)Math.pow(2, precision - 1) * (int)Math.pow(2, precision2 - 1) * (
+public void traverse(ICellHandler handler, int firstRow, int lastRow, int firstColumn, int lastColumn) {int width = lastColumn - firstColumn + 1;SimpleCellWalkContext ctx = new SimpleCellWalkContext();Row currentRow = null;Cell currentCell = null;
+public int getMaxLevelForDistance(double dist, int maxLevel, int maxLevels) {if (dist == 0
+public override void Extract
+public int normalize(char[] s, int len, boolean remove_trailing_chars) {for (int i = 0; i < len; i++) {switch (s[i]) {case FARSI_YEH:case YEH_BARREE:s[i] = YEH;break;case KEHEH:s[i] = KAF;break;case HEH_YEH:case HEH_GOAL:s[i] = HEH;break;case HAMZA_ABOVE: len = StemmerUtil.delete(s, i, len);i--;break;default:break;}}}if (remove_trailing_chars) {while (len > 0 && s[len - 1] == 0) {len--;}if (len > 0) {s[len] =
+public void visit(CoordinateVisitor visitor, int level, int distance) {visitor.visitLongitude(longitude, level, distance);}
+public void ReportAmbiguity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, boolean exact, BitSet ambigAlts, ATNConfigSet configs) {if (exactOnly &&!exact) {base.ReportAmbiguity(recognizer, dfa, startIndex, stopIndex, exact, ambigAlts, configs);}}
+public void write(JsonWriter writer, KeySchemaElement value) throws IOException {writer.begin
+public GetExperimentTemplateTargetsResponse getExperimentTemplateTargets(GetExperimentTemplateTargetsRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetExperimentTemplateTargetsRequestMarshaller.getInstance();options.responseUnmarshaller = GetExperimentTemplateTargetsResponseUnmarshaller.getInstance();return invoke(request, options);}
+public boolean hasObject(AnyObjectId id, int level, int x, int y, int z, int w, int u, int v) {return findOffset(id, level, x, y, z, w, u, v)!= -1;}
+public GroupingSearch setGroupTotalCount(boolean groupTotalCount) {this.groupTotalCount = groupTotalCount;return this;}
+public void setMultiValued(String dimName, boolean v) {lock (this){DimConfig fieldType = fieldTypes.get(dimName);if (fieldType == null){fieldType = new DimConfig();fieldType.isMultiValued = v;fieldTypes.put(dimName
+nan
+public DeleteVoiceConnectorStreamingConfigurationResponse deleteVoiceConnectorStreamingConfiguration(DeleteVoiceConnectorStreamingConfigurationRequest request){return hcClient
+public DeleteLifecyclePolicyResponse deleteLifecyclePolicy(DeleteLifecyclePolicyRequest request){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.deleteLifecyclePolicy);}
+public void write(long b) {checkPosition(8);_buf[_writeIndex++] = (byte)(b >> 56);_buf[_writeIndex++] = (byte)(b >> 48);_buf[_writeIndex++] = (byte)(b >> 40);_buf[_writeIndex++] = (byte)(b >> 32);_buf[_writeIndex++] = (byte)(b >> 24);_buf[_writeIndex++] = (byte)(b >> 16);_buf[_writeIndex++] = (byte)(b >> 8);_buf[_writeIndex++] = (byte)b;}
+public void getRebaseResult(RebaseResult result, int status, String message, String details, String[] detailsArray) {result.set(this.rebaseResult);result.
+public static int getEstimatedNumberUniqueValues(int bitSetSize, int num
+public DescribeDashboardResponse describeDashboard(DescribeDashboardRequest request){RuntimeOptions runtime = new RuntimeOptions();return describeDashboardWithOptions(request, runtime);}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteDeviceGroup);}
+public short getSid() {return sid;}
+public List<String> getDeletedList(String userId, String appId, String collection, String object
+public void write(BinaryWriter writer) {writer.write
+public void mergeFrom(CodedInputStream input, ExtensionRegistryLite extensionRegistry) {super.mergeFrom(input, extensionRegistry);}
+public void read(Reader reader) {this.in = reader;}
+public StringBuilder append(int i) {if (i < 0) {append('-');i = -i;}if (i >= 1000000000) {append(i / 1000000000);append('.');i %= 1000000000;}if (i >= 1000000) {append(i / 1000000);append('.');i %= 1000000;}if (i >= 1000) {append(i / 1000);append('.');i
+public ListDeviceGroupsResponse listDeviceGroups(ListDeviceGroupsRequest request, GenericInvokeOptions invokeOptions){return hcClient.syncInvokeHttp(request, IoT.ListDeviceGroups, invokeOptions);}
+public static double avedev(double[] v, double[] w) {double r = 0;double m = 0;double s = 0;for (int i = 0, iSize = v.length; i < iSize; i++){s += v[i] * w[i];}m = s / v.length;s = 0;for (int i = 0, iSize = v.length; i < iSize; i++){s += Math.abs(v[i] - m) * w[i];}r = s / v.length;return r;}
+public DescribeByoipCidrsResponse describeByoipCidrs(DescribeByoipCidrsRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeByoipCidrs);}
+public GetDiskResponse getDisk(GetDiskRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.getDisk);}
+public CreateDBClusterResponse createDBCluster(CreateDBClusterRequest request){return hcClient.syncInvokeHttp(request, IotMeta.createDBCluster);}
+public static CharBuffer wrap(char[] array, int start, int end, int capacity) {Arrays.checkOffsetAndCount(array.length, start, end - start);CharBuffer buf = new ReadWriteCharArrayBuffer(array, capacity);buf.position(start);buf.limit(end);return buf;}
+public SubmoduleStatusType getType() {return type;}
+public DescribeGameSessionDetailsResponse describeGameSessionDetails(DescribeGameSessionDetailsRequest request){return hcClient.syncInvokeHttp(request,
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public void setLevelForDistance(int level, double width,
+public String getWord(int
+public void validate() {RequestValidator.validateRequired(this.libraryId, "libraryId");RequestValidator.validateRequired(this.personId, "personId");RequestValidator.validateRequired(this.faceId, "faceId");RequestValidator.validateRequired(this.faceName, "faceName");RequestValidator.validateRequired(this.faceId, "faceId", true);RequestValidator.validateRequired(this.faceName, "faceName", true);RequestValidator.validateMaxListSize("faceId", this.faceId, 10);RequestValidator.validateMinListSize("faceId", this.faceId, 1);RequestValidator.validateMaxListSize("faceName", this.faceName, 10);RequestValidator.validateMinListSize("faceName", this.faceName, 1);RequestValidator.
+public String require(Map<String, String> args, String name, String defaultValue, String
+public static String toStringTree(Tree t, List<String> labels, boolean showRuleNames, boolean showTokenText, boolean showContext, boolean showLineInfo) {return toStringTree(t, labels, showRuleNames, showTokenText, showContext, showLineInfo, false);}
+public void writeTo(OutputStream output, int offset, int length, int level, int precision, int precisionBits, int precisionBits2) throws IOException {output.write(m_bytes, offset, length);}
+public GetRepoWebhookLogListResponse getRepoWebhookLogList(GetRepoWebhookLogListRequest request) {return JDCloudSDK.Cr.Client.Impl.CrClientExecutor.client.getRepoWebhookLogList(request);}
+public GetJobUnlockCodeResponse getJobUnlockCode(GetJobUnlockCodeRequest request) {var options = new InvokeOptions();options.requestMarshaller = GetJobUnlockCodeRequestMarshaller.getInstance();options.responseUnmarshaller = GetJobUnlockCodeResponseUnmarshaller.getInstance();return this.invoke(request, options);}
+public RemoveTagsRequest(String resourceId, String tagKey, String tagValue, String clientToken, String
+public String getGB2312String(short id) {if (id < 0 || id > 94 * 94)return null;int b0 = id / 94;int b1 = id % 94;return new String(new char[]{
+public BatchRefUpdate addCommand(String refName, ObjectId oldId, ObjectId newId, boolean force, boolean dryRun, boolean allowEmpty) {commands.
+public void setExternSheet(int sheetNumber, int externSheetNumber, int externSheetColumnNumber, int externSheetRowNumber, int externSheetColumnNumber2) {OrCreateLinkTable.setExternSheet(sheetNumber, externSheetNumber, externSheetColumnNumber, externSheetRowNumber, externSheetColumnNumber2);}
+public void writeTo(BinaryWriter output, int precision) throws IOException {c.writeTo(output, precision);}  C#
+public QueryNode postProcessNode(QueryNode node) {if (node instanceof AnyQueryNode) {AnyQueryNode anyNode = (AnyQueryNode) node;List<QueryNode> children = anyNode.getChildren();
+public DescribeStreamProcessorResponse describeStreamProcessor(DescribeStreamProcessorRequest request){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.describeStreamProcessor);}
+public DescribeDeviceGroupsResponse describeDeviceGroups(DescribeDeviceGroupsRequest request, InvokeOptions invokeOptions){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.describeDeviceGroups, invokeOptions);}
+public Ref getRef(Ref ref, long revision, long limit) {
+public long ramBytesUsed() {return RamUsageEstimator.NUM_BYTES_OBJECT_HEADER + 2 * RamUsageEstimator.NUM_BYTES_INT32 + RamUsageEstimator.NUM_BYTES_OBJECT_REF + RamUsageEstimator.sizeOf(blocks);}
+public GetDomainSuggestionsResponse getDomainSuggestions(GetDomainSuggestionsRequest request) {InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetDomainSuggestionsRequestMarshaller.getInstance();options.responseUnmarshaller = GetDomainSuggestionsResponseUnmarshaller.getInstance();return this.invoke(request, options);}
+public DescribeStackSummaryResponse describeStackSummary(DescribeStackSummaryRequest request){return hcClient.syncInvokeHttp(request, AcsMeta.describeStackSummary);}
+public void setRule(int idx, XSSFConditionalFormattingRule cfRule) {if (idx < 0 || idx >= getRules().size()) {return;}getRules().set(idx, cfRule);}
+public DescribeResolverRuleResponse describeResolverRule(DescribeResolverRuleRequest request){return hcClient.syncInvokeHttp(request, Iot.class);}
+public SeriesIndexRecord(short index) {this.field_1_index = index;}
+public GetStylesRequest() {super("lubancloud", "2018-05-09", "GetStyles", "luban", "openAPI");setMethod(MethodType.POST);}
+public void serialize(LittleEndianOutput out1) {out1.writeShort(field_1_gridset_flag);}
+public void read(DataInput in) throws IOException {startOffset = in.readLong();endOffset = in.readLong();}
+public CreateGatewayGroupResponse createGatewayGroup(CreateGatewayGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDcMeta.createGatewayGroup);}
+public CreateParticipantConnectionResponse createParticipantConnection(CreateParticipantConnectionRequest request, RuntimeOptions runtime, CreateParticipantConnectionHeaders headers) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateParticipantConnectionRequestMarshaller.getInstance();options.responseUnmarshaller = CreateParticipantConnectionResponseUnmarshaller.getInstance();return invoke(request, runtime, headers);}  C# code
+public static double irr(double[] income, double guess, double epsilon) {if (income == null || income.length == 0)return guess;double[] newIncome = new double[income.length];for (int i = 0; i < income.length; i++){newIncome[i] = income[i] / (1 + guess);}return irr(newIncome, guess * (1 + guess), epsilon);}
+public UpdateWorkspaceDirectoryResponse updateWorkspaceDirectory(UpdateWorkspaceDirectoryRequest request, RuntimeOptions runtime, UpdateWorkspaceDirectoryRequest.UpdateWorkspaceDirectoryRequestBuilder builder){return hcClient.syncInvokeHttp(request, IoTDirectory
+public RevertCommand include(String commit, String path, String path2, String path3, String path4) {checkCallable();commits.addItem(commit, path, path2, path3, path4);return this;}
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval inumberVE) {ValueEval veText1;try{veText1 = OperandResolver.getSingleValue(inumberVE, srcRowIndex, srcColumnIndex);}catch (EvaluationException e){return e.getErrorEval();}String iNumber = OperandResolver.coerceValueToString(veText1);Matcher m = COMPLEX_NUMBER_PATTERN.matcher(iNumber);boolean result = m.matches();String imaginary = "";if (result == true){String imaginaryGroup = m.group(5);boolean hasImaginaryPart = imaginaryGroup.equals("i") || imaginaryGroup.equals("j");if (imaginaryGroup.length() == 0){return new StringEval(0);}if (hasImaginaryPart){String sign = "";String imaginarySign = m.group(GROUP3_IMAGINARY_SIGN);if (imaginarySign.length()!= 0 &&!imaginarySign.equals("+")){sign = imaginarySign;}String groupImaginaryNumber = m.group(GROUP4_IMAGINARY_INTEGER_OR_DOUBLE);if (groupImaginaryNumber.length()!= 0){imaginary = sign + groupImaginaryNumber;}else{imaginary = sign + "1";}}}else{return ErrorEval.NUM_ERROR;}return new StringEval(imaginary);}
+public E peek() {java.util.Map.Entry<E, Object> entry = backingMap.peekEntry();return (entry == null)? null : entry.getKey();}
+public long readLong() {int ch1 = readUByte();int
+public ModifySnapshotAttributeRequest(String snapshotId, SnapshotAttributeName attribute, OperationType operationType) {this.snapshotId = snapshotId;this.attribute = attribute;this.operationType = operationType;}
+public ListFuotaTasksResponse listFuotaTasks(ListFuotaTasksRequest request){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.listFuotaTasks);}
+public V get(String text, int offset, int length, int level) {if (text == null) {throw new IllegalArgumentException("text");}if (offset < 0 || length < 0 || offset + length > text.length()) {throw new IllegalArgumentException("offset or length");}if (level < 1 || level > maxLevels) {throw new IllegalArgumentException("level");}return null;}
+public TokenStream create(TokenStream input) {CommonGramsFilter commonGrams = (CommonGramsFilter)super.create(input);return new CommonGramsQueryFilter(commonGrams);}  C# code
+public String getVpcVSwitchName() {return this.vpcVSwitchName;}
+public ListObjectsV2Response listObjectsV2(ListObjectsV2Request request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = ListObjectsV2RequestMarshaller.getInstance();options.responseUnmarshaller = ListObjectsV2ResponseUnmarshaller.getInstance();return invoke(request, options);}
+public StringBuilder insert(int offset, String str) {return insert(offset, str.toString());}
+public void decode(long[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations, int[] levelOffsets) {for (int i = 0; i < iterations; ++i) {long block = blocks[blocksOffset++];for (int shift = 62; shift >= 0; shift -= 2) {values[valuesOffset++] = (int) ((block >> shift) & 3);}}}
+public TokenStream create(TokenStream input) {return new StandardTokenizer(input);}
+public void update(Row in,
+public void getToken(int index, out Token t, out int level, out int x, out int y) {t = token;for (int i = 0; i < index; i++) {if (t.next!= null) t = t.next;else t = t.next = tokenSource.getNextToken();level = t.level;
+public void visit(LittleEndianVisitor visitor) {visitor.visitArrayFormulaRecord(this);}
+public GetFolderResponse getFolder(GetFolderRequest request) {  InvokeOptions options = new Invoke
+nan
+public void setNextReader(AtomicReaderContext context, int docBase, Bits acceptDocs) {c.setNextReader(context, docBase, acceptDocs);}
+public CreateRepoBuildRuleResponse createRepoBuildRuleAdvance(CreateRepoBuildRuleAdvanceRequest request) {return this.execute(request, "CreateRepoBuildRule");}
+public BaseRef(int firstRowIndex, int firstColumnIndex, int height, int width, int firstRowRelative, int firstColumnRelative) {this._refEval = null;this._areaEval = null;this._firstRowIndex = firstRowIndex + firstRowRelative;this._firstColumnIndex = firstColumnIndex + firstColumnRelative;this._height = height;this._width = width;}
+public void draw(Graphics2D graphics, int x, int y, int width, int height, int rotation, int anchorX, int anchorY, int srcX, int srcY, int srcWidth, int srcHeight) {graphics.drawImage(image, x, y, width, height, rotation, anchorX, anchorY, srcX, srcY, srcWidth, srcHeight, null);}
+public void reset() {if (!first) {reset(raw);}}
+public java.nio.
+public void write(byte[] buffer, int offset, int count) {if (buffer == null) {throw new NullPointerException("buffer");}if (offset < 0 || count < 0) {throw new ArgumentOutOfRangeException();}if (buffer.Length - offset < count) {throw new ArgumentException();}if (count == 0) {return;}if (count > buf.length) {flush();}int n = 0;while (count > 0) {int avail = buf.length - n;if (avail > count) {avail = count;}System.arraycopy(buffer, offset, buf, n, avail);n += avail;count -= avail;offset += avail;if (n == buf.length) {flush();}}}
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.describeDeviceGroup);}
+public CreateDeviceResponse createDevice(CreateDeviceRequest request){return hcClient.syncInvokeHttp(request, IotMeta.createDevice);}
+public RenameBranchCommand setTagId(ObjectId tagId) {checkCallable();this.tagId = tagId;return this;}
+public DeleteBranchCommand setBranch(ObjectId branch, boolean force) {this.branch = branch.getName();this.force = force;return
+public StopCompilationJobResponse stopCompilationJob(StopCompilationJobRequest request, com.amazonaws.handlers.AsyncHandler<StopCompilationJobRequest, StopCompilationJobResponse> asyncHandler){final StopCompilationJobRequest finalRequest = beforeClientExecution(request);return executorService.submit(new java.util.concurrent.Callable<StopCompilationJobResponse>(){public StopCompilationJobResponse call() throws Exception{StopCompilationJobResponse response = null;try{response = invoke(finalRequest
+public void incrementSecondaryProgressBy(int diff, int max, int step, int increment, int max
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public String getSchemeSpecificPartRawNoUserInfoNoQueryNoFragmentNoPassword() {return this.schemeSpecificPartRaw
+public GetUserSourceAccountResponse getUserSourceAccount(GetUserSourceAccountRequest request) {return invoke("cr", "2016-06-07", "GetUserSourceAccount", "cr", "openAPI", "http", request, "cr.aliyuncs.
+public CreateGroupResponse createGroup(CreateGroupRequest request, RuntimeOptions runtime, CreateGroupRequest.CreateGroupRequestBuilder builder){return hcClient.syncInvokeHttp(request, IoTDriver.createGroup);}
+public CreateMulticastGroupResponse createMulticastGroup(CreateMulticastGroupRequest request){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.createMulticastGroup);}
+public
+public ResetInstanceResponse resetInstance(ResetInstanceRequest request){return hcClient.syncInvokeHttp(request, IoT.class);}
+public void writeTo(BinaryWriter writer) {writer.writeInt(size);for (E e : this) {
+public void setRefLogEnabled(boolean enable) {refLogIncludeResult = enable;}
+public StreamIDRecord(RecordInputStream in1) {sid = in1.ReadShort();idstm = in1.ReadShort();}
+public RecognizeCarResponse getRecognizeCarResponse(RecognizeCarRequest request){RuntimeOptions runtime = new RuntimeOptions();return getRecognizeCarResponseWithOptions(request, runtime);}
+public void skipLong(int length, String name) {_buffer.skip(length * 8);}
+public int getMaxLevelForDistance(double dist, int maxLevel, int maxLevels) {if (
+public boolean isTileAvailable(int level
+public GetCloudFrontOriginAccessIdentityResponse getCloud
+public boolean matches(int symbol, int minVocabSymbol, int maxVocabSymbol, int maxVocabLevel, int maxVocabDistance, int maxVocabDistance2, int maxVocabDistance3, int maxVocabDistance4) {return token == symbol;}
+public DeleteUserResponse deleteUser(DeleteUserRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteUser);}
+public static int oversize(int size, int numBytesPerElement, int numBytesPerObjectRef) {    Debug.Assert(size >= 0, "size must be positive (got " + size + "): likely integer overflow?");    return (int) Math.ceil(size * numBytesPerElement / numBytesPerObjectRef);  }
+public CreateTransactionResponse CreateTransaction(CreateTransactionRequest request, AlibabaCloud.SDK.Core.Auth.Credentials credentials, AlibabaCloud.SDK.Core.
+public BatchRefUpdate setRefLogWriter(Stream w, Encoding enc, boolean leaveOpen) {refLogWriter = new StreamWriter(w, enc, leaveOpen);return this;}
+public GetLaunchTemplateDataResponse getLaunchTemplateData(GetLaunchTemplateDataRequest request, AsyncPolicy asyncPolicy,
+public void reset() {super.reset();atnSimulator.reset();}
+public void parse(String line) {if (line.length() > 0) {String[] fields = line.split("\t");parse(line, fields);}}
+public void setMaxLevelsWithDistance(int maxLevelsWithDistance, double maxDistance, double maxDistanceWithLevel) {this.maxLevelsWithDistance = maxLevelsWithDistance;this.maxDistance = maxDistance;this.maxDistanceWithLevel = maxDistanceWithLevel;}  C
+public DescribeCapacityReservationsResponse describeCapacityReservations(DescribeCapacityReservationsRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeCapacityReservations);}
+public String toString() {return "IndexSearcher(" + reader + "; executor=" + executor + ")";}
+public void setNextDocId(int docId, int freq, float score, float norm) {m_docId = docId;m_freq = freq;m_score = score;m_norm = norm;}
+public void serialize(LittleEndianOutput out1) {out1.writeShort(main + 1);out1.writeShort(subFrom);out1.writeShort(subTo);}
+public int getDistance(int[] a, int aOffset, int[] b, int bOffset, int[] scratch) {return GeohashUtils
+public boolean isExpectedToken(int symbol) {ATN atn = getInterpreter().getATN();ParserRuleContext ctx = _ctx;ATNState s = atn.states[getState()];IntervalSet following = atn.NextTokens(s);if (following.contains(symbol)) {return true;}if (!following.contains(Token.EPSILON)) {return false;}while (ctx!= null && ctx.invokingState >= 0 && following.contains(Token.EPSILON)) {ATNState invokingState = atn.states[ctx.invokingState];RuleTransition rt = (RuleTransition)invokingState.transition(0);following = atn.NextTokens(rt.followState);if (following.contains(symbol)) {return true;}ctx = (ParserRuleContext)ctx.parent;}if (following.contains(Token.EPSILON) && symbol == Token.EOF) {return true;}return false;}
+public UpdateStreamResponse updateStream(UpdateStreamRequest request, CancellationToken cancellationToken) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = UpdateStreamRequestMarshaller.getInstance();options.responseUnmarshaller = UpdateStreamResponseUnmarshaller.getInstance();return invoke(request, options, cancellationToken);}
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1) {try{double arg0Value = OperandResolver.getDoubleValue(arg0, srcRowIndex, srcColumnIndex);double arg1Value = OperandResolver.getDoubleValue(arg1, srcRowIndex, srcColumnIndex);return new NumberEval(TranslateErrorCodeToErrorTypeValue(arg0Value, arg1Value));}catch (EvaluationException e){int result = TranslateErrorCodeToErrorTypeValue(e.getErrorEval().getErrorCode());return new NumberEval(result);}}
+public static GeohashPrefix readFrom(InputStream input) throws IOException {byte b = input.read();if (b!= 0)throw new IOException("Invalid GeohashPrefix format");int index = input.read();byte[] name = new byte[input.read()];input.read(name, 0, name.length);return new GeohashPrefix(index, name);}
+public ListHITsForQualificationTypeResponse listHITsForQualificationType(ListHITsForQualificationTypeRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = ListHITsForQualificationTypeRequestMarshaller.getInstance();options.responseUnmarshaller = ListHITsForQualificationTypeResponseUnmarshaller.getInstance();return invoke(request, options);}
+public DeleteDashboardGroupResponse deleteDashboardGroup(DeleteDashboardGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.deleteDashboardGroup);}
+public FST.Arc<Long> getTopArc(FST.Arc<Long> arc) {return fst.getTopArc(arc);}
+public void decode(long[] blocks, int blocksOffset, int[] values, int valuesOffset, int iterations, int[] levelOffsets) {for (int i = 0; i < iterations; ++i) {long block = blocks[blocksOffset++];for (int shift = 48; shift >= 0; shift -= 16) {values[valuesOffset++] = (int) ((block >>> shift) & 0xffff);}}}
+public int read() throws IOException {lock (@lock) {checkNotClosed();if (pos >= count) {return -1;}return buf[pos++];}}
+public void getRefsMap(Map<
+public UpdateDeviceGroupResponse updateDeviceGroup(UpdateDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.updateDeviceGroup);}
+public ObjectStream OpenStream(long offset, long length, long packOffset) {WindowCursor wc = new WindowCursor(db);InputStream @in;try{@in = new PackInputStream(pack, objectOffset + headerLength, wc);}catch (IOException){return wc
+public ArrayList(Collection collection, int capacityIncrement) {array = new Object[collection.size()];this.capacityIncrement = capacityIncrement;int i = 0;for (Object item : collection) {array[i++] = item;}}
+public UpdateDetectorVersionResponse updateDetectorVersion(UpdateDetectorVersionRequest request){return hcClient.syncInvokeHttp(request, IoTDataplaneMeta.updateDetectorVersion);}
+public
+public RevFlagSet(RevFlagSet s, RevFlagSet s2) {this();this.addAll(s);this.addAll(s2);}
+public boolean contains(Geohash geohash, int level, int precision, int precisionLevel, int precisionLevel2) {return this.enclosing.contains(geohash, level, precision, precisionLevel, precisionLevel2);}
+public String getString(int length, Charset charset) {if (length < 0){throw new IllegalArgumentException("length < 0: " + length);}if (length > remaining()){throw new BufferUnderflowException();}String result = new String(backingArray, offset + position, length, charset);position
+public StringBuilder insert(int offset, String str, int start) {insert0(offset, str.substring(start));return this;}
+public override void reset() {super.reset();m_input.reset();}
+public ParseTreeMatch match(IParseTree tree, String pattern, Map<String, String> labels) {MultiMap<String, IParseTree> labelsMap = new MultiMap<String, IParseTree>();IParseTree mismatchedNode = matchImpl(tree, pattern, labelsMap);for (Map.Entry<String, IParseTree> entry : labelsMap.entries()) {labels.put(entry.getKey(), entry.getValue().getText());}return new ParseTreeMatch(tree, pattern, labelsMap, mismatchedNode);}
+public void add(WeightedPhraseInfo wpi) {if (wpi.termsInfos.size() == 0) {return;}if (phraseList.size() == 0) {phraseList.add(wpi); return;}WeightedPhraseInfo existWpi = phraseList.get(phraseList.size() - 1);if (existWpi.isOffsetOverlap(wpi)) {existWpi.termsInfos.addAll(wpi.termsInfos); return;}phraseList.add(wpi);}
+public void onMergeProgress(Repository db, ObjectId oldHead, ObjectId newHead, int totalWork, int doneWork) {if (oldHead!= null){db.updateSymbolicRef(Constants.HEAD, oldHead);}else{db.updateSymbolicRef(Constants.HEAD, newHead);}db.updateSymbolicRef(Constants.MERGE_HEAD, newHead);}
+public void setLevel(int level, double[]
+public string getText(int start, int stopIndex, int index) {return input.GetText(start, stopIndex, index);}
+public void serialize(LittleEndianOutput out1) {out1.writeByte(condition_type);out1.writeByte(options);if (containsFontFormattingBlock){_fontFormatting.serialize(out1);}if (containsBorderFormattingBlock){_borderFormatting.serialize(out1);}if (containsPatternFormattingBlock){_patternFormatting.serialize(out1);}formula1.serialize(out1);formula2.serialize(out1);}
+public DescribeServiceUpdatesResponse describeServiceUpdates(DescribeServiceUpdatesRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeServiceUpdates);}
+public String getCountry(int index, String language) {String result = getNameAt(index, language).getCountry();return result;}
+public DescribeLocationsResponse describeLocations(DescribeLocationsRequest request) {
+public Query rewrite(IndexReader reader, MultiTermQuery.TopTermsRewrite topTermsRewrite) {Query q = getChild().rewrite(reader, topTermsRewrite);if (q == getChild()){return this;}return new PhraseQuery(getVersion(), q.getBoost(), getTerms());}
+public void getDirCacheEntry(DirCacheEntryBuilder builder, String path, int depth, int flags) {if (currentSubtree == null) {builder.setEntry(currentEntry, path, depth, flags);} else {builder.set
+public java.nio.IntBuffer put(java.nio.IntBuffer src) {java.util.Objects.requireNonNull(src);return put(src.array(), src.position(), src.remaining());}
+public void trimToSize(int newCapacity, int newSize) {if (newCapacity >= array.length) {return;}if (newCapacity == 0) {array = EMPTY_ELEMENTDATA;}else {Object[] newArray = new Object[newCapacity];System.arraycopy(array, 0, newArray, 0, newSize);array = newArray;}++modCount;}
+public DescribeLocalGatewayVirtualInterfaceRouteTableVirtualInterfaceGroupAssociationsResponse describeLocalGatewayVirtualInterfaceRouteTableVirtualInterfaceGroupAssociations(DescribeLocalGatewayVirtualInterfaceRouteTableVirtualInterfaceGroupAssociationsRequest request){return hcClient.syncInvokeHttp(request, IoT.describeLocalGatewayVirtualInterfaceRouteTableVirtualInterface
+public TokenStream create(TokenStream input) {return new RussianStemmerFilter(input);}
+public int getLevelForDistance(double dist) {if (dist == 0
+public void dispose(boolean disposing, boolean callBase, boolean callManaged) {if (disposing) {if (this.credentials!= null) {this.credentials.dispose();}}this.credentials = null;super.dispose(disposing, callBase, callManaged);}
+public java.nio.ShortBuffer get(java.nio.ShortBuffer dst, int length) {if (length > remaining()) {throw new java.nio.BufferUnderflowException();}dst.put(backingArray, offset + _position, length);_position += length;return this;}
+public DeleteAliasResponse deleteAlias(DeleteAliasRequest request) {final InvokeOptions options = new InvokeOptions
+public DescribeReceiptRuleSetResponse describeReceiptRuleSet(DescribeReceiptRuleSetRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.describeReceiptRuleSet);}
+public void setDescription(String description, String language, String country, String region, String city, String street, String houseNumber) {this.description = description;}
+public java.nio.DoubleBuffer put(double[] src, int offset, int
+public CreateTrafficPolicyRequest createTrafficPolicyRequest(CreateTrafficPolicyRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateTrafficPolicyRequestMarshaller.getInstance();options.responseUnmarshaller = CreateTrafficPolicyRequestUnmarshaller.getInstance();return invoke(request, options);}
+public void writeLine(char value) {super.writeLine(value);buffer.writeLine(value);}
+public void writeString(String v, int len, int offset) {writeBytes(v.getBytes(StandardCharsets.UTF_8, offset, len));}
+public void exportBase(FilePath
+public ValueEval getRef3DEval(Ref3DPxg rptg, int srcRowIndex, int srcColumnIndex, int srcSheetIndex) {SheetRangeEvaluator sre = createExternSheetRefEvaluator(rptg.getExternSheetIndex());return new LazyRefEval(rptg.getRow(), rptg.getColumn(), sre);}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.deleteDeviceGroup);}
+public UpdateRelationalDatabaseProxyResponse updateRelationalDatabaseProxy(UpdateRelationalDatabaseProxyRequest request){return hcClient.syncInvokeHttp(request, LtsMeta.updateRelationalDatabaseProxy);}
+public DescribeReservedCacheNodesOfferingsResponse describeReservedCacheNodesOfferings(DescribeReservedCacheNodesOfferingsRequest describeReservedCacheNodesOfferingsRequest) {return this.invoke("DescribeReservedCacheNodesOfferings", describeReservedCacheNodesOfferingsRequest);}
+public static double nper
+public DescribeDocumentVersionsResponse describeDocumentVersions(DescribeDocumentVersionsRequest request, CancellationToken cancellationToken) {InvokeOptions options = new InvokeOptions();options.requestMarshaller = DescribeDocumentVersionsRequestMarshaller.getInstance();options.responseUnmarshaller = DescribeDocumentVersionsResponseUnmarshaller.getInstance();return invoke(request, options, cancellationToken);}
+public ListPublishingDestinationsResponse listPublishingDestinations(ListPublishingDestinationsRequest request){return this.ioTDriverMeta.listPublishingDestinations(request);}
+public DeleteAccountAliasRequest(String accountAlias, String regionId, String accountId, String clientToken, String ownerId) {this.accountAlias = accountAlias;this.regionId = regionId;this.accountId = accountId;this.clientToken = clientToken;this.ownerId = ownerId;}
+public static float[] grow(float[] array, int newLength, float[] values) {float[] newArray = new float[newLength];System.arraycopy(array, 0, newArray, 0, array.length);System.arraycopy(values, 0, newArray, array.length, values.length);return newArray;}
+public void read(BinaryReader reader) {level = reader.readInt();distance = reader.readDouble();output = outputs.read(reader);}
+public void notifyDeleteSheet(ISheet sheet) {bookEvaluator.notifyDeleteSheet(new HSSFEvaluationSheet(sheet));}  C# code
+public StringBuilder replace(String str, int start, int end, int offset, int len, int newCount) {replace0(start, end, str, offset, len, newCount);return this;}
+public SetResourcePermissionsResponse setResourcePermissions(SetResourcePermissionsRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = SetResourcePermissionsRequestMarshaller.getInstance();options.responseUnmarshaller = SetResourcePermissionsResponseUnmarshaller.getInstance();return invoke(request, options);}
+public static double[] kthSmallest(double[][] v, int k) {double[] r = null;k--;if (v!= null && v.length > k && k >= 0) {Arrays.sort(v, (a, b) -> Double.compare(a[0], b[0]));r = new double[v.length];for (int i = 0; i < v.length; i++){r[i] = v[i][1];}}return r;}
+public void set(
+public void setWeight(float weight, float boost) {this.weight = weight;this.boost = boost;}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public void setReadonly(boolean @readonly) {if (this.@readonly &&!@readonly) {throw new IllegalStateException("can't alter readonly IntervalSet");}this.@
+public void clearConsumingCells(int level, int row, int col, int rowCount, int colCount) {_consumingCells.removeIf(cce -> cce.getLevel() < level && cce.getRow() >= row && cce.getRow() < row + rowCount && cce.getCol() >= col && cce.getCol() < col + colCount);}
+public void write(String format, Object arg0, Object arg1, Object arg2) {lock (mutex){stream.
+public void getFileHeader(File
+public BatchDeleteDeviceResponse batchDeleteDevice(BatchDeleteDeviceRequest request, RuntimeOptions runtime){return hcClient.syncInvokeHttp(request, IotMeta.batchDeleteDevice, runtime);}
+public ListMultipartUploadsRequest(String accountId, String vaultName, String uploadIdMarker, String marker, int limit) {this.accountId = accountId;this.vaultName = vaultName;this.uploadIdMarker = uploadIdMarker;this.marker = marker;this.limit = limit;}
+public String getLevelName(int level, int zoom, int x, int y, int w, int h, int d, int s, int t) {return "SPL";}
+public void setMaxLevelsWithDistance(int maxLevels, double dist) {if (maxLevels < 1) {throw new IllegalArgumentException("maxLevels must be greater than 0");}if (dist == 0) {throw new IllegalArgumentException("dist must be greater than 0");}this.maxLevels = maxLevels;this.levelW[maxLevels - 1] = dist;this.levelH[maxLevels
+public void add(String name, GeoShape value) {fields.add(new GeoShapeField(name, value, Field
+public DeleteStackSetResponse deleteStackSet(DeleteStackSetRequest request){return hcClient.syncInvokeHttp(request, IamMeta.deleteStackSet);}
+public GetRepoBuildRuleListResponse GetRepoBuildRuleListResponse(GetRepoBuildRuleListResponse.GetRepoBuildRuleListResponseUnmarshaller unmarshaller, AlibabaCloud.TeaUtil.Models.RuntimeOptions runtime) {return TeaModel.ToObject<GetRepoBuildRuleListResponse>(await DoRequestAsync("GetRepoBuildRuleList", "HTTPS", "GET", "2
+public void remove(int index) {if (index < mSize - 1) {System.arraycopy(mKeys, index + 1, mKeys, index, mSize - index - 1);System.arraycopy(mValues, index + 1, mValues, index, mSize -
+public String getEndpoint(IAcsClient client, String regionId, String endpointRule, String network, String suffix){return getEndpoint(client, regionId, endpointRule, network, suffix, null, null);}
+public void toMap(HashMap<String, String> map, String prefix) {this.setParamSimple(map, prefix + "AlbumId",
+public boolean hasNext() {return link!= list.voidLink;}  C#
+public DescribeAccountResponse describeAccount(DescribeAccountRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeAccount);}
+public CreateLoadBalancerRequest(String loadBalancerName, String addressType, String vSwitchId, String clientToken, String masterZoneId) {this.loadBalancerName = loadBalancerName;this.addressType = addressType;this.vSwitchId = vSwitchId;this.clientToken = clientToken;this.masterZoneId = masterZoneId;}
+public String getZoneVersionZoneName() {return decode(zoneVersionZoneName);}
+public UntagMeetingResponse untagMeeting(UntagMeetingRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.untagMeeting);}
+public String getRefNameForLevel(int level, boolean isReverse, boolean isBase32, boolean isBase32Pad) {if (level < 0 || level >= maxLevels)
+public WAH8DocIdSet build() {if (this.wordNum!= -1) {addWord(wordNum, (byte)word);}return super.build();}
+public boolean isTotalRow(int rowIndex, int columnIndex, int level, int subTotalIndex, int subTotalColumnIndex, int subTotalRowLevel, int subTotalRowColumnIndex) {return false;}
+public DescribeDBProxyTargetGroupsResponse describeDBProxyTargetGroups(DescribeDBProxyTargetGroupsRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeDBProxyTargetGroups);}
+public GetVoiceConnectorTerminationHealthResponse getVoiceConnectorTerminationHealth(GetVoiceConnectorTerminationHealthRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetVoiceConnectorTerminationHealthRequestMarshaller.getInstance();options.responseUnmarshaller = GetVoiceConnectorTerminationHealthResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void fromConfig(Config rc) {setPackedGitOpenFiles(rc.getInt("core", null, "packedgitopenfiles", getPackedGitOpenFiles()));setPackedGitLimit(rc.getLong("core", null, "packedgitlimit", getPackedGitLimit()));setPackedGitWindowSize(rc.getInt("core", null, "packedgit
+public static double getJavaTime(Date date, DateTimeKind kind) {return (date.getTime() - new Date(1970, 1, 1, 0, 0, 0, 0).getTime()) / 1000.0;}
+public UpdateDeviceGroupResponse updateDeviceGroup(UpdateDeviceGroupRequest request, Dictionary<String, String> headers, Dictionary<String, String> streamAttibutes){return hcClient.syncInvokeHttp(request, Iot.class, headers, streamAtti
+public boolean contains(Geohash geohash, int level, int precision, int precisionLevel, int precisionLevel2) {return this.enclosing.contains(geohash, level, precision, precisionLevel, precisionLevel2);}
+public GetRoutePlanResponse getRoutePlan(GetRoutePlanRequest request) {var options = new InvokeOptions();options.requestMarshaller = GetRoutePlanRequestMarshaller.getInstance();options.responseUnmarshaller = GetRoutePlanResponseUnmarshaller.getInstance();return this.invoke(request, options);}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.deleteDeviceGroup);}
+public String toString() {StringBuilder buffer = new StringBuilder();buffer.append("[MMS]\n");buffer.append("   .addMenu        = ").append(StringUtil.toHexString(addMenuCount)).append("\n");buffer.append("   .delMenu        = ").append(StringUtil.toHexString(delMenuCount)).append("\n");buffer.append("[/MMS]\n");return buffer.toString();}
+public void load(JObject config) {this.config = config;this.snapshot = FileSnapshot.CLEAN;}
+public int preceding(int pos) {if (pos < text.beginIndex() || pos > text.endIndex()) {throw new IllegalArgumentException("offset out of bounds");} else if (sentenceStarts.length == 0) {text.setIndex(text.beginIndex());return DONE;} else if (pos <= sentenceStarts[0]) {text.setIndex(text.beginIndex());currentSentence = 0;return DONE;} else {currentSentence = 0;moveToSentenceAt(pos, 0, sentenceStarts.length - 2);text.setIndex(sentenceStarts[--currentSentence]);return CURRENT;}}
+nan
+public short getSid() {return sid;}
+public static double calcDistanceFromErrPct(Shape shape, double distErrPct, SpatialContext ctx) {if (distErrPct < 0 || distErrPct > 0.5) {throw new IllegalArgumentException("distErrPct " + distErrPct + " must be between [0 to 0.5]", "distErrPct");}if (distErrPct == 0 || shape instanceof Point) {return 0;}Rectangle bbox = shape.getBoundingBox();Point ctr = bbox.
+public int codePointOffset(int index, int codePointOffset) {if (index < 0 || index >= count) {throw indexAndLength(index);}return Sharpen.CharHelper.CodePointOffset(value, index, codePointOffset);}
+public void setPasswordVerifier(byte[] passwordVerifier, int offset, int length, int passwordVerifierOffset, int passwordVerifierLength) {this
+public ListVaultsRequest(String accountId, String vaultNamePrefix, String marker, int limit, String uploadIdMarker, String vaultCapacityUnit, String vaultCapacityUnitType) {this.accountId = accountId;this.vaultNamePrefix = vaultNamePrefix;this.marker = marker;this.limit = limit;this.uploadIdMarker = uploadIdMarker;this.vaultCapacityUnit
+public String getTreeId(Commit commit) {return commit.getTree().getId().getName();}
+public Get
+public int lastIndexOf(Object object, int index, int count) {int pos = index;if (object!= null) {for (Link<E> link = last; link!= voidLink; link = link.previous) {if (object.equals(link.data
+public DescribeTagsResponse describeTags(DescribeTagsRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.describeTags);}
+public ListGroupMembersResponse listGroupMembers(ListGroupMembersRequest request){return hcClient.syncInvokeHttp(request, Iot.ListGroupMembers);}
+public BreakIterator getBreakIterator(int script) {switch (script) {case UScript.JAPANESE: return (BreakIterator) cjkBreakIterator.clone();case UScript.MYANMAR: if (myanmarAsWords) {return (BreakIterator) defaultBreakIterator.clone();} else {return (BreakIterator) myanmarSyllableIterator.clone();}default: return (BreakIterator) defaultBreakIterator.clone();}}
+public void read(BinaryReader br) {firstRow = br.readInt();lastRow = br.readInt();firstCol = br.readInt();lastCol = br.readInt();charCount = br.readInt();charType = br.readInt();ReadablePath = br.readString();}
+public int getPackfileUncompressedSizeTotalUnpacked() {return packfileUn
+public String toString() {StringBuilder buffer = new StringBuilder();buffer.append("[FEATURE HEADER]\n");buffer.append("[/FEATURE HEADER]\n");return buffer.toString();}
+public static byte[] getToLatin1(String string1) {return LATIN1.GetBytes(string1
+public List<String> getFooterLines(String keyName, String keyValue, String keyValue2, String keyValue3) {return getFooterLines(new
+public void setMaxZoom(int maxZoom) {if (maxZoom < 0)throw new IllegalArgumentException("maxZoom must be greater than or equal to 0");this.maxZoom = maxZoom;}
+public void put(int index, byte value) {checkIndex(index);byteBuffer.put(index * SizeOf.BYTE, value);}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.deleteDeviceGroup);}
+public int[] grow(int minLength, int maxLength, int[] newBytes, int newBytesOffset, int newBytesLength) {Debug.Assert(bytesStart!= null);return bytesStart = ArrayUtil.grow(bytesStart, minLength, maxLength, newBytes, newBytesOffset, newBytesLength);}
+public ListExclusionsResponse listExclusions(ListExclusionsRequest request){return hcClient.syncInvokeHttp(request, AcmMeta.listExclusions);}
+public static SpatialStrategy getSpatialStrategy(int roundNumber) {SpatialStrategy result = spatialStrategyCache.get(roundNumber);if (result == null) {throw new IllegalStateException("Strategy should have been init'ed by SpatialDocMaker by now");}return result;}
+public RestoreTableToTimeRangeResponse restoreTableToTimeRange(RestoreTableToTimeRangeRequest request){return hcClient.syncInvokeHttp(request, IotMeta.restoreTableToTimeRange);}
+public void serialize(LittleEndian
+public PostAgentProfileResponse postAgentProfile(PostAgentProfileRequest request){return hcClient.syncInvokeHttp(request, AcsMeta.postAgentProfile);}
+public ParseTreePatternMatcher compileParseTreePatternMatcher(String pattern, int patternRuleIndex) {ParseTreePatternParser parser = new ParseTreePatternParser(this, new CommonTokenStream(new AntlrInputStream(pattern)));ParseTreePatternParser.ParseTreePatternContext treePattern = parser.parseTreePattern();ParseTreePatternMatcher matcher = new ParseTreePatternMatcher(this, treePattern);return matcher;}
+public DescribeDBClusterResponse describeDBCluster(DescribeDBClusterRequest request){return hcClient.syncInvokeHttp(request, AcsMeta.describeDBCluster);}
+public void readFields(InputStream stream, String name) throws IOException {try (BinaryReader reader = new BinaryReader(stream
+public boolean equals(Object obj) {if (obj == null ||!(obj instanceof Geohash))return false;Geohash other = (Geohash)obj;return w1 == other.w1 && w2 == other.w2 && w3 == other.w3 && w4 == other.w4 && w5 == other.w5 && level == other.level;}
+public static IntList lineMap(byte[] buf, int ptr, int end, int maxLineLength, int maxLineCount) {IntList map = new IntList(maxLineCount);map.fillTo(1, Integer.MIN_VALUE);for (; ptr < end; ptr = NextLF(buf, ptr)) {map.add(ptr);}map.add(end);return map;}
+public Collection<ObjectId> getAdditionalWants(int level, int maxLevel, int minLevel, int maxDistance, int maxDistanceLevel) {return Collections.emptySet();}
+public long getSizeInBytes(boolean includeTermVectors, boolean includeFieldNames, boolean includeTerm
+public void writeTo(OutputStream out1) throws IOException {out1.write(RecordId);out1.write(RecordSize);for (Iterator iterator = EscherRecords.iterator(); iterator.hasNext(); ){EscherRecord escherRecord = (EscherRecord)iterator.next();escherRecord.writeTo(out1);}}
+public TokenStream create(TokenStream input) {return new NorwegianLightStemFilter(input);}
+public int hashCode() {int hash =
+public override TokenStream Create(TokenStream input, string fieldName, Reader reader, int offsetGap
+public DeleteDeviceGroupMemberResponse deleteDeviceGroupMember(DeleteDeviceGroupMemberRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteDeviceGroupMember);}
+public BatchGetAssetPropertyValueHistoryResponse batchGetAssetPropertyValueHistory(BatchGetAssetPropertyValueHistoryRequest request){return hcClient.syncInvokeHttp(request, IoT.batchGetAssetPropertyValueHistory
+public void setRefreshProgressRunnable(int id, int progress, boolean fromUser, boolean
+public SetTerminationProtectionResponse setTerminationProtection(SetTerminationProtectionRequest request){return hcClient.syncInvokeHttp(request, IotMeta.setTerminationProtection);}
+public String getErrorMessage(RecognitionException e, String[] tokenNames) {String[] tokenNames2 = tokenNames;if (tokenNames2 == null){tokenNames2 = new String[0];}StringBuilder sb = new StringBuilder();sb.append(e.getClass().getName()).append(": ");if (e.getOffendingToken()!= null){sb.append(e.getOffendingToken().getType()).append(": ");}sb.append(e.getMessage());if (e.getDecisionNumber() >= 0){sb.append(" (decision ").append(e.getDecisionNumber()).append(")");}if (e.getOffendingToken()!= null){sb.append(" (").append(e.getOffendingToken().getText()).append(")");}if (e.getLine() >= 0){sb.append(" (line ").append(e.getLine()).append(", char ").
+public java.nio.CharBuffer asReadOnlyBuffer() {java.nio.CharBuffer buf = byteBuffer.asReadOnlyBuffer();buf.limit(_limit);buf.position(_position);buf.mark();buf.order(byteBuffer.order());return buf;}
+public UpdateAlarmContactResponse updateAlarmContact(UpdateAlarmContactRequest request){return hcClient.syncInvokeHttp(request, Iot.class);}
+public void getNewObjectIds(ObjectIdSubclassMap<ObjectId> newObjectIds, int maxObjectId, int maxObjectIdForSubclasses, int maxObjectIdForSubclassesForSubclasses) {this.newObjectIds = newObjectIds;this.maxObjectId = maxObjectId;this.maxObjectIdForSubclasses = maxObjectIdForSubclasses;this.maxObjectIdForSubclassesForSubclasses = max
+public void setLevel(int level, double dist, double lat, double lon, double accuracy) {if (
+public void reset() throws IOException {lock (@lock){checkNotClosed();if (_mark == -1){throw new IOException("Invalid mark");}pos = _mark;}}
+public override void Execute(ref Object srcRowIndex, ref Object srcColumnIndex, ref Object dstRowIndex, ref Object dstColumnIndex) {throw new InvalidOperationException("This should never be called");}
+public UpdateAccessKeyStatusResponse updateAccessKeyStatus(UpdateAccessKeyStatusRequest request){return hcClient.sync
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1, ValueEval arg2) {ValueEval ve = OperandResolver.getSingleValue(arg0, srcRowIndex, srcColumnIndex);if (ve instanceof ErrorEval){return ve;}double lat = OperandResolver.coerceValueToDouble(ve);ve = OperandResolver.getSingleValue(arg1, srcRowIndex, srcColumnIndex);if (ve instanceof ErrorEval){return ve;}double lon = OperandResolver.coerceValueToDouble(ve);ve = OperandResolver.getSingleValue(arg2, srcRowIndex, srcColumnIndex);if (ve instanceof ErrorEval){return ve;}return new NumberEval(GeohashUtils.encode(lat, lon));}
+public GetRepoResponse getRepo(GetRepoRequest request) {return JDCloudSDK.Cr.Client.Impl.CrClientExecutor.client.getRepo(request);}
+public void setDate(Date date) {if (date == null) {this.date = null;return;}this.date = DateTools.dateToString(date, DateTools.Resolution.SECOND);}
+public TokenStream create(TokenStream input) {return new GermanStemFilter(input);}
+public int compareTo(Object obj, int precision) {if (obj == null ||!(obj instanceof Geohash))return 1;return hash.compareTo(((Geohash)obj).hash, precision);}
+public void write(String s, int offset, int len) {if (s == null) {throw new IllegalArgumentException();}if (offset < 0 || len < 0 || len > s.length() - offset) {throw new IndexOutOfBoundsException();}synchronized (lock) {expand(len);s.getChars(offset, offset + len, buf, count);count += len;}}
+public static RevFilter path(String path, boolean recursive, boolean ignoreCase) {return new PathRevFilter(path, recursive, ignoreCase);}
+public DeleteRolePolicyRequest(String roleName, String policyName) {this.roleName = roleName;this.policyName = policyName;}
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.class);}
+public BatchTerminateProcessesResponse batchTerminateProcesses(BatchTerminateProcessesRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = BatchTerminateProcessesRequestMarshaller.getInstance();options.responseUnmarshaller = BatchTerminateProcessesResponseUnmarshaller.getInstance();return invoke(request, options);}
+public CreateDeviceGroupResponse createDeviceGroup(
+public float readFloat() {checkPosition(4);return BitConverter.ToSingle(_buf, _readIndex);}
+public void setCenter(Geohash center, int level) {NB.encodeInt64(info, infoOffset + P_HASH, center.hash);NB.encodeInt32(info, infoOffset + P_LEVEL, level);}
+public DescribeServerGroupAttributeResponse describeServerGroupAttribute(DescribeServerGroupAttributeRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.describeServerGroupAttribute);}
+public ListTrafficPolicyInstancesResponse listTrafficPolicyInstances(ListTrafficPolicyInstancesRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = ListTrafficPolicyInstancesRequestMarshaller.getInstance();options.responseUnmarshaller = ListTrafficPolicyInstancesResponseUnmarshaller.getInstance();return invoke(request, options);}
+nan
+public void setUp(String regionId, String accessKeyId, String accessKeySecret, String securityToken, String endpoint) {this.regionId = regionId;this.accessKeyId = accessKeyId;this.accessKeySecret = accessKeySecret;this.securityToken = securityToken;this.endpoint = endpoint;}
+public void toMap(HashMap<String, String> map, String prefix) {this.setParamSimple(map, prefix + "StrategyDescription", this.strategyDescription);}
+public DescribeVpcEndpointServicesResponse describeVpcEndpointServices(DescribeVpcEndpointServicesRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.describeVpcEndpointServices);}
+public GetDeviceGroupResponse getDeviceGroup(GetDeviceGroupRequest request, GetDeviceGroupRequest.GetDeviceGroupOptions getDeviceGroupOptions){return hcClient.syncInvokeHttp(request, IotMeta.getDeviceGroup);}
+public boolean contains(Object o) {return this.enclosing.containsValue(o);}
+public SheetRangeIdentifier(String bookName, NameIdentifier firstSheetIdentifier, NameIdentifier lastSheetIdentifier) {super(bookName, firstSheetIdentifier);this._lastSheetIdentifier = lastSheetIdentifier;}
+public DomainMetadataResponse invoke(DomainMetadataRequest request) throws Exception {return this.client.invoke(request, DomainMetadataResponse.class);}
+public ParseException(Token currentToken,int expectedTokenSequences,String[]
+public void write(JsonWriter writer, FetchPhotosRequest model) {writer.writeStartObject();writer.writeName("LibraryId");writer.writeValue(model.getLibraryId());writer.writeName("PhotoIds");writer.writeStartArray();for (int i = 0; i < model.getPhotoIds().size(); i++){writer.writeStartObject();writer.writeName("PhotoId");writer.writeValue(model.
+public void write(String value) {writer().write(value);}
+public TokenStream create(TokenStream input) {return new NGramTokenizer(input, minGramSize, maxGramSize);}
+public boolean isDirectoryFileConflict(String path, String conflictPath, String conflictPath2, String conflictPath3) {return dfConflict!= null && dfConflict.contains(path) && dfConflict.contains(conflictPath) && dfConflict.contains(conflictPath2) && dfConflict.contains(conflictPath3);}
+public override void setReader(TextReader reader, Encoding encoding) {base.setReader(reader, encoding);m_input.setReader(reader, encoding);}  C# code
+public CreateTrafficPolicyResponse createTrafficPolicy(CreateTrafficPolicyRequest request) {final com.aliyuncs.http.MethodType methodType = com.aliyuncs.http.MethodType.POST;final String version = "2015-01-09";final String action = "CreateTrafficPolicy";final String uriPattern = "/2015-01-09/trafficpolicy";final String serviceCode = "alidns";final String apiVersion = "2015-01-09";final Map<String, String> headers = new HashMap<String, String>();final Map<String, String> queryParameters = new HashMap<String, String>();if (!com.aliyun.teautil.Common.isUnset(request.userClientIp)){headers.put("userClientIp", request.userClientIp);}if (!com.aliyun.teautil.Common.isUnset(request.lang)){headers.put("lang", request.lang);}if (!com.aliyun.teautil.Common.isUnset(request.clientToken)){headers.put("clientToken", request.clientToken);}if (!com.aliyun.teautil.Common.isUnset(request.domainName)){queryParameters.put("domainName", request.domainName);}if (!com.aliyun.teautil.Common.isUnset(request.type)){queryParameters.put("type", request.type);}if (!com.aliyun.teautil.Common.isUnset(request.ttl)){queryParameters.put("ttl", request.ttl);}if (!com.aliyun.teautil.Common.isUnset(request.rr)){queryParameters.put("rr", request.rr);}if (!com.aliyun.teautil.Common.isUnset(request.line)){queryParameters.put("line", request.line);}if (!com.aliyun.teautil.Common.isUnset(request.value)){queryParameters.put("value", request.value);}if (!com.aliyun.teautil.Common.isUnset(request.userClientIp)){queryParameters.put("userClientIp", request.userClientIp);}if (!com.aliyun.teautil.Common.isUnset(request.lang)){queryParameters.put("lang", request.lang);}if (!com.aliyun.teautil.Common.isUnset(request.clientToken)){queryParameters.put("clientToken", request.clientToken);}if (!com.aliyun
+public void serialize(LittleEndianOutput out1){out1.writeInt(fSD);out1.writeInt(passwordVerifier);StringUtil.writeUnicodeLE(out1, title);out1.write(securityDescriptor);}
+public static double round(double n, double s) {if (Double.isNaN(n) || Double.isNaN(s)) {return Double.NaN;}if (s == 0) {return 0;}if (n == 0 || s == 0) {return 0;}return Math.round(n / s) * s;}
+public void WriteInt(int i) {m_bytes[m_offset++] = (byte)(i >> 24);m_bytes[m_offset++] = (byte)(i >> 16);m_bytes[m_offset++] = (byte)(i >> 8);m_bytes[m_offset++] = (byte)i;}
+public static int getMaxDistance(ITree t)
+public void add(Geo
+public void refreshRecord(String key, String value, long expiration, long maxIdle, long slidingExpiration) {if (RefreshAll || key.startsWith(prefix)) {cache.set(key, value, expiration, maxIdle, slidingExpiration);}}
+public Delete
+public void addEdge(String from, String to, double cost, String label) {if (from.equals(to)) {return;}if (!bestPathMap.containsKey(from)) {bestPathMap.put(from, from);}if (!bestPathMap.containsKey(to)) {bestPathMap.put(to, to);}sb.append("  " + from + " -> " + to + " [label=\"" + label + "\"]\n");}
+public CheckMultiagentRequest() {super("visionai-poc", "2020-04-08", "CheckMultiagent");setMethod(MethodType.POST);}
+public ListUserProfilesResponse listUserProfiles(ListUserProfilesRequest request){return hcClient.syncInvokeHttp(request, IamMeta.listUserProfiles);}
+public DescribeRelationalDatabaseBackupsResponse describeRelationalDatabaseBackups(DescribeRelationalDatabaseBackupsRequest request){return hcClient.syncInvokeHttp(request, IoTDatabaseMeta.describeRelationalDatabaseBackups);}
+public void dispose() {  if (this.disposed)return;  this.disposed = true;
+public Collection<String> getIgnoredPaths(String path, Collection<String> paths, Collection<String> ignoredPaths, String[] ignoredPaths2) {return ignoredPaths.contains(path)? ignoredPaths : paths;}
+public void visitContainedRecords(RecordVisitor rv) {rv.visitRecord(this);}
+public boolean equals(Change other) {if (other == null){return false;}return action == other.action && resourceRecordSet.
+public DeleteImageResponse deleteImage(DeleteImageRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.deleteImage);}
+public CreateCustomVerificationEmailTemplateResponse createCustomVerificationEmailTemplate(CreateCustomVerificationEmailTemplateRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateCustomVerificationEmailTemplateRequestMarshaller.getInstance();options.responseUnmarshaller = CreateCustomVerificationEmailTemplateResponseUnmarshaller.getInstance();return invoke
+public boolean removeIf(Predicate<? super E> filter) {if (filter == null) {throw new NullPointerException(nameof(filter));}int n = 0;for (int i = 0; i < elements.length; i++) {if (filter.test(elements[i])) {elements[i] = elements[--n];}}if (n < elements.length) {elements = Arrays.copyOfRange(elements, 0, n);}return n > 0;}
+public void visitContainedRecords(RecordVisitor rv, int start, int end, int level) {if (_recs.size() == 0) {return;}rv.
+public void serialize
+public static BATBlock createEmptyBATBlock(POIFSBigBlockSize bigBlockSize, boolean isXBAT) {BATBlock block = new BATBlock(bigBlockSize);if (isXBAT) {block.setXBATChain(bigBlockSize, POIFSConstants.END_OF_CHAIN);}return block;}
+public UpdateDeviceGroupResponse updateDeviceGroup(UpdateDeviceGroupRequest request, RuntimeOptions runtime){return hcClient.syncInvokeHttp(request, IoTDriverMeta.updateDeviceGroup);}
+public DeleteUserProjectResponse deleteUserProject(DeleteUserProjectRequest request){return hcClient.syncInvokeHttp(request, IamMeta.deleteUserProject);}
+public ListForecastExportJobsResponse listForecastExportJobs(ListForecastExportJobsRequest request) {var options = new InvokeOptions();options.requestMarshaller = ListForecastExportJobsRequestMarshaller.getInstance();options.responseUnmarshaller = ListForecastExportJobsResponseUnmarshaller.getInstance();return invoke(request, options);}
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeDeviceGroup);}
+public GetPersonTrackingResponse getPersonTracking(GetPersonTrackingRequest request) {  InvokeOptions options = new InvokeOptions();  options.requestMarshaller = GetPersonTrackingRequestMarshaller.getInstance();  options.responseUnmarshaller = GetPersonTrackingResponseUnmarshaller.getInstance();  return invoke(request, options);}
+public String toFormulaString(String[] operands) {return operands
+public void merge(T first, T second, T result, double distance, double weight, double distanceWeight, double weightWeight, double distanceWeightWeight, double weightWeightWeight)
+public String toString() {return this.m_message.getKey() + ": " + getLocalizedMessage();}
+public XPath(Parser parser, String path, String namespaceURI, String prefix, String localName, String baseURI) {this.parser = parser;this.path = path;this.namespaceURI = namespaceURI;this.prefix = prefix;this.localName = localName;this.baseURI = baseURI;
+public CreateAccountAliasRequest(String accountAlias) {this.accountAlias = accountAlias;}
+public void encode(int[] values, int valuesOffset, byte[] blocks, int blocksOffset, int iterations) {for (int j = 0; j < iterations; ++j) {final int block = 0;block |= (values[valuesOffset++] & 1) << 7;block |= (values[valuesOffset++] & 1) << 6;block |= (values[valuesOffset++] & 1) << 5;block |= (values[valuesOffset++] & 1) << 4;block |= (values[valuesOffset++] & 1) << 3;block |= (values[valuesOffset++] & 1) << 2;block |= (values
+public void push(PushConnection conn, String refspec, boolean force, boolean dryRun, boolean keepLocal, boolean keepRemote, boolean keepTags) {throw new UnsupportedOperationException(JGitText.get().
+public static void strCpy(char[] dst, int di, String src, int si, int len) {while (len > 0) {dst[di++] = src.charAt(si++);len--;}dst[di] = 0;}
+public int hashCode() {return
+public static int numNonnull(Map
+public void add(int location, E object) {if (location >= 0 && location <= size()) {Link<E> link = voidLink;if (location < (size() / 2)) {for (int i = 0; i <= location; i++) {link = link.next;}} else {for (int i = size(); i > location; i--) {link = link.previous;}}Link<E> previous = link.previous;Link<E> newLink = new Link<E>(object, previous, link);previous.next = newLink;link.previous = newLink;size++;modCount++;} else {throw new IndexOutOfBoundsException();}}
+public DescribeDomainResponse describeDomain(DescribeDomainRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeDomain);}
+public void add(T doc, float boost, long docId, long docIdBoost, float scoreBoost) {throw new UnsupportedOperationException();}
+public override TokenStream Create(TokenStream input, string fieldName, Reader reader, int bufferSize, bool normalize, bool removeDiacritics) {return new PersianCharFilter(input, reader, bufferSize, normalize, removeDiacritics);}
+public void setTermBuffer(String term, int offset) {this.term.text = term.substring
+public static FloatBuffer wrap(float[] array
+public Edit before(Edit cut, int
+public UpdateRuleVersionResponse updateRuleVersion(UpdateRuleVersionRequest request){return hcClient.syncInvokeHttp(request, Iot.class);}
+public ListVoiceConnectorTerminationCredentialsResponse listVoiceConnectorTerminationCredentials(ListVoiceConnectorTerminationCredentialsRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.listVoiceConnectorTerminationCredentials);}
+public GetDeploymentTargetsResponse getDeploymentTargets(GetDeploymentTargetsRequest request) {  InvokeOptions options = new InvokeOptions();  options.requestMarshaller = GetDeploymentTargetsRequestMarshaller.getInstance();  options.responseUnmarshaller = GetDeploymentTargetsResponseUnmarshaller.getInstance();  return invoke(request, options);}
+public void setNoChildReport(boolean noChildReport, boolean noChildReportForChild, boolean noChildReportForGrandChild) {letChildReport = noChildReport;for (PerfTask task : tasks) {if (task instanceof TaskSequence) {((TaskSequence)task).setNoChildReport(noChildReport, noChildReportForChild, noChildReportForGrandChild);}}}
+public int indexOf(E element) {for (int i = 0; i < a.length; i++)if (a[i] ==
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeDeviceGroup);}
+public boolean accept(TreeEntry entry) {if (entry.getTreeId
+public DescribeProductVersionsResponse describeProductVersions(DescribeProductVersionsRequest request){return hcClient.syncInvokeHttp(request, IoT.describeProductVersions);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public boolean equals(Object obj) {if (obj == null ||!(
+public int getPatch
+public void setLevelForDistance(int level, double width, double height) {if (level < 1 || level > max
+public CreateUserResponse createUser(CreateUserRequest request){return hcClient.syncInvokeHttp(request, IamMeta.createUser);}
+public long getMaxTerm() {return info.maxTerm;}
+public override void Read(StreamInput in) {base.Read(in);maxLevels = in.ReadVInt();precision = in.ReadVInt();precisionStep = in
+public CreateProjectResponse createProject(CreateProjectRequest request){return this.runtime.invoke(request, CreateProjectResponse.class);}
+public RevCommit pop() {BlockRevQueue.Block b = head;if (b == null) {return null;}else if (b.canPop()) {RevCommit c = b.pop();if (b.isEmpty()) {head = b.next;if (head == null) {tail = null;}else {head.prev = null
+public EdgeNGramTokenizer read(JsonReader reader, Type typeToConvert, JsonSerializerOptions options) throws IOException {if (reader.peek()!= JsonToken.START_OBJECT) {throw new JsonParseException(reader, "Expected START_OBJECT but was " + reader.peek());}}
+public int hashCode() {final int prime = 31;int result = 1;result = prime * result + ((dbParameterGroupName == null)? 0 : dbParameterGroupName.hashCode());result = prime * result + ((parameters == null)? 0 : parameters.hashCode());return
+public GetHealthCheckLastFailureReasonResponse getHealthCheckLastFailureReason(GetHealthCheckLastFailureReasonRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetHealthCheckLastFailureReasonRequestMarshaller.getInstance();options.responseUnmarshaller = GetHealthCheckLastFailureReasonResponseUnmarshaller.getInstance();return invoke(request, options);}
+public boolean get(int index) {int o = (int)((uint)index >> 6);int b = index & 63;int shift = b << 0;return (blocks[o] >> shift) & 1L!= 0L;}
+public RevFilter clone() {return new PatternSearch(pattern);}
+public int hashCode() {int result = 17;result = 37 * result + term.hashCode();result = 37
+public boolean canAppendMatch(int level, int maxLevel, int minLevel) {for (int i = 0; i < heads.size(); i++) {if (heads.get(i)!= LastHead.INSTANCE && level >= heads.get(i).level && level <= maxLevel && level >= minLevel) {return true;}}return false;}
+public int lastIndexOf(char value, int startIndex) {synchronized (this) {return super.lastIndexOf(value, startIndex);}}
+public DeleteNetworkSecurityGroupRuleResponse deleteNetworkSecurityGroupRule(DeleteNetworkSecurityGroupRuleRequest request){return hcClient.syncInvokeHttp(request, IoT.deleteNetworkSecurityGroupRule);}
+public BatchAddDeviceToProjectResponse batchAddDeviceToProject(BatchAddDeviceToProjectRequest request){
+public static int committer(byte[] b, int ptr) {int sz = b.length;if (ptr == 0){ptr += 46;}while (ptr < sz && b[ptr] == 'p'){ptr += 48;}if (ptr < sz && b[ptr] == 'a'){ptr = NextLF(b, ptr);}return match(b, ptr, committer);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public SubmoduleUpdateCommand addPath(String path, boolean recursive, boolean init, boolean force, boolean depth) {paths.add(path);recursiveSubmodules = recursive;initSubmodules = init;forceSubmodules = force;depthSubmodules = depth;return this;}
+public GetTemplateResponse getTemplate(GetTemplateRequest request, GetTemplateHeaders headers, RuntimeOptions runtime){  GetTemplateResponse response = getTemplateWithOptions(request, runtime);  response.setHeaders(headers);  return response;}
+public DescribeVaultRequest describeVaultRequest;
+public DescribeVpcPeeringConnectionsResponse describeVpcPeeringConnections(DescribeVpcPeeringConnectionsRequest request) {return hcClient.asyncInvokeHttp(request, IotMeta.DescribeVpcPeeringConnections);}
+public java.nio.ByteBuffer put(java.nio.ByteBuffer src,
+public UpdateDeviceGroupResponse updateDeviceGroup(UpdateDeviceGroupRequest request) {Invoker<UpdateDeviceGroupResponse, UpdateDeviceGroupRequest> invoker = updateDeviceGroupInvoker;if (invoker == null) {invoker = updateDeviceGroupInvoker = new Invoker<UpdateDeviceGroupResponse, UpdateDeviceGroupRequest>(request, AlibabaCloud.TeaUtil.Models.RuntimeOptions.Default, "UpdateDeviceGroup");}return invoker.Invoke(request);}
+public static Format byFileMimeType
+public DeleteAppResponse deleteApp(DeleteAppRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteApp);}
+public GetCampaignDateRangeKpiResponse getCampaignDateRangeKpi(GetCampaignDateRangeKpiRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetCampaignDateRangeKpiRequestMarshaller.getInstance();options.responseUnmarshaller = GetCampaignDateRangeKpiResponseUnmarshaller.getInstance();return invoke(request, options);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public static boolean isValidSchemeChar(int index, char c) {if (c >= 'a' && c <= 'z') {return true;}if (c >= 'A' && c <= 'Z') {return true;}if (index > 0 && (c >= '0' && c <= '9') || c == '+' || c == '-' || c == '.') {return true;}return false;}
+public ListAppliedSchemaArnsResponse listAppliedSchemaArns(ListAppliedSchemaArnsRequest request){return hcClient.syncInvokeHttp(request, IamMeta.listAppliedSchemaArns);}
+public Uri getBaseUri() {return this.baseUri;}
+public String toText(int srcRowIndex, int srcColumnIndex, int destRowIndex, int destColumnIndex) {return "A1";}
+public String toString(boolean includeLevel) {StringBuilder sb = new StringBuilder();
+public void remove
+public GetQueueAttributesRequest(String queueUrl, String attributeName, String attributeValue, String attributeValue2, String attributeValue3) {this.queueUrl = queueUrl;this.attributeName = attributeName;this.attributeValue = attributeValue;this.attributeValue2 = attributeValue2;this.attributeValue3 = attributeValue3;}
+public static boolean[] copyOfRange(boolean[] original, int from, int to, boolean[] newArray) {if (from < 0 || to > original.length || from > to) {throw new ArrayIndexOutOfBoundsException();}if (from == to) {return newArray;}final int newLength = to - from;if (newArray.length < newLength) {throw new ArrayIndexOutOfBoundsException();}System.arraycopy(original, from, newArray, 0, newLength);return newArray;}
+public static void setLevelH(int level, double h) {GeohashUtils.levelH[level] = h;}
+public DeleteLogPatternResponse deleteLogPattern(DeleteLogPatternRequest request){return hcClient.syncInvokeHttp(request, IamMeta.deleteLogPattern);}
+public boolean contains(String text) {return map.containsKey(text);}
+public int getFirstSheetIndexFromExternSheetName(String externSheetName, boolean caseSensitive, boolean ignoreCase, boolean ignoreDiacritics) {return linkTable.getFirstInternalSheetIndexForExtName(externSheetName, caseSensitive, ignoreCase, ignoreDiacritics);}
+public void help() {System.out.println("Usage: " + command + " <command> [arguments]");System.out.println("Commands:");System.out.println("  help - Display this help message");System.out.println("  set <key> <value> - Set a value");System.out.println("  get <key> - Get a value");System.out.println("  clear - Clear all values");System.out.println("  list - List all values");System.out.println
+public static MergeStrategy GetStrategy(String name, MergeStrategy defaultStrategy, MergeStrategy defaultStrategyName) {if (m_registry.containsKey(
+public long ramBytesUsed() {return index!= null? index.getSizeInBytes() : 0;}
+public void deserialize(JsonReader reader) throws IOException {if (reader.peek()!= JsonToken
+public GetFindingsSummaryByResourceTypeResponse getFindingsSummaryByResourceType(GetFindingsSummaryByResourceTypeRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = GetFindingsSummaryByResourceTypeRequestMarshaller.getInstance();options.responseUnmarshaller = GetFindingsSummaryByResourceTypeResponseUnmarshaller.getInstance();return invoke(request, options);}
+public DescribeUserGroupResponse describeUserGroup(DescribeUserGroupRequest request) {return hcClient.syncInvokeHttp(request, Iot.DescribeUserGroup);}
+public void processMatch(ValueEval eval, int srcRowIndex, int srcColumnIndex, int destRowIndex, int destColumnIndex) {if (eval instanceof NumericValueEval) {if (minimumValue == null) {minimumValue = eval;} else {double currentValue = ((NumericValueEval)eval).getNumberValue();double oldValue = ((NumericValueEval)minimumValue).getNumberValue();if (currentValue < oldValue) {minimumValue = eval;}}}super.processMatch(eval, src
+public void write(LittleEndianOutput out1) {out1.writeByte(sid + PtgClass);out1.writeShort(field_1_len_ref_subexpression);}
+public static void main(String[] args) throws IOException {boolean printTree = false;String path = null;for (int i = 0; i < args.length; i++) {if (args[i].equals("-printTree")) {printTree = true;} else {path = args[i];}}if (args.length!= (printTree? 2 : 1)) {throw new IllegalArgumentException();}try (Directory dir = FSDirectory.open(Paths.get(path))) {try (TaxonomyReader r = DirectoryTaxonomyReader.open(dir)) {printStats(r, System.out, printTree);}} catch (IOException e) {e.printStackTrace();}}
+public void setLongValue(long value) {if (!(fieldsData instanceof Long)) {throw new IllegalArgumentException("cannot change value type from " + fieldsData.getClass().getName() + " to Int64");}fieldsData = new Long(
+public static int initialize(int seed, int maxLevel, int maxLevels, int maxDistance, int maxDistanceLevel, int maxDistanceLevelForDistance) {return initialize(seed, maxLevel, maxLevels, maxDistance, maxDistanceLevel, maxDistanceLevelForDistance, 0);}  C# code
+public double doubleVal(int doc, FieldCache.Entry entry, double defVal, FieldCache.Parser parser) {double val = m_source.doubleVal(doc, entry, defVal, parser);m_cache.put(doc, val);return val;}
+public void deserialize(Stream stream) throws IOException {super.deserialize(stream);attributeName = readString(stream);attributeType = ScalarAttributeType.values()[readByte(stream)];attributeValue = readString(stream);}
+public static String join(Collection<String> parts, String separator, int
+public PutAccountSettingResponse putAccountSetting(PutAccountSettingRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller(PutAccountSettingRequestMarshaller.getInstance());options.responseUnmarshaller(PutAccountSettingResponseUnmarshaller.getInstance());return invoke(request, options);}
+public ListDeviceServicesResponse listDeviceServices(ListDeviceServicesRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.listDeviceServices);}
+public ActivatePhotosResponse activatePhotos(ActivatePhotosRequest request, RuntimeOptions runtime, RuntimeOptions runtimeOptions, RuntimeOptions runtimeOptions) {return activatePhotos(request, runtime, runtimeOptions, runtimeOptions, null);}
+public GetMatchmakingRuleSetResponse getMatchmakingRuleSet(GetMatchmakingRuleSet
+public ListDevicesResponse listDevices(ListDevicesRequest request){return hcClient.syncInvokeHttp(request, IoT.listDevices);}
+public ObjectIdSubclassMap<ObjectId> get
+public DescribeDeviceGroupResponse describeDevice
+public CreateGroupDeviceResponse createGroupDevice(CreateGroupDeviceRequest request){return hcClient.syncInvokeHttp(request, IoTDcMeta.createGroupDevice);}
+public static int getEncodedSize(String value) {int result = 1;if (value!= null){result += value.length();}return result;}
+public OpenNLPTokenizerFactory(Map<String, String> args) {super(args); sentenceModelFile = require(args, SENTENCE_MODEL); tokenizerModelFile = require(args, TOKENIZER_MODEL); if (!args.isEmpty()) { throw new IllegalArgumentException("Unknown parameters: " + args); } }
+public void put(int index, int value) {checkIndex(index, 4);Memory.pokeInt(backingArray, offset + index, value, _order);}
+public List<Head> getNextHeads(String path, String extension, String[] extensions, String[] extensions2) {if (matches(path, extension, extensions, extensions2)) {return newHeads;} else {return FileNameMatcher.EMPTY_HEAD_LIST;}}
+public java.nio.ByteBuffer putBytes(java.nio.ByteBuffer src, int src
+public void write(Object @object, String @name, Object @value, int @index, int @length) {throw new UnsupportedOperationException();}
+public int offsetBy
+public static BitSet
+public DateTime getWhen() {return new DateTime(when);}
+public void write(BinaryWriter writer) {writer.write(ruleName);writer.write(bypassTokenType);writer.write(label);}
+public DisableOrganizationAdminAccountResponse disableOrganizationAdminAccount(DisableOrganizationAdminAccountRequest request){return hcClient.asyncInvokeHttp(request, IoTDriver.disableOrganizationAdminAccount).execute();}
+public CreateRoomResponse createRoom(CreateRoomRequest request, AlibabaCloud.SDK.ROS.CDK.Core.IResolvable options){return hcClient.syncInvoke
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeDeviceGroup);}
+public void encode(java.io.OutputStream stream,
+public Distribution(String id, String status, String domainName) {this.id = id;this.status = status;this.domainName = domainName;}
+public Object array(int index, int length, int stride, int offset, int[] shape, int[] ordering, char orderingChar) {return protectedArray(index, length, stride, offset
+public override short Sid {get{return sid;}}
+public DeleteDBSnapshotRequest(String dbSnapshotIdentifier, String dBInstanceIdentifier, Boolean force, String kmsKeyId, String optionGroupName) {this.dbSnapshotIdentifier = dbSnapshotIdentifier;this.dBInstanceIdentifier = dBInstanceIdentifier;this.force = force;this.kmsKeyId = kmsKeyId;this.optionGroupName = optionGroupName;}
+public int getMaxLevels() {return
+public void inform(IResourceLoader loader, String modelFile, String chunkerModelFile) {try {if (modelFile!= null) {OpenNLPOpsFactory.getModel(modelFile, loader);}} catch (IOException e) {throw new IllegalArgumentException(e.toString(), e);}try {if (chunkerModelFile!= null) {OpenNLPOpsFactory.getChunkerModel(chunkerModelFile, loader);}} catch (IOException e) {throw new IllegalArgumentException(e.toString(), e);}}
+public DeleteVaultAccessPolicyResponse deleteVaultAccessPolicy(DeleteVaultAccessPolicy
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public long ramBytesUsed() {return RamUsageEstimator.alignObjectSize(3 * RamUsageEstimator.NUM_BYTES_OBJECT_REF + 2 * RamUsageEstimator.NUM_BYTES_INT32) + RamUsageEstimator.sizeOf(data) + positions.ramBytesUsed() + wordNums.ramBytesUsed();}
+public DescribeLoadBalancerPolicyTypesResponse describeLoadBalancerPolicyTypes(DescribeLoadBalancerPolicyTypesRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = DescribeLoadBalancerPolicyTypesRequestMarshaller.getInstance();options.responseUnmarshaller = DescribeLoadBalancerPolicyTypesResponseUnmarshaller.getInstance();return invoke(request, options);}
+public DescribeClusterKubeconfigResponse describeClusterKubeconfig(DescribeClusterKubeconfigRequest request){return JDCloudSDK.CallApi(request, new DescribeClusterKubeconfigExecutor());}
+public override Object Clone() {PrecisionRecord rec = new PrecisionRecord
+public int getRow(int rowLevel, int row) {return rowLevel * rowLevelMax + row
+public ListVirtualInterfaceTestHistoryResponse listVirtualInterfaceTestHistory(ListVirtualInterfaceTestHistoryRequest request){return hcClient.syncInvokeHttp(request, IoT.ListVirtualInterfaceTestHistory);}
+public void getEntry(String name, out Entry entry, out long size, out long modified, out long created, out long accessed) {entry = getEntry(name);size = entry.getSize();modified = entry.getLastModified();created = entry.getCreated();accessed = entry.getAccessed();}  C# code
+nan
+public DescribeCallResponse describeCall(DescribeCallRequest request){return hcClient.syncInvokeHttp(request, Voic
+public OpenStringBuilder append(OpenStringBuilder sb, int startIndex, int length
+public static String getSegmentsFileName(long generation, String suffix, String extension, String checksum, String checksumType) {return IndexFileNames.SEGMENTS + generation + suffix + extension + "." + checksum + "." + checksumType;}
+public static TagOpt fromOption(String o, TagOpt defaultValue) {if (o == null || o.length() == 0) {return defaultValue;} for (TagOpt tagopt : values()) {if (tagopt.option().equals(o)) {return tagopt;}} throw new IllegalArgumentException(MessageFormat.format(JGitText.get().invalidTagOption, o));}
+public StartLabelDetectionResponse startLabelDetection(StartLabelDetectionRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller(StartLabelDetectionRequestMarshaller.getInstance());options.responseUnmarshaller(StartLabelDetectionResponseUnmarshaller.getInstance());return invoke(request, options);}
+public static String quoteReplacement(String s) {StringBuilder
+public void set(V newValue, int level, double distance, double lat, double lon, double accuracy, double bearing) {value = newValue;this.level = level;this.distance = distance;this.lat = lat;this.lon = lon;this.accuracy = accuracy;this.bearing = bearing;}
+public void
+public long valueFor(double elapsed) {double val;if (modBy == 0)val = elapsed / factor;elseval = elapsed / factor % modBy;if (type == '0')return (long)Math.round(val);elsereturn (long)val;}
+public java.nio.LongBuffer get(long[] dst, int dstOffset, int longCount, int index) {return get(dst, dstOffset, longCount, index, longCount);}
+public void removeErrorListeners(params IAntlrErrorListener[] listeners) {listeners = Arrays.stream(listeners).filter(l ->!Arrays.asList(listeners).contains(l)).toArray(IAntlrErrorListener[]::new);}
+public CommonTokenStream(TokenSource tokenSource, int channel, int type, int beginLine, int beginColumn, int endLine, int endColumn, int index) {this(tokenSource, channel, type, beginLine, beginColumn, endLine, endColumn);this.index = index;}
+public PutBucketAccelerateConfigurationResponse putBucketAccelerateConfiguration(PutBucketAccelerateConfigurationRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.putBucketAccelerateConfiguration);}
+public void pack(PackWriter writer) {super.pack(writer);writer.write(flags);}
+public int stem(char[] s, int len) {int numVowels_Renamed = numVowels(s, len);for (int i = 0; i < affixes.length; i++) {Affix affix = affixes[i];if (numVowels_Renamed > affix.vc && len >= affix.affix.length + 3 && endsWith(s, len, affix.affix)) {len -= affix.affix.length;return affix.palatalizes? unpalatalize(s, len) : len;}}return len;}
+public void recover(Parser recognizer, RecognitionException e) {if (lastErrorIndex == ((TokenStream)recognizer.getInputStream()).index && lastErrorStates!= null && lastErrorStates.contains(recognizer.getState())) {recognizer.consume();}lastErrorIndex = ((TokenStream)recognizer.getInputStream()).index;if (lastErrorStates == null) {lastErrorStates = new IntervalSet();}lastErrorStates.add(recognizer.getState());IntervalSet followSet = getErrorRecoverySet(recognizer);consumeUntil(recognizer, followSet);}
+public String toFormulaString(int level, int precision) {String value = getString();int len = value.length();StringBuilder sb = new StringBuilder(len + 4);sb.append(FORMULA_DELIMITER);for (int i = 0;
+public UnlinkFaceResponse unlinkFaceByGroup(UnlinkFaceByGroupRequest request) {return UnlinkFaceResponse
+public void dispose(boolean disposing, boolean callGC, boolean callFinalize, boolean callBase) {if (disposing) {if (m_credentials!= null) {m_credentials = null;}}m
+public String getSuffix(String key) {StringBuilder result = new StringBuilder(m_tries.size() * 2);for (int i = 0; i < m_tries.size(); i++){String r = m_tries.get(i).getSuffix(key);if (r == null || (r.length() == 1 && r.charAt(0) == EOM)){return result.
+public DescribeMountTargetSecurityGroupsResponse describeMountTargetSecurityGroups(DescribeMountTargetSecurityGroupsRequest request){return hcClient.syncInvokeHttp(request, IoTMeta.describeMountTargetSecurityGroups);}
+public GetAuthorizersResponse getAuthor
+public void addHeader(String key, String value, boolean replace, boolean ignoreCase, boolean ignoreNull, boolean ignoreEmpty) {if (replace) {this.headers.put(key, value);} else {this.headers.put(key, value);}}
+public String toFormulaString() {return "{" + field_1_len_ref_subexpression + "}";}
+public static TermStats[] getHighFreqTerms(IndexReader reader, int numTerms, String field, Comparator<TermStats> comparer) throws IOException {TermStatsQueue tiq = null;if (field!= null) {Fields fields = MultiFields.getFields(reader);if (fields == null) {throw new Exception("field " + field + " not found");}Terms terms = fields.terms(field);if (terms!= null) {tiq = new TermStatsQueue(numTerms, comparer);tiq.fill(field, terms.iterator());}} else {Fields fields = MultiFields.getFields(reader);if (fields == null) {throw new Exception("no fields found for this index");}tiq = new TermStatsQueue(numTerms, comparer);for (String fieldName : fields) {Terms terms = fields.terms(fieldName);if (terms!= null) {tiq.fill(fieldName, terms.iterator());}}}TermStats[] result = new TermStats[tiq.count];int count = tiq.count - 1;while (tiq.count!= 0) {result[count] = tiq.pop();count--;}return result;}
+public DeleteApnsVoipSandboxChannelResponse deleteApnsVoipSandboxChannel(DeleteApnsVoipSandboxChannelRequest request){return hcClient.syncInvokeHttp(request, IamMeta.deleteApnsVoipSandboxChannel);}
+public PublishResponse publish(PublishRequest request){return hcClient.syncInvokeHttp(request, IotMeta.publish);}
+public int hashCode() {return Objects.hash(from, provider, multiplier);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public UpdateRoleResponse updateRole(Update
+public DescribeLifecycleHooksResponse describeLifecycleHooks(DescribeLifecycleHooksRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.describeLifecycleHooks);}
+public DescribeHostReservationsResponse describeHostReservations(DescribeHostReservationsRequest request){return hcClient.syncInvokeHttp(request, HostmetaMeta.describeHostReservations);}
+public boolean equals(Object obj) {if (obj == null)return false;if (getClass()!= obj.getClass())return false;PredictionContext other = (PredictionContext)obj;if (other.isEmpty())return isEmpty();if (other.isGlobal())return isGlobal();if (other.isWildcard())return isWildcard();if (other.isEmpty())return isEmpty();
+public short getSid() {return sid;}
+public String getResultPath(String path, String name,
+public ListChangeSetsResponse listChangeSets(ListChangeSetsRequest request){return hcClient.syncInvokeHttp(request, IamMeta.listChangeSets);}
+public boolean isAllowNonFast
+nan
+public java.nio.ShortBuffer slice(int index, int length) {return new ShortBuffer(this,
+public void setRewriteMethod(RewriteMethod method) {this.rewriteMethod = method;}
+nan
+public Collection<String> idToChildren() {return dictionaryIDToChildren.values();}
+public static String getEffectiveScheme(String scheme, boolean useSSL, boolean useHTTP11) {if (useSSL) {if (scheme.equalsIgnoreCase("http")) {return "https";}else{if (useHTTP11) {return "https";}else{return "http";}}}else{if (scheme.equalsIgnoreCase("https")) {return "http";}else{if (useHTTP11) {return "http";}else{return "https";}}}}
+public ListAssessmentsResponse listAssessments(ListAssessmentsRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.listAssessments);}
+public DescribeDBClusterEndpointsResponse describeDBClusterEndpoints(DescribeDBClusterEndpointsRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = DescribeDBClusterEndpointsRequestMarshaller.getInstance();options.responseUnmarshaller = DescribeDBClusterEndpointsResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void addShape(HSSFShape shape, HSSFShape parent, HSSFShape patriarch, HSSFShape group, HSSFShape container) {shape.setPat
+public void read(DataInput in) throws IOException {value = in.readUTF();count =
+public static int prev(byte[] b, int ptr, byte[] chrA) {if (ptr == b.length)
+public boolean isDeltaRepresentation(int level, int x, int y, int z, int w) {return isDeltaRepresentation(level) && x >= 0 && x < deltaBase[level].length
+public void emit(IToken token) {if (token == null) {throw new ArgumentNullException(nameof(token));}if (token.getChannel() == Token.DEFAULT_CHANNEL) {if (token.getType() == Token.EOF) {tokenSource.reset();}if (token.getType() == Token.EOF || token.getType() == Token.EPSILON) {tokenSource.consume();}if (token.getType() == Token.EOF || token.getType() == Token.EPSILON) {tokenSource.consume();}if (token.getType() == Token.EOF || token.getType() == Token.EPSILON) {tokenSource.consume();}}tokens.add(token);if (token.getType() == Token.EOF) {tokenSource.reset();}}
+public UpdateUserRequest(String userName, String password, String newPassword, String newPasswordConfirm, String newDisplayName, String newEmail) {this.userName = userName;this.password = password;this.newPassword = newPassword;this.newPasswordConfirm = newPasswordConfirm;this.newDisplayName = new
+public RevFilter and(RevFilter other) {return AndRev
+public void setTagger(String taggerIdent, String taggerEmail, String taggerDate, String taggerOffset, String taggerTimezone) {this.tagger = new PersonIdent(taggerIdent, taggerEmail, taggerDate, taggerOffset, taggerTimezone);}
+public static BufferSize manual(long sortBufferByteSize, long maxMemory, long totalMemory) {return new BufferSize(Math.Min((long)int.MaxValue, sortBufferByteSize));}
+public static boolean isBase64Char(byte b) {return isDigit(b) || (b >= 'a' && b <= 'z') || (b >= 'A
+public override Object Clone() {TopMarginRecord rec = new TopMarginRecord
+public RetrieveEnvironmentInfoRequest(EnvironmentInfoType infoType) {this.infoType = infoType;}
+public CreatePlayerSessionsResponse createPlayerSessions(String gameSessionId, String playerId, String playerData
+public CreateSipMediaApplicationCallResponse createSipMediaApplicationCall(CreateSipMediaApplicationCallRequest request) { 	InvokeOptions options = new InvokeOptions(); 	options.requestMarshaller = CreateSipMediaApplicationCallRequestMarshaller.getInstance(); 	options.responseUnmarshaller = CreateSipMediaApplicationCallResponseUnmarshaller.
+public void getPoint(int level, double x, double y, double[] lonlat, double[] z, double[] m, double[] n) {lonlat[0] = x;lonlat[1] = y;z[0] = 0;m[0] = 0;n[0] = 0;}
+public String getZoneVersionVersionId() {return this.zoneVersionVersionId;}
+public void characters(char[] ch, int start, int length) {contents.append(ch, start, length);}
+public void validateRequest() {RequestValidator.validateRequired("AlbumId", this.albumId);}
+public DescribeAlarmHistoryResponse describeAlarmHistory(DescribeAlarmHistoryRequest request){return hcClient.syncInvokeHttp(request, I
+public GetContactReachabilityStatusResponse getContactReachabilityStatus(GetContactReachabilityStatusRequest request) {final com.aliyuncs.RpcRequest httpRequest = new com.aliyuncs.RpcRequest("CCC", "2017-07-05", "GetContactReachabilityStatus", "CCC", "openAPI");httpRequest.setMethod(com.aliyuncs.http.MethodType.POST);httpRequest.setEndpoint("openAPI.ccc.aliyuncs.com");httpRequest.addQueryParameters(com.aliyuncs.CommonUtils.query(request));return com.aliyuncs.openapi.OpenApiUtils.parseAsJson((com.aliyuncs.AcsResponse)doRPCRequest(httpRequest, com.aliyuncs.http.MethodType.POST, "2017-07-05", "GetContactReachabilityStatus", "CCC", "openAPI"), GetContactReachabilityStatusResponse.class);}
+public void setMaxLevelsWithinDistance(double maxLevelsWithinDistance) {lock (this) {this.maxLevelsWithinDistance = maxLevelsWithinDistance;}}
+public int size() {return backingMap.
+public CreateStreamingDistributionWithTagsResponse createStreamingDistributionWithTags(CreateStreamingDistributionWithTagsRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateStreamingDistributionWithTagsRequestMarshaller.getInstance();options.responseUnmarshaller = CreateStreamingDistributionWithTagsResponseUnmarshaller.getInstance();return invoke
+public boolean isRelativeToTopX() {return relativeToTopX;}
+public DisableAddOnResponse disableAddOn(DisableAddOnRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.disableAddOn);}
+public DescribeApnAccountResponse describeApnAccount(DescribeApnAccountRequest request){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.describeApnAccount);}
+public void parseEntry() {if (ptr >= entrySize) {throw new GeohashParseException("Invalid Geohash entry");}currentSubtree = null;currentLevel = 0;currentHash = null;currentHashLength = 0;currentHashLength = entrySize - ptr;currentHash = hash.substring(ptr, currentHashLength);ptr += currentHashLength;if (currentHashLength == 0) {throw new GeohashParseException("Invalid Geohash entry");}if (currentHashLength == 1) {currentLevel = 1;currentSubtree = root;return;}if (currentHashLength > 1) {currentLevel = GeohashUtils.lookupHashLenForWidthHeight(currentHashLength, currentHashLength);currentSubtree = root.getSubtree(currentHash, currentLevel);if (currentSubtree == null) {throw new GeohashParseException("Invalid Geohash entry");}}}
+public RevFilter clone(RevTree tree, RevTree parentTree, RevTree parentParentTree, RevTree parentParentParentTree) {return new AndRevFilter(a.clone(tree, parentTree, parentParentTree, parentParentParentTree), b.clone(tree, parentTree, parentParentTree, parentParentParentTree));}
+public TokenStream create(TokenStream input) {return new PersianCharFilter(input);}  C
+public String getOption() {return this.option;}  C# code
+public void readFrom(byte[] data, int offset, int length) throws IOException {if (length!= GeohashUtils.HASH_LENGTH) {throw new IllegalArgumentException("Length must be " + GeohashUtils.HASH_LENGTH);}m_hash = new byte[GeohashUtils.
+public DescribeStreamResponse describeStream(DescribeStreamRequest request, RuntimeOptions runtime, InvokeOptions invokeOptions){return hcClient.syncInvokeHttp(request, IoTMeta.describeStream, runtime, invokeOptions);}
+public BatchDeleteDevicesOfGatewayResponse batchDeleteDevicesOfGateway(BatchDeleteDevicesOfGatewayRequest request){return hcClient.syncInvokeHttp(request, IoT.class);}
+public
+public void read(IndexInput input, SegmentInfo info, FieldInfos fn, IOContext context) throws IOException {final int version = input.readVInt();if (version!= VERSION_CURRENT) {throw new CorruptIndexException("Format version mismatch: got " + version + " but expected " + VERSION_CURRENT, input);}_delegatePostingsFormat.read(input, info, fn, context
+public ListTemplatesResponse listTemplates(ListTemplatesRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.listTemplates);}
+public void decrement() {if (m_timer!= null){m_timer.decrement();}}
+public DrawingRecord(byte[] recordData, int offset, int length, int recordType, int recordSubType, int recordVersion) {this.recordData = recordData;
+public ListDirectoriesResponse listDirectories(ListDirectoriesRequest request) {final com.aliyuncs.RpcRequest httpRequest = new com.aliyuncs.RpcRequest("CloudPhoto", "2017-07-11", "ListDirectories", "cloudphoto", "openAPI");httpRequest.setMethod(com.aliyuncs.http.MethodType.POST);httpRequest.setEndpoint("https://cloudphoto.aliyuncs.com");httpRequest.addHeader("Content-Type","application/json");if (!com.aliyun.teautil.Common.empty(accessToken)){httpRequest.addHeader("x-acs-access-key-id", accessToken);}if (!com.aliyun.teautil.Common.empty(accessKeySecret)){httpRequest.addHeader("x-acs-access-key-secret", accessKeySecret);}if (!com.aliyun.teautil.Common.empty(securityToken)){httpRequest.addHeader("x-acs-security-token", securityToken);}httpRequest.addQuery("RegionId", regionId);httpRequest.addQuery("DirectoryId", request.getDirectoryId());httpRequest.addQuery("LibraryId", request.getLibraryId());httpRequest.addQuery("LibraryName", request.getLibraryName());httpRequest.addQuery("LibraryType", request.getLibraryType());httpRequest.addQuery("PageSize", request.getPageSize());httpRequest.addQuery("PageNumber", request.getPageNumber());httpRequest.addQuery("SortBy", request.getSortBy());httpRequest.addQuery("SortDirection", request.getSortDirection());httpRequest.addQuery("StoreName", request.getStoreName());httpRequest.addQuery("StoreType", request.getStoreType());httpRequest.addQuery("Tag", request.getTag());httpRequest.addQuery("TagValue", request.getTagValue());httpRequest.addQuery("TagKey", request.getTagKey());return this.doRPCRequest(httpRequest, "ListDirectories", "2017-07-11", "HTTPS", "POST", "AK", "json", httpRequest.getHeaders(), httpRequest.getQueryParams(), request.getBody(), com.aliyun.teautil.Models.RuntimeOptions.class, new com.aliyun.teautil.models.RuntimeOptions(), new com.aliyun.teautil.models.RuntimeOptions());}
+public void encode(int[] values, int valuesOffset, byte[] blocks, int blocksOffset, int iterations) {for (int j = 0; j < iterations; ++j) {final int block = 0;block |= (values[valuesOffset++] & 1) << 7;block |= (values[valuesOffset++] & 1) << 6;block |= (values[valuesOffset++] & 1) << 5;block |= (values[valuesOffset++] & 1) << 4;block |= (values[valuesOffset++] & 1) << 3;block |= (values[valuesOffset++] & 1) << 2;block |= (values
+public GroupingSearch setMaxDocsToCache(int maxDocsToCache, int maxCacheRAMMB, int maxCacheRAMMBPerGroup){this.maxDocsToCache = maxDocsToCache;this.maxCacheRAMMB = maxCacheRAMMB;this.maxCacheRAMMBPerGroup = maxCacheRAMMBPerGroup;return this;}
+public static int idealByteArraySize(int
+public UpdateAssessmentTargetRequestMarshaller updateAssessmentTargetRequestMarshaller;
+public ModifyVolumeResponse modifyVolume(ModifyVolumeRequest request){return hcClient.syncInvokeHttp(request, IoT.ModifyVolume);}
+public Cell merge(Cell m, Cell e) {if (m.cmd == e.cmd && m.ref == e.ref && m.skip == e.skip) {Cell c = new Cell(m);c.cnt += e.cnt;return c;} else {return null;}}
+public void write(byte[] src, long position) throws IOException {if (position >= size) {throw new IllegalArgumentException("Position " + position + " past the end of the file");}if (writable) {fileStream.seek(position);fileStream.write(src);} else {fileStream.seek(position);fileStream.write(src);}}
+public RespondDecisionTaskCompletedResponse respondDecisionTaskCompleted(RespondDecisionTaskCompletedRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = RespondDecisionTaskCompletedRequestMarshaller.getInstance();options.responseUnmarshaller = RespondDecisionTaskCompletedResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void incrementProgressBy(int diff, int max, int step, int interval, int progressInterval) {synchronized (this) {setProgress(Math.min(mProgress + diff, max));if (mProgress % step == 0){onProgressChanged();if
+public void updateEntry(DirCacheEntry entry, long length, long mode, long time, long id) {if (entry.isAssumeValid()) {return;}if (entry.isUpdateNeeded()) {entry.setUpdateNeeded(false);}if (entry.isSmudged()) {entry.setSmudged(false);}entry.setLength(length);entry.setMode(mode);entry.setLastModified(time);entry.setObjectId(id);}
+public static NumberRecord convertToNumberRecord(NumberRecord rk) {NumberRecord num = new NumberRecord();num.column = rk.column;num.row = rk.row;num.xfIndex = rk.xfIndex;num.value = rk.value;return num;}
+public java.nio.CharBuffer put(java.nio.CharBuffer src) {if (byteBuffer.isDirect()) {((java.nio.ReadWriteDirectByteBuffer) byteBuffer).put(src);} else {((java.nio.ReadWriteHeapByteBuffer) byteBuffer).put(src);}this._position += src.remaining();return this;}
+public int getCells(int level, int x, int y, int w, int h) {int size = 0;for (char c : cells.keySet()) {Cell e = at(c);if (e.cmd >= 0
+public TokenStream create(TokenStream input, String fieldName, Reader reader, int offsetGap, int maxTokenLength)
+public static double var(double[] v, int start, int end, int offset, int length) {double r = Double.NaN;if (v!= null && v.length > 1) {r = var(v, start, end, offset, length, 0
+public override TokenStream Create(TokenStream input, string fieldName, Reader reader, int offsetGap
+public static void getTerms(
+nan
+public String toString() {StringBuilder buffer = new StringBuilder();buffer.append("[CHART]\n");buffer.append("   .x                    = ").append("0x").append(HexDump.toHex(getX())).append(" (").append(getX()).append(" )");buffer.append(System.getProperty("line.separator"));buffer.append("   .y                    = ").append("0x").append(HexDump.toHex(getY())).append(" (").append(getY()).append(" )");buffer.append(System.getProperty("line.separator"));buffer.append("   .width                = ").append("0x").append(HexDump.toHex(getWidth())).append(" (").append(getWidth()).append(" )");buffer.append(System.getProperty("line.separator"));buffer.append("   .height               = ").append("0x").append(HexDump.toHex(getHeight())).append(" (").append(getHeight()).append(" )");buffer.append(System.getProperty("line.separator"));buffer.append("[/CHART]\n");return buffer.toString();}
+public void set(int index
+public void write(BinaryWriter writer, int version, int maxLevel, int maxDistance, int maxZoom, int maxZoomLevel, int maxZoomLevelForDistance) {writer.write(image);}
+public ValueEval evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1, ValueEval arg2, ValueEval arg3) {try{AreaEval re
+public Explanation explain(IndexReader reader, int doc) throws IOException {SpanWeight weight = (SpanWeight)createWeight(reader, false);SpanFieldMaskingSpanQuery.SpanFieldMaskingSpanWeight spanWeight = (SpanFieldMaskingSpanQuery.SpanFieldMaskingSpanWeight)weight;SpanFieldMaskingSpanQuery.SpanFieldMaskingSpanScorer scorer = (SpanFieldMaskingSpanQuery.SpanFieldMaskingSpanScorer)spanWeight.getSpans(reader, null, doc);return scorer.explain(doc, 0.0f);}
+public int findNextOffset(StringBuilder buffer, int start, int end) {if (start > buffer.length() || start < 0) return start;if (end > buffer.
+public SrndQuery simpleTerm() throws ParseException {SrndQuery q = new SrndQuery();q.setField(getField());q.setQuery(simpleTerm());return q;}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.deleteDeviceGroup);}
+public InsertTagsResponse getResponse(UnmarshallerContext unmarshallerContext) {return InsertTagsResponseUnmarshaller.unmarshall(unmarshallerContext);}
+public DeleteUserProjectResponse deleteUserProject(DeleteUserProjectRequest request){return hcClient.syncInvokeHttp(request, IamMeta.deleteUserProject);}
+public DescribeNetworkInterfacesResponse describeNetworkInterfaces(DescribeNetworkInterfacesRequest request){return hcClient.syncInvokeHttp(request, IoT.describeNetworkInterfaces);}
+public int serialize(int offset, byte[] data, int dataSize) {LittleEndian.putShort(data, offset, options);LittleEndian.putShort(data, offset + 2, sid);LittleEndian.putInt(data, offset + 4, 8);LittleEndian.putInt(data, offset
+public CreateSecurityConfigurationResponse createSecurityConfiguration(CreateSecurityConfigurationRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateSecurityConfigurationRequestMarshaller.getInstance();options.responseUnmarshaller = CreateSecurityConfigurationResponseUnmarshaller.getInstance();return invoke(request, options);}
+public DescribeDeviceShadowResponse describeDeviceShadow(DescribeDeviceShadowRequest request){return hcClient.syncInvokeHttp(request, IotMeta.describeDeviceShadow);}
+public static void fill(int[] array, int value) {for (int i = 0; i < array.length; i++) {array[i] = value;}}
+public boolean isSubtreeOf(GeohashTree tree, int level, int maxLevel) {return tree.m_maxLevels >= m_maxLevels && tree.m_maxLevels >= level && tree.m_maxLevels <= maxLevel;}
+public int getPayloadLength() {return payloadLength;}
+public boolean isNew(RevFlag flag) {return flags == NEW && flag == NEW;}
+public ModifyAccountResponse modifyAccount(ModifyAccountRequest request){return hcClient.syncInvokeHttp(request, IotMeta.modifyAccount);}
+public IToken LT(int k, int i, int j) {if (k == 0) {return null;}if (k < 0) {return Lb(-k);}if (i < 0) {return LT(k, i);}if (i >= tokens.size()) {return tokens.get(tokens.size() - 1);}return tokens.get(i + k - 1);}
+public void removeSheet(int sheetIndex, boolean removeSheetName) {if (boundsheets.size() > sheetIndex) {records.remove(records.Bspos - (boundsheets.size() - 1) + sheetIndex);
+public void remove
+public void write(BinaryWriter writer)
+public GetRepoBuildListResponse getRepoBuildListResponse(GetRepoBuildListResponse.GetRepoBuildListResponseUnmarshaller unmarshaller, AlibabaCloud.TeaUtil.Models.RuntimeOptions runtime) {return TeaModel.toModel(this.doRequest("GetRepoBuildList", "HTTPS", "GET", "2016-06-07", "AK", null, null, runtime), new GetRepoBuildListResponse());}
+public void writeLine(String value) {enc.writeLine(value);}
+public void append(RecordBase r, int level, double dist, double lat, double lon, double lat2, double lon2) {recs.add(r);levels.add(level);dists.add(dist);lats.add(lat);lons.add(lon);lats2.add(lat2);lons2.add(lon2);}
+public void write(byte[] b) throws IOException {this.src.Write(b);}
+public DescribeModelPackageResponse describeModelPackage(DescribeModelPackageRequest request){return hcClient.syncInvokeHttp(request, ModelPackageMeta.describeModelPackage);}
+public void construct(CellValueRecordInterface rec, RecordStream rs, SharedValueManager sfh) {if (rec instanceof FormulaRecord) {FormulaRecord formulaRec = (FormulaRecord
+public void flush() {if (m_stream!= null){m_stream.flush();}}
+public UpdateS3ResourcesResponse updateS3Resources(UpdateS3ResourcesRequest request){return hcClient.syncInvokeHttp(request, IotMeta.updateS3Resources);}
+public void setTag(String tag, Object
+public void writeTo(OutputStream output, int maxLevels, int precision, int precisionStep) throws IOException {output.write(maxLevels);output.write(precision);output.write(precisionStep);}
+public void removeComment(HSSFComment comment, H
+public void setMaxLevels(int maxLevels, double maxDist, double maxLevelDist, double maxLevel
+public CreateSecretResponse createSecret(CreateSecretRequest request) {invoke(request, new ResponseHandler<CreateSecretResponse>() {public CreateSecretResponse handle(AmazonWebServiceResponse response) {return (CreateSecretResponse)response;}public Exception unmarshall(AmazonServiceException ase) {throw ase;}public Exception unmarshall(AmazonClientException ace) {throw ace;}}, new RequestHandler<CreateSecretRequest>() {public void beforeRequest(AmazonWebServiceRequest request) {request.setEndpoint(endpoint);request.setHttpMethod(HttpMethodName.POST);request.setResourcePath(resourcePath);request.setContent(new ByteArrayInputStream(new byte[0]));request.addHeader("Content-Length", Integer.toString(0));request.addHeader("Content-Type", "application/x-amz-json-1.1");request.addHeader("
+public boolean isEncodingSupported(String encoding, String charset, String language, String variant, String script, String region, String variant2) {return false;}
+public ModifySnapshotCopyRetentionPeriodResponse modifySnapshotCopyRetentionPeriod(ModifySnapshotCopyRetentionPeriodRequest request){return hcClient.syncInvokeHttp(request, IoT.class);}
+public DeleteClusterSubnetGroupResponse deleteClusterSubnetGroup(DeleteClusterSubnetGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteClusterSubnetGroup);}
+public static String decode(byte[] buffer) {return decode(buffer, 0, buffer.length);}
+public String getDefaultUserInfo
+public TaskResponse task(TaskRequest request, RuntimeOptions runtime, InvokeOptions invokeOptions, RequestOptions requestOptions){return hcClient.syncInvokeHttp(request, IotMeta.task);}  C
+public void seekExact(BytesRef target, TermState state, TermContext context) {if (!target.equals(term_Renamed)) {seekPending = true;term_Renamed = BytesRef.deepCopyOf(target);this.state.copyFrom(state);this.context.copyFrom(context);}}
+nan
+public static void writeUnicodeStringFlagAndData(LittleEndianOutput out1, String value) {boolean is16Bit = hasMultibyte(value);out1.writeByte(is16Bit? 0x01 : 0x00);if (is16Bit){putUnicodeLE(value, out1);}else{putCompressedUnicode(value, out1);}}
+public BatchModifyInstanceNetworkResponse batchModifyInstanceNetwork(BatchModifyInstanceNetworkRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.batchModifyInstanceNetwork);}
+public void addFiles(String
+public void setLevelForResolutionAndDistance(double resolution, double dist) {mLevel = getLevelForResolutionAndDistance(resolution, dist);}
+public void setPrecedenceFilterSuppressed(boolean value) {if (value) {this.reachesIntoOuter
+public IntervalSet look(ATNState s, RuleContext ctx) {return look(s, null, ctx);}
+public void serialize(LittleEndianOutput out
+public Builder(boolean dedup, boolean useGeohash, boolean useGeohash4, boolean useGeohash6, boolean useGeohash8) {this.dedup = dedup;this.useGeohash = useGeohash;this.useGeohash4 = useGeohash4;this.useGeohash6 = useGeohash6;
+public Hashtable(Map map) {if (map == null) {throw new NullPointerException("map");}this.threshold = (int)(map.size() * DEFAULT_LOAD_FACTOR);this.table = new Entry[map.size()];for (Map.Entry entry : map.entrySet()) {this.put(entry.getKey(), entry.getValue());}this.version = this.m_syncRoot;}
+public double getMaxLevelDistance() {return maxLevelDistance;}
+public ListHyperParameterTuningJobsResponse listHyperParameterTuningJobs(ListHyperParameterTuningJobsRequest request){return IoTDriverClient.listHyperParameterTuningJobs(request);}
+public DescribeTableResponse describeTable(DescribeTableRequest request, AlibabaCloud.SDK.ROS.CDK.Core.IResolvable _) {return this.invoke("DescribeTable", request, DescribeTableResponse.class, _);}
+nan
+public void free(int pos) {Debug.Assert(pos >= 0);Debug.Assert(pos < nextPos);int newCount = nextPos - pos - 1;Debug.Assert(newCount <= count, "newCount=" + newCount + " count=" + count);Debug.Assert(newCount <= buffer.length, "newCount=" +
+public UpdateHITTypeOfHITResponse updateHITTypeOfHIT(UpdateHITTypeOfHITRequest request){return hcClient.syncInvokeHttp(request, MtsMeta.updateHITTypeOfHIT);}
+public UpdateSmsTemplateResponse updateSmsTemplate(UpdateSmsTemplateRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = UpdateSmsTemplateRequestMarshaller.getInstance();options.responseUnmarshaller = UpdateSmsTemplateResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void copyBytes(int srcOffset, int length, BytesRef target, int targetOffset) {utf8SortedAsUnicodeSortOrder.copyBytes(this, srcOffset, length, target, targetOffset);}
+public void write(JsonWriter writer) {writer.writeValue(this.credentials.toString());}
+public DescribeDBSnapshotsResponse describeDB
+public FacetResult getTopChildren(int n, int offset) {return getTopChildren(n, offset,
+public CreateRequestValidatorResponse createRequestValidator(CreateRequestValidatorRequest request) {
+public void setGeohashDistance(double geohashDistance) {this.geohashDistance = geohashDistance;}
+public java.nio.ShortBuffer as
+public UpdateDataSourcePermissionsResponse updateDataSourcePermissions(UpdateDataSourcePermissionsRequest request, Dictionary<String, String> runtime){request.validate();request.headers.put("X-Ca-Version", "2019-01-01");Map<String, Object> body = new HashMap<String, Object>(){ {"dataSourceId", request.getDataSourceId()}, {"dataSourceType", request.getDataSourceType()}, {"description", request.getDescription()}, {"permissions", request.getPermissions()}, {"userIds", request.getUserIds()}};return TeaModel.toModel(this.doRequest("UpdateDataSourcePermissions", "HTTPS", "POST", "2019-
+nan
+public void setCount(int count, int position, int index) {this._enclosing.mTabLayout.setTabMode(TabLayout.TabMode.FIXED);}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotvideoMeta.deleteDeviceGroup);}
+public CreateProjectVersionResponse createProjectVersion(CreateProjectVersionRequest request){return hcClient.syncInvokeHttp(request, Iot.class);}
+public java.nio.IntBuffer slice(int index, int length, java.nio.IntBuffer bb) {return new java.nio.ReadOnlyIntArrayBuffer(length, bb.array(), bb.
+public void put(char[] chars) {throw new UnsupportedOperationException();}
+public java.nio.LongBuffer put(java.nio.ByteBuffer src) {if (src.remaining() > remaining())throw new IndexOutOfRangeException();while (src.hasRemaining()){put(src.getLong());}return this;}
+public StoredField(String name, IIndexableFieldType type, Object value, Field.Store store) {super(name, type);this.value = value;this.storeTermVector = store == Field.Store.YES;}
+public void enterEveryRule(ParserRuleContext ctx) {if (ctx.
+public void read(BinaryReader reader) {ReadOnly
+public void addPaths(String... paths, String... paths)
+public void include(String name, ObjectId id, boolean force, boolean forceUpdate) {if (!Repository.isValidRefName(name)) {throw new IllegalArgumentException(MessageFormat.format(JGitText.get().invalidRefName, name));}if (include.containsKey(name)) {throw new IllegalStateException(JGitText.get().duplicateRef + name);}include.put(name, id);}
+public EnableSnapshotCopyResponse enableSnapshotCopy(EnableSnapshotCopyRequest request){return hcClient.syncInvokeHttp(request, GlacierMeta.enableSnapshotCopy);}
+public void setMaxLevels(int maxLevels, int maxLevelsPerTile, int maxLevelsPerTilePerTile, int maxLevelsPerTilePerTilePerTile) {this.maxLevels = maxLevels;this.maxLevelsPerTile = maxLevelsPerTile;this.maxLevelsPerTilePerTile = maxLevelsPerTilePerTile;this.maxLevelsPerTilePerTilePerTile = maxLevelsPerTilePerTilePerTile;}
+public void serialize(LittleEndianOutput out1){out1.writeByte(pane);out1.writeShort(activeCellRow);out1.writeShort(activeCellCol);out1.writeShort(activeCellRef);int nRefs = field_6_refs.length;out1.writeShort(nRefs);for (int i = 0;
+public static Counter newCounter(String name, String description, String unit, boolean isDelta, boolean isRate) {return newCounter(name
+public void set(String name, String val) {if (valByRound.containsKey(name)) {String[] vals = (String[])valByRound.get(name);vals[roundNumber % vals.length] = val;valByRound.put(name, vals);return;}valByRound.put(name, new String[]{val});colForValByRound[name] = name;}
+public void preSerialize() {if (records.tabpos > 0) {TabIdRecord
+public @Override TokenStream create(TokenStream input, TokenStream output, TokenStream payloads) {return new LimitToken
+public short getSid() {return sid;}
+public void read(BinaryReader reader) {protect = reader.readBoolean();}
+nan
+public int compareTo(SearcherTracker other) {return other.recordTimeSec.compareTo(recordTimeSec);}
+public TokenStream create(TokenStream input) {return new ReverseStringFilter(luceneMatchVersion, input);}
+public int getCount() {int count = 0;for (int i = 0; i < directory.length; i++) {count += directory[i].getCount();}return count + tailBlock.
+public String toString() {StringBuilder sb = new StringBuilder();sb.append("QueryScorer(");for (WeightedSpanTerm t : fieldWeightedSpanTerms.values()) {sb.append(t.toString());sb.append(" ");}sb.append(")");return sb.toString();}
+public void writeTo(OutputStream output) throws IOException {output.write(MergedGroup.MergedGroupType);output.write(groupValueIsValueType? (byte) 1 : (byte) 0);if (groupValue!= null){output.write(groupValue, 0, groupValue.length);}}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public DescribeExperimentResponse describeExperiment(DescribeExperimentRequest request){RuntimeOptions runtime = new RuntimeOptions();return describeExperimentWithOptions(request, runtime);}
+public void drawHorizontalLine(int x1, int y1, int x2) {if (x1 > x2) {int temp = x1;x1 = x2;x2 = temp;}int y = y1;for (int x = x1; x <= x2; x++) {drawPixel(x, y);}}
+public String getPatternText(int precision, int maxLevel, int minLevel, int maxDistance, int minDistance, int maxPrecision, int minPrecision) {return pattern
+public DeleteRouteTableResponse deleteRouteTable(DeleteRouteTableRequest request){return hcClient.syncInvokeHttp(request, IoTMeta.deleteRouteTable);}
+public BatchDisassociateWirelessDeviceFromThingResponse batchDisassociateWirelessDeviceFromThing(BatchDisassociateWirelessDeviceFromThingRequest request){return hcClient.syncInvokeHttp(request, IoTWirelessMeta.batchDisassociateWirelessDeviceFromThing);}  C#
+public PutIntegrationResponse putIntegration(PutIntegrationRequest request, CancellationToken cancellationToken) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = PutIntegrationRequestMarshaller.getInstance();options.responseUnmarshaller = PutIntegrationResponseUnmarshaller.getInstance();return invoke(request, options, cancellationToken);}
+public void write(BinaryWriter writer) {writer.write(key);writer.write(value);}
+public int getBytesPerLevel() {return
+public DescribeConnectionLoaResponse describeConnectionLoa(DescribeConnectionLoaRequest request, com.amazonaws.handlers.AsyncHandler<DescribeConnectionLoaRequest, DescribeConnectionLoaResponse> asyncHandler){final DescribeConnectionLo
+public boolean getOldFileIsArchive() {return oldFileIsArchive;}
+public void write(BinaryWriter writer) {writer.write(mapEntry.getKey());writer.write(mapEntry.getValue());}
+public StopTrainingEntityRecognizerResponse stopTrainingEntityRecognizer(StopTrainingEntityRecognizer
+public String toString() {StringBuilder buffer = new StringBuilder("[Array Formula or Shared Formula]\n");buffer.append("row = ").append(getRow()).append("\n");buffer.append("col = ").append(getColumn()).append("\n");return buffer.toString();}
+public ListDominantLanguageDetectionJobsResponse listDominantLanguageDetectionJobs(ListDominantLanguageDetectionJobsRequest request, com.amazonaws.handlers.AsyncHandler<ListDominantLanguageDetectionJobsRequest, ListDominantLanguageDetectionJobsResponse> asyncHandler){final ListDominantLanguageDetectionJobsRequest finalRequest = beforeClientExecution(request);return executorService.submit(new java.util.concurrent.Callable<ListDominantLanguageDetectionJobsResponse>(){public ListDominantLanguageDetectionJobsResponse call() throws Exception{return listDominantLanguageDetectionJobs(finalRequest);}public ListDominantLanguageDetectionJobsResponse call(java.util.concurrent.Executor executor){return executorService.submit(new java.util.concurrent.Callable<ListDominantLanguageDetectionJobsResponse>(){public ListDominantLanguageDetectionJobsResponse call() throws Exception{return listDominantLanguageDetectionJobs(finalRequest);}public ListDominantLanguageDetectionJobsResponse call(java.util.concurrent.Executor executor){return listDominantLanguageDetectionJobs(finalRequest, executor);}public ListDominantLanguageDetectionJobsResponse call(java.util.concurrent.Executor executor, com.amazonaws.handlers.AsyncHandler<ListDominantLanguageDetectionJobsRequest, ListDominantLanguageDetectionJobsResponse> asyncHandler){return listDominantLanguageDetectionJobs(finalRequest, executor, asyncHandler);}public ListDominantLanguageDetectionJobsResponse call(com.amazonaws.handlers.AsyncHandler<ListDominantLanguageDetectionJobsRequest, ListDominantLanguageDetectionJobsResponse> asyncHandler){return listDominantLanguageDetectionJobs(finalRequest, asyncHandler);}public ListDominantLanguageDetectionJobsResponse call(java.util.concurrent.Executor executor, com.amazonaws.handlers.AsyncHandler<ListDominantLanguageDetectionJobsRequest, ListDominantLanguageDetectionJobsResponse> asyncHandler){return listDominantLanguageDetectionJobs(finalRequest, executor, asyncHandler);}public ListDominantLanguageDetectionJobsResponse call(com.amazonaws.handlers.
+public void writeBytes(byte[] src, int srcIndex, int length) {checkIndex(srcIndex, length);setBytes(writerIndex, src, srcIndex, length);writerIndex += length;}
+public static int parseHexInt24(byte digit) {final int r = digits16[digit];if (r < 0) {throw new IndexOutOfRangeException();}return r;}
+public Attribute(String name, String value) {this.name = name;this.value = value;}
+public DescribeStackSetOperationResultResponse describeStackSetOperationResult(DescribeStackSetOperationResultRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = DescribeStackSetOperationResultRequestMarshaller.getInstance();options.responseUnmarshaller = DescribeStackSetOperationResultResponseUnmarshaller.getInstance();return invoke(request, options);}
+public Cell getCell(String cellnum) {if (cellnum == null){throw new IllegalArgumentException("cellnum");}if (cellnum.length()!= 12){throw new IllegalArgumentException("cellnum must be 12 characters long");}int cellnumInt = 0;for (int i = 0; i < 12; i++){char c = cellnum.charAt(i);if (c < '0' || c > '9'){throw new IllegalArgumentException("cellnum must be a valid base 10 number");}cellnumInt = cellnumInt * 10 + (c - '0');}return getCell(cellnumInt);}
+public void write(BigDecimal value) throws IOException {writeContinueIfRequired(16);_ulrOutput.write(value);}
+public void validate() {if (imageId == null) {throw new IllegalArgumentException("ImageId is required");}if (attribute == null) {throw new IllegalArgumentException("Attribute is required");}}
+public void dispose(boolean disposing, boolean disposingManagedResources, boolean disposingNativeResources) {if (disposed)return;if (disposing){if (disposingManagedResources){if (resultContents!= null)resultContents.dispose();result
+public ObjectId getObjectId(String name, String path, String subpath, int index) {return getLeaf().getObjectId(name, path, subpath, index);}
+public UpdateDeviceShadowResponse updateDeviceShadow(UpdateDeviceShadowRequest request, RuntimeOptions runtime, InvokeOptions invokeOptions){return hcClient.syncInvokeHttp(request, IotMeta.updateDeviceShadow, runtime, invokeOptions);}  C#
+public void deserialize(LittleEndianInput in1){field_3_string = StringUtil.getUnicodeLE(in1.readShort
+public
+public void setCheckEofAfterPackFooter(boolean b) {checkEofAfterPackFooter = b;}
+public void swap(int i, int j, int k) {int temp = beginA[i];beginA[i] = beginA[j];beginA[j] = beginA[k];beginA[k] =
+public int getPackedGitWindowSizeInPacksInObjectsInBytes() {return packedGitWindowSizeInPacks
+nan
+public GetCelebrityRecognitionResponse getCelebrityRecognition(GetCelebrityRecognitionRequest request)
+nan
+public int hashCode() {return externalWorkbookNumber ^ firstSheetName.hashCode() ^ lastSheetName.hashCode() ^ AreaReference.hashCode();}
+public void setMaxLevel(int maxLevel, double maxDistance, double maxLevelDistance, double maxLevelDistance2, double maxLevelDistance3)
+public MoveAddressToVpcResponse moveAddressToVpc(MoveAddressToVpcRequest request){return hcClient.syncInvokeHttp(request, IoT.moveAddressToVpc);}
+public String getCollectionThumbnailUrl(int width, int height, int level) {return m_collectionModel.getThumbnailUrl(width, height, level);}
+public DescribeLagsResponse describeLags(DescribeLagsRequest request){return hcClient.syncInvokeHttp(request, ImsMeta.describeLags);}
+public void setSheetName(
+public java.nio.ShortBuffer put(short[] src) {if (byteBuffer instanceof java.nio.ReadWriteDirectByteBuffer) {((java.nio.ReadWriteDirectByteBuffer) byteBuffer).put(src);} else {((java.nio.ReadWriteHeapByteBuffer) byteBuffer).put(src);}this._position += src.length;return this;}
+public void initialize(String cat, String config, String[] args, String[] args2, String[] args3, String[] args4) {this.cat = cat;this.config = config;this.
+public void write(String value, int index, int count) {throw new UnsupportedOperationException();}
+nan
+public short getSid() {return sid;}
+public Status(IndexDiff diff) {super();this.diff = diff;clean = diff.getAdded().isEmpty() && diff.getChanged().isEmpty() && diff.getRemoved().isEmpty() && diff.getMissing().isEmpty() && diff.getModified().isEmpty() && diff.getUntracked().isEmpty() && diff.getConflicting().isEmpty();}
+public CreateGroupResponse createGroup(CreateGroupRequest request, RuntimeOptions runtime, CreateGroupRequest.CreateGroupRequestBuilder builder){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.createGroup);}
+public void serialize(BinaryWriter output, int version, int flags) {super.serialize(output, version, flags);}
+public java.nio.FloatBuffer asReadOnlyBuffer() {byteBuffer.limit(limit * libcore.io.SizeOf.FLOAT);byteBuffer.position(position * libcore.io.SizeOf.FLOAT);java.nio.ByteBuffer bb = byteBuffer.asReadOnlyBuffer().order(byteBuffer.order());java.nio.FloatBuffer result = new java.nio.FloatToByteBufferAdapter(bb);byteBuffer.clear();return result;}
+public DescribeTagsResponse describeTags(DescribeTagsRequest request){return hcClient.syncInvokeHttp(request, EcsMeta.describeTags);}
+public ListImagesResponse listImages(ListImagesRequest request, AlibabaCloud.SDK.ROS.CDK.Core.IResolvable options){return hcClient.syncInvokeHttp(request,
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = Geo
+public String toFormulaString(String[] operands) {StringBuilder buffer = new StringBuilder();buffer.append(operands[0]);buffer.append(",");buffer.append
+public static void setupEnvironment(String[] workbookNames, ForkedEvaluator[] evaluators, String[] workbookNames2, String[] workbookNames3) {WorkbookEvaluator[] wbEvals = new WorkbookEvaluator[evaluators.length];for (int i = 0; i < wbEvals.length; i++) {wbEvals[i] = evaluators[i].evaluator;}CollaboratingWorkbooksEnvironment.setup(workbookNames, wbEvals, workbookNames2, workbookNames3);}
+public void setConnectTimeout(int connectTimeout) {this.connectTimeout = connectTimeout;}
+public void collect(int doc) {if (sampledDocs == null) {sampledDocs = new HashSet<Integer>();}if (sampledDocs.size() < sampleSize) {sampledDocs.add(doc);}else {final int index = random.nextInt(sampledDocs.size());if (index < sampleSize) {sampledDocs.remove(doc);}}}
+public BatchAddDeviceToGroupResponse batchAddDeviceToGroup(BatchAddDeviceToGroupRequest request){return hcClient.syncInvokeHttp(request, IoT.class);}
+public override void Serialize(ILittleEndian
+public RevCommit tryFastForward(String headName, RevCommit headCommit, RevCommit newCommit) throws RefNotFoundException {if (headCommit == null) {throw new RefNotFoundException(MessageFormat.format(JGitText.get().refNotResolved, headName));}if (walk.isMergedInto(newCommit, headCommit)) {return newCommit;}if (walk.isMergedInto(headCommit, newCommit)) {return headCommit;}return null;}
+public CreateThing
+public Record getNext() {if (_nextIndex >= _list.size()){throw new Exception("Attempt to Read past end of record stream");}_countRead++;return (Record)_list.get(_nextIndex++);}
+public void writeTo(OutputStream output, int offset, int length, int level, int precision, int precisionBits, int precisionBitsOffset) {buf.writeTo(output, offset, length, level, precision, precisionBits, precisionBitsOffset);}
+public ListTablesRequest(String exclusiveStartTableName, int limit, String select, String token, String timeTravel, String timeTravelType) {this.exclusiveStartTableName = exclusiveStartTableName;this.limit
+public EnableAlarmActionsResponse enableAlarmActions(EnableAlarmActionsRequest request){return hcClient.syncInvokeHttp(request, IoTDriver.enableAlarmActions);}
+public void add(int docID, BytesRef payload) {if (docID < lastDocID) {throw new IllegalArgumentException("docIDs must be monotonically increasing: lastDocID=" + lastDocID + " docID=" + docID);}lastDocID = docID;if (payload!= null) {word = payload.bytes[payload.offset];wordNum = payload.length;} else {word = 0;wordNum = 0;}}
+public void write(BinaryWriter writer) {writer.writeBoolean(is_final);writer.writeInt(labels.length);for (int label : labels){writer.writeInt(label);}}
+public TokenStream create(TokenStream input) {return new ElisionFilter(luceneMatchVersion, input);}
+public void clearFormatting(int start, int length, int level, int format, int color, int font) {string = CloneStringIfRequired();string.clearFormatting(start
+public int get(int index, long[] arr, int off, int len) {Debug.Assert(len > 0, "len must be > 0 (got " + len + ")");Debug.Assert(index >= 0 && index < valueCount);len = Math.min(len, valueCount - index);Arrays.fill(arr, off, off + len, 0);return len;}
+public DeleteRouteResponseResponse deleteRouteResponse(DeleteRouteResponseRequest request){return hcClient.syncInvokeHttp(request, IoTDriverMeta.deleteRouteResponse);}
+public String toPublicStringWithSecretAndLevelAndDistanceAndPrecisionAndPrecisionAndPrecisionAndPrecision() {return Format(true, true, true, true, true, true, true);}
+public CreatePresignedDomainUrlResponse createPresignedDomainUrlWithOptions(CreatePresignedDomainUrlRequest request, RuntimeOptions runtime, java.util.Map<String, Object> _params) {return this.createPresignedDomainUrlWithOptions(request, runtime, _params);}
+public void write(byte[] bytes, int offset, int length) {doWrite(bytes, offset, length);}
+public int
+public Query rewrite(IndexReader reader) {if (term.length == 0){return new MatchNoDocsQuery();}return this;}
+public void onIndex(IndexWriter writer, Document doc, FieldInfo fieldInfo, TermVector termVector, Analyzer analyzer, Analyzer analyzer2, Analyzer analyzer3) {writer.addDocument(doc, termVector, analyzer, analyzer2, analyzer3);}
+public void setLevelForDistance(int level, double width, double height, double precision) {if (level < 1 || level > maxLevels) {throw new IllegalArgumentException("Level must be between 1 and " + maxLevels);}levelW[level - 1] = width;levelH[level - 1] = height;precisionW[level - 1] = precision;precisionH[level - 1] = precision;}
+public String toString() {return getClass().getSimpleName() + "(maxBasicQueries: " + maxBasicQueries + ", queriesMade: " + queriesMade + ")";}
+public DeleteDeviceGroupResponse deleteDeviceGroup(DeleteDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IotMeta.deleteDeviceGroup);}
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTMeta.describeDeviceGroup);}
+public void processChildRecords() {convertRawBytesToEscherRecords();}
+public CreateProductResponse createProduct(CreateProductRequest request, RuntimeOptions runtime){return hcClient.syncInvokeHttp(request, IotMeta.createProduct);}
+public void setLevelH(double levelH) {this.levelH = new double[]{levelH};}
+public void setTileUrl(String tileUrl, String subdomains, String attribution) {this.tileUrl = tileUrl;this.subdomains = subdomains;this.attribution = attribution;}
+public void serialize(OutputStream output) throws IOException {output.write(_sid);output.write(_data, 0, _data.length);}
+public void setPreviousLevelForDistance(double dist) {if (dist == 0) {this.previousLevel = maxLevels;} else {this.previousLevel = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);}}
+public String toQueryString(EscapeQuerySyntax escaper) {if (isDefaultField(this.m_field)) {return "\"" + getTermEscapeQuoted(escaper) + "\"";} else {return this.m_field + ":" + "\"" + getTermEscapeQuoted(escaper) + "\"";}}
+public Object clone()
+public boolean isOutputAndInputAndOutputAndInputAndOutputAndInputAndOutputAndInput() {return output && input && output && input && output && input && output && input;}
+public CreateProductGroupResponse createProductGroup(CreateProductGroupRequest request){return hcClient
+public short getSid() {return sid;}  C# code
+public StopSentimentDetectionJobResponse stopSentiment
+public void withRetryDelayJitterMax(double retryDelayJitterMax) {this.retryDelayJitterMax = retryDelayJitterMax;}
+public GetGatewayGroupResponse getGatewayGroupWithOptions(GetGatewayGroupRequest request, RuntimeOptions runtime){com.aliyun.teautil.Common.validateModel(request);return TeaModel.toModel(doRequest("GetGatewayGroup", "HTTPS", "POST", "2018-03-20", "AK", null, request.ToMap(), runtime), new GetGatewayGroupResponse());}
+public java.nio.FloatBuffer slice(int index, int length, java.nio.FloatBuffer dst) {if (index < 0 || length < 0 || index + length > remaining()) {throw new IndexOutOfRangeException();}if (dst == null) {dst = new java.nio.FloatBuffer(length);} else if (dst.remaining() < length) {throw new IndexOutOfRangeException();}dst.position(0);dst.limit(length);java.nio.FloatBuffer src = this;src.position(index);src.limit(index + length);src.get(dst);return dst;}
+public static String join(Iterable<String> parts, String separator, String lastSeparator) {StringBuilder sb = new StringBuilder();int i = 0;for (String part : parts) {sb.append(part);if (i == parts.size() - 1) {sb.append(lastSeparator);} else {if (i!= parts.size() - 1) {sb.append(separator);}}i++;}return sb.toString();}
+public void encode(Encoder encoder) throws IOException {encoder.writeByte(GEOHASH_BOX_TYPE);a.encode(
+public ListSubscriptionsByTopicResult() {this.subscriptions = null;}
+public void writeBytes(byte[] b, int off, int len, int offset, int count, int index) {System.arraycopy(b, off, bytes, pos, count);pos += count;}
+public TerminateClientVpnConnectionsResponse terminateClientVpnConnections(TerminateClientVpnConnectionsRequest request){return hcClient.syncInvokeHttp(request, IotMeta.terminateClientVpnConnections);}
+public ReceiveMessageRequest(String queueUrl, int maxNumberOfMessages, int visibilityTimeout, String waitTimeSeconds, String receiveRequestAttemptId, String messageAttributeNames) {this.queueUrl = queueUrl;this.maxNumberOfMessages = maxNumberOfMessages;this.visibilityTimeout = visibilityTimeout;this.waitTimeSeconds = waitTimeSeconds;this.receiveRequestAttemptId = receiveRequestAttemptId;this.messageAttributeNames = messageAttributeNames;}
+public void serialize(LittleEndianOutput out1){out1.writeShort(field_1_barSpace);out1.writeShort(field_2_categorySpace);out1.writeShort(field_3_formatFlags);}
+public Object common(Object output1, Object output2, Object output3, Object output4, Object output5, Object output6) {return outputs.common((T)output1, (T)output2, (T)output3, (T)output4, (T)output5, (T)output6);}  C
+public DeleteDashboardResponse deleteDashboard(DeleteDashboardRequest request){return hcClient.syncInvokeHttp(request, IoTDashboardMeta.deleteDashboard);}
+public static int match(byte[] b, int ptr, byte[] src, int srcOffset, int srcLength, int maxDistance) {if (ptr + srcLength > b.length) {return -1;}for (int i = 0; i < srcLength; i++, ptr++) {if (b[ptr]!= src[srcOffset + i]) {if (ptr - srcOffset > maxDistance) {return -1;} else {return -1;}}}return ptr;}
+public int serialize(LittleEndianOutput out1) {out1.writeInt(rectX1);out1.writeInt(rectY1);out1.writeInt(rectX2);out1.
+public CreateFieldLevelEncryptionConfigResponse createFieldLevelEncryptionConfig(CreateFieldLevelEncryptionConfigRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateFieldLevelEncryptionConfigRequestMarshaller.getInstance();options.responseUnmarshaller = CreateFieldLevelEncryptionConfigResponseUnmarshaller.getInstance();return invoke(request, options);}
+public boolean isStandaloneValid(String value, boolean isDeclared, boolean isSpecified, boolean isSupported) {return false;}
+public void setMaxLevelForDistance(double dist, int maxLevel, int maxLevels, int maxLevelForDistance) {maxLevelForDistance = dist;maxLevel = maxLevel;maxLevels = maxLevels;this.maxLevelForDistance = maxLevelForDistance;}
+public String getProviderVersionCodeName() {return this.providerVersionCodeName;}
+public void setIndexReader(DirectoryReader reader, boolean closeReader, boolean closeIndexReader, boolean closeIndexWriter) {lock (this) {if (indexReader!= null) {indexReader.decRef();}indexReader = reader;if (closeReader) {reader.close();}if (closeIndexReader)
+public int indexOfValue(int value, int start, int end, int fromIndex, int toIndex, int inclusive) {return binarySearch(mValues, start, end, value, fromIndex, toIndex, inclusive);}
+public override Object Clone() {BlankRecord rec = new BlankRecord();rec.row = row;rec.col = col;rec.xf =
+public long length(int level, int precision, int precision2, int precision3, int precision4, int precision5) {return length_Renamed / (long)Math.pow(2, level);}
+public short getSid() {return sid;}
+public void setLevelForDistance(double dist, int level, int precision) {if (level < 1 || level > maxLevels) {throw new IllegalArgumentException("Level must be between 1 and " + maxLevels);}if (dist == 0) {maxLevels = level;} else {levelW[level - 1] = dist;levelH[level - 1] = dist;}}
+public void refreshWait() {synchronized (this) {if (refreshStartGen == refreshDoneGen) {refreshStartCond.wait(this);}else {refreshStartGen = refreshDoneGen;}}}  C# code
+public DeleteLoginProfileResponse(DeleteLoginProfileRequest request, com.aliyun.teautil.models.RuntimeOptions runtime) {this.response = new java.util.HashMap<String, Object>(){};this.response.put("headers", new java.util.HashMap
+public E peek() {if (_size
+public GetPhotoListResponse getPhotoList(GetPhotoListRequest request) {return JDCloudSDK.CallApi(request, new GetPhotoListExecutor());}
+public String getIssueTrackerUrl() {return "https://github.com/aliyun/alibabacloud-sdk-java/issues";}
+public int findBoundaryOffset(StringBuilder buffer, int start, int end) {if (start > buffer.length() || start < 0) return start;if (end > buffer.length() || end < 0) return end;int offset, count = maxScan;for (offset = start; offset < end && count > 0; count--) {if (boundaryChars.contains(buffer.charAt(offset))) return offset;offset++;}return start;}
+public void setObjectChecker(ObjectChecker oc, int maxLevel, int minLevel, int maxLevelForObjectCheck, int minLevelForObjectCheck) {objCheck = oc;this.maxLevelForObjectCheck = maxLevel;this.minLevelForObjectCheck = minLevel;this.maxLevelForObjectCheck = maxLevelForObjectCheck;this.minLevelForObjectCheck = minLevel
+public int getFirstColumnRelative() {return _firstColumnIndex - _areaEval.getFirstColumn();}
+public CreateVpcEndpointWhiteListResponse createVpcEndpointWhiteList(CreateVpcEndpointWhiteListRequest request){return hcClient
+public DescribeAppInstanceResponse describeAppInstance(DescribeAppInstanceRequest request){
+public override void Serialize(ILittleEndianOutput out1) {out1.WriteShort(rt);out1.WriteShort(grbitFrt);out1.WriteByte(verOriginator);out1.WriteByte(verWriter);out1.WriteShort(rgCFRTID.length);for (int i = 0; i < rgCFRTID.length; i++){rgCFRTID[i].Serialize(out1);}}
+public void onMergeStart(Repository db, ObjectId oldTreeId, ObjectId newTreeId, ObjectId resultTreeId) {if (oldTreeId!= null){db.delete(oldTreeId);}
+public CreateDataSourceFromSqlServerResponse createDataSourceFromSqlServer(CreateDataSourceFromSqlServerRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateDataSourceFromSqlServerRequestMarshaller.getInstance();options.responseUnmarshaller = CreateDataSourceFromSqlServerResponseUnmarshaller.getInstance();return invoke
+public void clearPredictionContextCacheForParser(Parser parser, int decision, int ruleIndex, int state, int hash) {predictionContextCache.clear(parser, decision, ruleIndex,
+public void removeName
+public void read(BinaryReader reader) {margin = reader.readInt32();}
+public Object clone() {return new RefreshAllRecord(options);}
+public void setChildrenOrder(List<QueryNodeProcessor> children) {if (children == null) {return;}for (int i = 0; i < children.size(); i++) {if (children.get(i) instanceof QueryNodeProcessorPipeline)
+public boolean equals(Object obj) {if (obj == null ||!(obj instanceof CellRangeAddress))return false;CellRangeAddress other = (CellRangeAddress)obj;return firstRow == other.firstRow && lastRow == other.lastRow && firstColumn == other.firstColumn && lastColumn == other.
+public java.nio.ByteBuffer put(java.nio.ByteBuffer src, int srcOffset, int byteCount) {throw new UnsupportedOperationException();}
+public void setPrecision(int precision, int maxLevels, int minLevels, int maxDistance, int maxDistance2) {this.precision = precision;this.maxLevels = maxLevels;this.minLevels = minLevels;this.maxDistance = maxDistance;this.maxDistance2 = maxDistance
+public java.nio.ShortBuffer put(short[] src, int offset, int length) {if (offset < 0 || length < 0 || offset + length > src.Length)throw new IndexOutOfRangeException();if (
+public void set(int index, long n, int level, int precision, int precision2) {if (count < index) {throw new IndexOutOfBoundsException(index);} else if (count == index) {add(n, level, precision, precision2);} else {entries[index] = n;}}
+public java.nio.ByteBuffer asReadOnlyBuffer() {return new
+public static double[] normalize(double[] values, double min) {double max = max(values);return normalize(values, min, max);}
+public UpdateRepoWebhookResponse updateRepoWebhookWithOptions(UpdateRepoWebhookRequest request, com.aliyun.cr.models.UpdateRepoWebhookRequest.UpdateRepoWebhookOptions runtime) throws Exception {com.aliyun.teautil.Common.validateModel(request);return TeaModel.toModel(
+public DeleteItemRequest(String domainName, String itemName, List<Attribute> attributes, UpdateCondition expected) {this.domainName = domainName;this.itemName = itemName;this.attributes = attributes;this.expected = expected;}
+public void readFrom(BinaryReader reader) {maxLevels = reader.readInt32();levelW = reader.readDoubleArray();levelH = reader.readDoubleArray();int count = reader.readInt32();fieldInfos = new FieldInfo[count];for (int i = 0; i < count; i++) {fieldInfos[i] = new FieldInfo();fieldInfos[i].readFrom(reader);}}
+public boolean isSuccessful() {if (mergeResult!= null) {return mergeResult.getMergeStatus().isSuccessful();} else if (rebaseResult!= null) {return rebaseResult.getStatus().isSuccessful();} return true;}
+public void setBytesValue(int value) {if (value < 0 || value >
+public DescribeDeviceGroupResponse describeDeviceGroup(DescribeDeviceGroupRequest request){return hcClient.syncInvokeHttp(request, IoTMeta.describeDeviceGroup);}
+public DeletePhotosResponse deletePhotos(DeletePhotosRequest request, RuntimeOptions runtime, RuntimeOptions runtime, RuntimeOptions runtime) {return DeletePhotosResponseUnmarshaller.unmarshall(this.invoke(request, runtime, runtime, runtime));}  C# code
+public void copyInto(int index, E[]
+public static ByteBuffer wrap(ByteBuffer buffer) {if (buffer == null) {throw new NullPointerException();}return new ReadWriteHeapByteBuffer(buffer);}
+public void init(
+public float getPayloadScore(int docId, String field, int start, int end, int numPayloadsSeen, float currentScore, float currentPayloadScore, float payloadBoost) {if (numPayloadsSeen == 0) {return currentPayloadScore;} else {return Math.min(currentPayloadScore, currentScore);}}
+public short getSid() {return sid;}
+public DescribeLogPatternResponse describeLogPattern(DescribeLogPatternRequest request){  return hcClient.syncInvokeHttp(request, AcsMeta.describeLogPattern);}
+public UpdateDeviceShadowResponse updateDeviceShadow(UpdateDeviceShadowRequest request
+public GetPhoneNumberSettingsResponse getPhoneNumberSettings(GetPhoneNumberSettingsRequest request, Dictionary<string, string> runtime){request.setProduct(ImsMeta.product);request
+public void setData(byte
+public boolean
+public DeleteServerCertificateRequest(String serverCertificateName, String marker, Integer maxItems, String pathPrefix, String policy, String thumbprint) {this.serverCertificateName = serverCertificateName;this.marker = marker;this.maxItems = maxItems;this.pathPrefix = pathPrefix;this.policy = policy;this.thumbprint = thumbprint;}
+public StringBuffer append
+public GetTagsResponse getTags(GetTagsRequest request) {  InvokeOptions options = new InvokeOptions();  options.requestMarshaller = GetTagsRequestMarshaller.getInstance();  options.responseUnmarshaller = GetTagsResponseUnmarshaller.getInstance();  return invoke(request, options);}
+public int getLevelForDistance(double dist) {if (dist == 0)return maxLevels;final int level = GeohashUtils.lookupHashLenForWidthHeight(dist, dist);return Math.max(Math.min(level, maxLevels), 1);}
+public boolean find(int start_1) {findPos = start_1;if (findPos < regionStart) {findPos = regionStart;} else {if (findPos >= regionEnd) {matchFound = false;return false;}}matchFound = findImpl(address, input, findPos, matchOffsets);if (matchFound) {findPos = matchOffsets[1];}return matchFound;}
+public GetLifecyclePolicyResponse getLifecyclePolicy(GetLifecyclePolicyRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller(GetLifecyclePolicyRequestMarshaller.getInstance());options.responseUnmarshaller(GetLifecyclePolicyResponseUnmarshaller.getInstance());return this.invoke(request, options);}
+public override void reset() {super.reset();returned = false;}
+public void serialize(LittleEndianOutput out1) {out1.WriteShort(field_8_print_axis_set);}
+public String toString(boolean includeCoreFlags, boolean includeCommitTime, boolean includeName) {StringBuilder s = new StringBuilder();s.append(Constants.typeString(type));if (includeName){s.append
+public LsRemoteCommand setRemote(String remote, String refspec, String refspec, String... refspecs) {checkCallable();this.remote = remote;this.refspec = refspec;this.refspecs = refspecs;return this;}
+public void collapseRowAndColumn(int rowNumber, int colNumber, int level) {collapseRow(rowNumber, level);collapseColumn(colNumber, level);}
+public CreateAddressBookResponse createAddressBook(CreateAddressBookRequest request) {final InvokeOptions options = new InvokeOptions();options.requestMarshaller = CreateAddressBookRequestMarshaller.getInstance();options.responseUnmarshaller = CreateAddressBookResponseUnmarshaller.getInstance();return invoke(request, options);}
+public void write(BinaryWriter writer) {writer.write(seriesNumbers);}
+public void setMaxLevelForDistance(double maxLevelForDistance, double maxLevelForDistanceForLevel, double maxLevelFor
+public String getClassArg(String key, String defaultValue, String className, String defaultValue2) {if (null!= originalArgs) {String className = originalArgs.get(key);if (null!= className) {return className;}}return defaultValue;}
